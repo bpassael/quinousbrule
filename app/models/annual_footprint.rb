@@ -1,0 +1,2 @@
+class AnnualFootprint < ApplicationRecord
+end

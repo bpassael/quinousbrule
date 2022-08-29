@@ -1,0 +1,2 @@
+class AnnualFootprintsController < ApplicationController
+end

@@ -10,9 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_29_102915) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_29_110237) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "annual_footprints", force: :cascade do |t|
+    t.float "annual_footprint_kgCO2e"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "measurements", force: :cascade do |t|
+    t.string "title"
+    t.string "category"
+    t.float "kgCO2e"
+    t.text "source_description_html"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "representatives", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "circo_key"
+    t.string "email"
+    t.string "twitter"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
