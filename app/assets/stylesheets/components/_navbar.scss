@@ -1,12 +1,22 @@
-.navbar-lewagon {
+.navbar-quinousbrule {
   justify-content: space-between;
-  background: white;
+  background: $dark-blue;
+  color: $light-gray;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-quinousbrule a {
+  color: $light-gray;
+}
+
+.navbar-quinousbrule a:hover {
+  color: $yellow;
+}
+
+
+.navbar-quinousbrule .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
+.navbar-quinousbrule .navbar-brand img {
   width: 40px;
 }
