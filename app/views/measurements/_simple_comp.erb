@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row d-flex">
+      <h2 class="text-center">Comparateur simple</h2>
+      <div class="col-12 col-lg-6 w-50 d-flex flex-wrap">
+      <% @measurements.each do |measurement| %>
+          <p class="text-center m-1 item-element"><%= measurement.title.first%><br><%= measurement.title[1..] %></p>
+      <% end %>
+      </div>
+      <div class="col-12 col-lg-6 w-50">
+      <p class="text-center m-0">test</p>
+      </div>
+    </div>
+</div>

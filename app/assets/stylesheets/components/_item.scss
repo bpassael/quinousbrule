@@ -1,0 +1,21 @@
+.item-element {
+  border-radius: 5px;
+  border: solid $green 2px;
+  padding: 5px 10px 5px 10px;
+  color: $dark-blue;
+  width: 200px;
+}
+
+.item-element:hover {
+  background-color: rgba(124, 165, 67, 0.2);
+  color: $dark-blue;
+}
+
+.item-element-selected {
+  border: solid $yellow 2px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  color: $light-gray;
+  width: 200px;
+  background-color: $orange;
+}
