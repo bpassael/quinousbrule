@@ -115,20 +115,8 @@ m7 = Measurement.new(
 m7.save!
 
 
+
 m8 = Measurement.new(
-  title: "✈️ J'arrête de prendre l'avion (voyageur régulier)",
-  kgCO2e_year: 6500,
-  eq_minutes_flight_jet_bollore: 83.33,
-  eq_km_yacht_arnault: 28.26,
-  additional_info: "Sur une base 4 vols domestiques. 2 vols moyen courrier et 2 vols long courrier dans l'année",
-  source_link: "nosgestesclimat.fr",
-  source_name: "ADEME"
-)
-
-m8.save!
-
-
-m9 = Measurement.new(
   title: "💻 Je fais du 100% télétravail",
   kgCO2e_year: 761.40,
   eq_minutes_flight_jet_bollore: 9.76,
@@ -138,9 +126,9 @@ m9 = Measurement.new(
   source_name: "ADEME"
 )
 
-m9.save!
+m8.save!
 
-m10 = Measurement.new(
+m9 = Measurement.new(
   title: "🚅 Je privilégie le train à l'avion",
   kgCO2e_year: 1192,
   eq_minutes_flight_jet_bollore: 15.28,
@@ -150,10 +138,10 @@ m10 = Measurement.new(
   source_name: "ADEME"
 )
 
-m10.save!
+m9.save!
 
 
-m11 = Measurement.new(
+m10 = Measurement.new(
   title: "🚲 Je prends le vélo plutôt que la voiture pour les trajets courts",
   kgCO2e_year: 491.40,
   eq_minutes_flight_jet_bollore: 6.30,
@@ -163,7 +151,7 @@ m11 = Measurement.new(
   source_name: "ADEME"
 )
 
-m11.save!
+m10.save!
 
 
 m11 = Measurement.new(
