@@ -227,7 +227,7 @@ fp_train = 0
 train = ""
 until train == "Y" || train == "N"
   puts "Prenez-vous le train ? (Y/N)"
-  plane = gets.chomp.capitalize
+  train = gets.chomp.capitalize
 end
 if train == "Y"
   puts "Combien de trajets courts AR (eq. Nice Cannes) dans l'année ?"
@@ -357,6 +357,8 @@ elsif home_heat_type == 4
 else
   p "WRONG INPUT"
   exit
+end
+
 if home_low_cons == "Y"
   fp_heat = fp_heat * 0.3
 end
