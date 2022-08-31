@@ -304,13 +304,13 @@ end
 
 ## Amortissement annuel construction
 
-if home_old == "Y" # on considère déjà amorti si > 50 ans
+if home_old == "N" # on considère déjà amorti si > 50 ans
   if home_type == 1
-    fp_am_an = home_surface * 10,5 # amortissement annuel moyen par m2 suivant type de logement
+    fp_am_an = home_surface * 10.5 # amortissement annuel moyen par m2 suivant type de logement
   elsif home_type == 2
-    fp_am_an = home_surface * 8,5
+    fp_am_an = home_surface * 8.5
   elsif home_type == 3
-    fp_am_an = home_surface * 2,88
+    fp_am_an = home_surface * 2.88
   end
 else
   fp_am_an = 0
@@ -325,11 +325,6 @@ end
 
 fp_elec = elec_monthly_cost * 62.08 * 0.06
 
-if home_heat_type == 1 && home_low_cons == 'Y'
-  fp_elec_heat_part = fp_elec * 0.24 * 0.3
-  fp_elec_other_part = fp_elec * 0.76
-  fp_elec = fp_elec_heat_part + fp_elec_other_part
-end
 
 
 ## Chauffage
@@ -359,9 +354,6 @@ else
   exit
 end
 
-if home_low_cons == "Y"
-  fp_heat = fp_heat * 0.3
-end
 
 
  ## Divide by users
@@ -463,7 +455,7 @@ end
 
 ## water
 if food_water == "Y"
-  total_footprint += food_water
+  fp_food_total += food_water
 end
 
 

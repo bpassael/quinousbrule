@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_31_123944) do
+ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -43,7 +43,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_123944) do
     t.integer "input_home_surface"
     t.boolean "input_home_old?"
     t.string "input_home_type"
-    t.boolean "input_home_low_cons?"
     t.string "input_home_heat_type"
     t.integer "input_home_elec_monthly_bill"
     t.integer "input_home_heat_bill"
@@ -56,6 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_123944) do
     t.string "input_consumption_appliances"
     t.string "input_consumption_clothing"
     t.float "fp_total_consumption"
+    t.boolean "input_food_bottled_water?"
   end
 
   create_table "measurements", force: :cascade do |t|

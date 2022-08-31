@@ -26,8 +26,14 @@ export default class extends Controller {
     } else {
       this.resultTarget.innerText = "Cochez une ou plusieurs cases pour estimer vos économies carbone"
     }
-    if (this.totalJet < 30 && this.totalCarb != 0) {
-      this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseInt(4500/this.totalCarb)} ans pour économiser la consommation carbone de 60 minutes de vol du jet privé de Vincent Bolloré, ou de 20 kilomètres parcourus par le yacht de Bernard Arnault.`)
+    if (this.totalJet < 20 && this.totalCarb != 0) {
+      this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseFloat(4500/this.totalCarb).toFixed(2)} ans pour économiser la consommation carbone de 60 minutes de vol du jet privé de Vincent Bolloré, ou de 20 kilomètres parcourus par le yacht de Bernard Arnault.`)
+    } else if (this.totalJet < 50 && this.totalCarb != 0) {
+      this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseFloat(9000/this.totalCarb).toFixed(2)} ans pour économiser la consommation carbone de 2 heures de vol du jet privé de Vincent Bolloré, ou de 40 kilomètres parcourus par le yacht de Bernard Arnault.`)
+    } else if (this.totalJet < 100 && this.totalCarb != 0) {
+      this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseFloat(18000/this.totalCarb).toFixed(2)} ans pour économiser la consommation carbone de 4 heures de vol du jet privé de Vincent Bolloré, ou de 80 kilomètres parcourus par le yacht de Bernard Arnault.`)
+    } else if (this.totalJet < 200 && this.totalCarb != 0) {
+      this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseFloat(36000/this.totalCarb).toFixed(2)} ans pour économiser la consommation carbone de 8 heures de vol du jet privé de Vincent Bolloré, ou de 160 kilomètres parcourus par le yacht de Bernard Arnault.`)
     }
   }
 }

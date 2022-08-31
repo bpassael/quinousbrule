@@ -1,6 +1,6 @@
-<div class="container overflow-auto">
+<div class="simple-comp-container container overflow-auto">
     <div class="row d-flex" data-controller="item-comp">
-      <h2 class="text-center">Comparateur simple</h2>
+      <h2 class="text-center">Comparer mes petits gestes</h2>
       <div
         class="col-12 col-lg-6 w-50 d-flex flex-wrap">
       <% @measurements.each do |measurement| %>
@@ -26,9 +26,11 @@
           <p
           class="mx-2"
           data-action="click->source-flip#return">🔁</p>
-          <p
-          class="mx-2"
-          data-action="click->source-flip#infos">ℹ️</p>
+          <% if measurement.additional_info %>
+            <p
+            class="mx-2"
+            data-action="click->source-flip#infos">ℹ️</p>
+          <% end %>
           </div>
         </div>
       <% end %>

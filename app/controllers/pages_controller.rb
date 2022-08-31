@@ -5,4 +5,6 @@ class PagesController < ApplicationController
     @measurements = Measurement.all
     @footprint = AnnualFootprint.new
   end
+
+
 end
