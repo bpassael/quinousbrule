@@ -3,5 +3,6 @@ class PagesController < ApplicationController
 
   def home
     @measurements = Measurement.all
+    @footprint = AnnualFootprint.new
   end
 end

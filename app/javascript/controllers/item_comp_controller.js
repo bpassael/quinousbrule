@@ -22,7 +22,7 @@ export default class extends Controller {
         this.totalYacht += Number.parseFloat(carbValues[e]["childNodes"][7]["innerHTML"])
       })
       if (this.totalCarb != 0) {
-      this.resultTarget.innerText = `Félicitations ! Votre empreinte carbone diminue de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Cela correspond à la consommation en carburant de ${this.totalJet.toFixed(2)} minutes de vol du jet privé de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault.`
+      this.resultTarget.innerText = `Félicitations ! Votre empreinte carbone diminue de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ces efforts sont annulés par la consommation en carburant de ${this.totalJet.toFixed(2)} minutes de vol du jet privé de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault.`
     } else {
       this.resultTarget.innerText = "Cochez une ou plusieurs cases pour estimer vos économies carbone"
     }
