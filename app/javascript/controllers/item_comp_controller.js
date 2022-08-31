@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="item-comp"
 export default class extends Controller {
-  static targets = ["item", "result"]
+  static targets = ["item", "result", "source"]
 
   connect() {
   }
@@ -30,5 +30,4 @@ export default class extends Controller {
       this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseInt(4500/this.totalCarb)} ans pour économiser la consommation carbone de 60 minutes de vol du jet privé de Vincent Bolloré, ou de 20 kilomètres parcourus par le yacht de Bernard Arnault.`)
     }
   }
-
 }
