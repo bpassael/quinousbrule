@@ -1,9 +1,8 @@
-<div class="container">
-    <div class="row d-flex">
+<div class="container overflow-auto">
+    <div class="row d-flex" data-controller="item-comp">
       <h2 class="text-center">Comparateur simple</h2>
       <div
-        class="col-12 col-lg-6 w-50 d-flex flex-wrap"
-        data-controller="item-comp">
+        class="col-12 col-lg-6 w-50 d-flex flex-wrap">
       <% @measurements.each do |measurement| %>
         <div class="d-flex">
           <p class="text-center m-1 item-element"
@@ -11,17 +10,14 @@
           data-action="click->item-comp#selected">
           <%= measurement.title.first%><br><%= measurement.title[1..] %>
           <i class="d-none"><%= measurement.kgCO2e_year %></i>
+          <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %></i>
+          <i class="d-none"><%= measurement.eq_km_yacht_arnault %></i>
           </p>
         </div>
       <% end %>
       </div>
-      <div class="col-12 col-lg-6 w-50" data-controller="item-comp">
-      <p class="text-center m-0" data-item-comp-target="result">test</p>
+      <div class="col-12 col-lg-6 w-50">
+      <p class="text-center m-0 simple-comp-result" data-item-comp-target="result">Cochez une ou plusieurs cases pour estimer vos économies carbone</p>
       </div>
     </div>
 </div>
-
-
-<%# data-item-comp-carbon-value="measurement.kgCO2e_year"
-data-item-comp-jet-value="measurement.eq_minutes_flight_jet_bollore"
-data-item-comp-yacht-value="measurement.eq_km_yacht_arnault"  %>
