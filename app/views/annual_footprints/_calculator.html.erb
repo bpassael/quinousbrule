@@ -1,35 +1,105 @@
- <h2 class="text-center">Calculer mon empreinte carbone annuelle</h2>
- <div class="container">
+ <h2 class="text-center my-5">Calculer mon empreinte carbone annuelle</h2>
+ <div class="container my-5 bg-white rounded">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <%# <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+          </div> %>
           <div class="carousel-inner">
+          <%= simple_form_for @footprint,  data: { turbo: false }  do |f| %>
             <div class="carousel-item active justify-center-center">
-            <h5>Je me déplace</h5>
-              <img src="..." class="d-block w-100" alt="...">
+            <h5 class="my-5">Je me déplace</h5>
+              <div class="caroussel-fixed overflow-auto">
+              <%= f.input :input_transport_plane? %>
+              <%= f.input :input_transport_flights_short %>
+              <%= f.input :input_transport_flights_middle %>
+              <%= f.input :input_transport_flights_long %>
+              <%= f.input :input_transport_car? %>
+              <%= f.input :input_transport_car_type, collection: ["Petite", "Moyenne", "Berline", "SUV"] %>
+              <%= f.input :input_transport_car_carburant, collection: ["Thermique", "Hybride", "Electrique"]%>
+              <%= f.input :input_transport_car_age %>
+              <%= f.input :input_transport_car_passengers %>
+              <%= f.input :input_transport_car_km %>
+              <%= f.input :input_transport_two_wheels, collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"] %>
+              <div class="d-flex justify-content-center">
+                    <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    Suivant
+                    </i>
+              </div>
+              </div>
+            </div>
+            <div class="carousel-item justify-center-center">
+            <h5>Je me déplace -2</h5>
+              <div class="caroussel-fixed overflow-auto">
+              <%= f.input :input_transport_two_wheels, collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"] %>
+              <%= f.input :input_transport_scooter_km %>
+              <%= f.input :input_transport_moto_km %>
+              <%= f.input :input_transport_train? %>
+              <%= f.input :input_transport_train_trips_short %>
+              <%= f.input :input_transport_train_trips_middle %>
+              <%= f.input :input_transport_train_trips_long %>
+              <%= f.input :input_transport_bus_hours_week %>
+              <%= f.input :input_transport_metro_tram_hours_week %>
+              <div class="d-flex justify-content-center">
+                    <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    Précédent
+                    </i>
+                    <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    Suivant
+                    </i>
+              </div>
+              </div>
             </div>
             <div class="carousel-item">
             <h5>Je me loge</h5>
-              <img src="..." class="d-block w-100" alt="...">
+              <div class="caroussel-fixed overflow-auto">
+              <%= f.input :input_home_surface %>
+              <%= f.input :input_home_old? %>
+              <%= f.input :input_home_type, collection: ["Appartement", "Maison", "Maison eco-construite"] %>
+              <%= f.input :input_home_heat_type, collection: ["Electricité ou pompe à chaleur", "Gaz", "Fioul", "Bois"] %>
+              <%= f.input :input_home_elec_monthly_bill %>
+              <%= f.input :input_home_heat_bill %>
+              <%= f.input :input_home_users %>
+              <div class="d-flex justify-content-center">
+                    <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    Précédent
+                    </i>
+                    <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    Suivant
+                    </i>
+              </div>
+              </div>
             </div>
             <div class="carousel-item">
             <h5>Je consomme</h5>
-              <img src="..." class="d-block w-100" alt="...">
+              <div class="caroussel-fixed overflow-auto">
+              <%= f.input :input_food_diet, collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"] %>
+              <%= f.input :input_food_bottled_water? %>
+              <%= f.input :input_food_waste, collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"] %>
+              <%= f.input :input_consumption_tech, collection: ["Beaucoup", "Moyennement", "Peu"] %>
+              <%= f.input :input_consumption_appliances, collection: ["Beaucoup", "Moyennement", "Peu"] %>
+              <%= f.input :input_consumption_clothing, collection: ["Très souvent", "Régulièrement", "Occasionnellement", "Rarement"] %>
+              <%= f.submit %>
+              <div class="d-flex justify-content-center">
+                    <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    Précédent
+                    </i>
+              </div>
+              </div>
+            <% end %>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <%# <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> %>
         </div>
       </div>
     </div>
