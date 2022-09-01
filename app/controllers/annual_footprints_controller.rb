@@ -13,7 +13,7 @@ class AnnualFootprintsController < ApplicationController
     compute_grand_total
     @footprint.save!
     @current_id = @footprint.id
-    redirect_to root_path
+    # redirect_to root_path
   end
 
 

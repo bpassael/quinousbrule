@@ -2,28 +2,78 @@
  <div class="container my-5 bg-white rounded">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
           <%# <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> %>
-          <div class="carousel-inner">
+          <div class="carousel-inner" data-controller="annual-calc">
           <%= simple_form_for @footprint,  data: { turbo: false }  do |f| %>
             <div class="carousel-item active justify-center-center">
-            <h5 class="my-5">Je me déplace</h5>
+              <h5 class="my-5">Transports</h5>
               <div class="caroussel-fixed overflow-auto">
-              <%= f.input :input_transport_plane, label: "Prenez-vous l'avion ?" %>
-              <%= f.input :input_transport_flights_short, label: "Combien de vols domestiques aller-retour effectuez-vous dans l'année ? (ex: Bordeaux-Lyon)"%>
-              <%= f.input :input_transport_flights_middle, label: "Combien de vols moyen courrier aller-retour effectuez-vous dans l'année ? (ex: Paris-Ibiza)" %>
-              <%= f.input :input_transport_flights_long, label: "Combien de vols long courrier aller-retour effectuez-vous dans l'année ? (ex: Nice-Hanoï)" %>
-              <%= f.input :input_transport_car, label: "Utilisez-vous une voiture (covoiturage compris) ?" %>
-              <%= f.input :input_transport_car_type, label: "Quel type de voiture ?", collection: ["Petite", "Moyenne", "Berline", "SUV"] %>
-              <%= f.input :input_transport_car_carburant, label: "Quel type de carburant ?", collection: ["Thermique", "Hybride", "Electrique"]%>
-              <%= f.input :input_transport_car_age, label: "Quel âge a la voiture (en années ?)" %>
-              <%= f.input :input_transport_car_passengers, label: "Combien de passagers en moyenne ?" %>
-              <%= f.input :input_transport_car_km, label: "Combien de km parcourus sur l'année ?" %>
+              <%= f.input :input_transport_plane,
+                input_html: {data: {action: "change->annual-calc#displayplane"}},
+                label: "Prenez-vous l'avion ?" %>
+              <div class="row g-3 d-none" data-annual-calc-target="plane">
+              <p>Combien de vols (aller-retour) effectuez-vous dans l'année ?</p>
+                <div class="col"><%= f.input :input_transport_flights_short, label: "Domestiques (ex: Bordeaux-Lyon)"%></div>
+                <div class="col"><%= f.input :input_transport_flights_middle, label: "Moyen courrier (ex: Paris-Ibiza)" %></div>
+                <div class="col"><%= f.input :input_transport_flights_long, label: "Long courrier (ex: Nice-Hanoï)" %></div>
+              </div>
+              <%= f.input :input_transport_car,
+              input_html: {data: {action: "change->annual-calc#displaycar"}},
+              label: "Utilisez-vous une voiture (covoiturage compris) ?" %>
+              <div class="d-none" data-annual-calc-target="car">
+              <p>Comment est la voiture que vous utilisez le plus ?</p>
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_transport_car_type, label: "Type de voiture", collection: ["Petite", "Moyenne", "Berline", "SUV"] %></div>
+                <div class="col"><%= f.input :input_transport_car_carburant, label: "Type de carburant", collection: ["Thermique", "Hybride", "Electrique"]%></div>
+              </div>
+              <div class="row g-3">
+                <div class="col"><%= f.input :input_transport_car_age, label: "Age (en années)" %></div>
+                <div class="col"><%= f.input :input_transport_car_passengers, label: "Passagers (en moyenne)" %></div>
+                <div class="col"><%= f.input :input_transport_car_km, class: "col-2", label: "Km parcourus (sur l'année)" %></div>
+              </div>
+              </div>
+                <div class="d-flex justify-content-center col-12">
+                    <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    Suivant
+                    </i>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item justify-center-center">
+              <h5>Déplacements</h5>
+              <div class="caroussel-fixed overflow-auto">
+              <%= f.input :input_transport_two_wheels,
+              input_html: {data: {action: "change->annual-calc#displaymoto"}},
+              label: "Avez-vous un scooter ou une moto ?",
+              collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"] %>
+              <p data-annual-calc-target="textmoto">Combien de km parcourez-vous chaque année ?</p>
+              <div class="row g-2">
+                <div class="col" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250" %></div>
+                <div class="col d-none" data-annual-calc-target="moto"><%= f.input :input_transport_moto_km, label: "En moto > 250" %></div>
+              </div>
+              <%= f.input :input_transport_train,
+              input_html: {data: {action: "change->annual-calc#displaytrain"}},
+              label: "Prenez-vous le train ?" %>
+              <div class="row g-3 d-none" data-annual-calc-target="train">
+              <p>Combien de trajets (aller-retour) effectuez-vous dans l'année ?</p>
+                <div class="col"><%= f.input :input_transport_train_trips_short, label: "Courts trajets (ex: Cannes-Nice)"%></div>
+                <div class="col"><%= f.input :input_transport_train_trips_middle, label: "Moyens trajets (ex: Paris-Clermont)" %></div>
+                <div class="col"><%= f.input :input_transport_train_trips_long, label: "Longs trajets (ex: Lille-Nice)" %></div>
+              </div>
+              <p>Combien d'heures passez-vous en moyenne chaque semaine ?</p>
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_transport_bus_hours_week, label: "Dans le bus" %></div>
+                <div class="col"><%= f.input :input_transport_metro_tram_hours_week, label: "Dans le métro ou le tram" %></div>
+              </div>
               <div class="d-flex justify-content-center">
+                    <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    Précédent
+                    </i>
                     <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     Suivant
                     </i>
@@ -31,37 +81,21 @@
               </div>
             </div>
             <div class="carousel-item justify-center-center">
-            <h5>Je me déplace -2</h5>
+              <h5>Je me loge</h5>
               <div class="caroussel-fixed overflow-auto">
-              <%= f.input :input_transport_two_wheels, label: "Avez-vous une scooter ou une moto ?", collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"] %>
-              <%= f.input :input_transport_scooter_km, label: "Combien de km parcourez-vous en scooter ou moto < 250 chaque année ?" %>
-              <%= f.input :input_transport_moto_km, label: "Combien de km parcourez-vous en moto > 250 chaque année ?" %>
-              <%= f.input :input_transport_train, label: "Prenez-vous le train ?" %>
-              <%= f.input :input_transport_train_trips_short, label: "Combien de courts trajets effectuez-vous dans l'année ? (ex: Cannes-Nice)" %>
-              <%= f.input :input_transport_train_trips_middle, label: "Combien de moyens trajets effectuez-vous dans l'année ? (ex: Paris-Clermont)" %>
-              <%= f.input :input_transport_train_trips_long, label: "Combien de longs trajets effectuez-vous dans l'année ? (ex: Lille-Nice)" %>
-              <%= f.input :input_transport_bus_hours_week, label: "Combien d'heures passez-vous dans le bus chaque semaine ?" %>
-              <%= f.input :input_transport_metro_tram_hours_week, label: "Combien d'heures passez-vous dans le métro/tram chaque semaine ?" %>
-              <div class="d-flex justify-content-center">
-                    <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    Précédent
-                    </i>
-                    <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    Suivant
-                    </i>
-              </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-            <h5>Je me loge</h5>
-              <div class="caroussel-fixed overflow-auto">
-              <%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?" %>
-              <%= f.input :input_home_old, label: "Votre logement a t'il plus de 50 ans ?" %>
+              <p>Parlez nous de votre logement</p>
               <%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"] %>
+              <div class="row g-3">
+                <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?" %></div>
+                <div class="col"><%= f.input :input_home_old, label: "Votre logement a t'il plus de 50 ans ?" %></div>
+                <div class="col"><%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?" %></div>
+              </div>
               <%= f.input :input_home_heat_type, label: "Comment est chauffé votre logement ?", collection: ["Electricité ou pompe à chaleur", "Gaz", "Fioul", "Bois"] %>
-              <%= f.input :input_home_elec_monthly_bill, label: "Quelle est votre dépense moyenne en électricité par mois ?" %>
-              <%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?" %>
-              <%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?" %>
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_home_elec_monthly_bill, label: "Quelle est votre dépense moyenne en électricité par mois ?" %></div>
+                <div class="col"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?" %></div>
+              </div>
+
               <div class="d-flex justify-content-center">
                     <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     Précédent
@@ -72,23 +106,37 @@
               </div>
               </div>
             </div>
-            <div class="carousel-item">
-            <h5>Je consomme</h5>
+            <div class="carousel-item justify-center-center">
+              <h5>Je consomme</h5>
               <div class="caroussel-fixed overflow-auto">
-              <%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"] %>
-              <%= f.input :input_food_bottled_water, label: "Consommez-vous de l'eau en bouteille ?" %>
-              <%= f.input :input_food_waste, label: "Pour vos déchets", collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"] %>
-              <%= f.input :input_consumption_tech, label: "Combien avez-vous d'appareils numériques de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %>
-              <%= f.input :input_consumption_appliances, label: "Combien avez-vous d'électroménager de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %>
-              <%= f.input :input_consumption_clothing, label: "Achetez-vous souvent des vêtements neufs ?", collection: ["Très souvent", "Régulièrement", "Occasionnellement", "Rarement"] %>
-              <%= f.submit %>
-              <div class="d-flex justify-content-center">
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"] %></div>
+                <div class="col"><%= f.input :input_food_waste, label: "Pour vos déchets", collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"] %></div>
+              </div>
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_consumption_clothing, label: "Achetez-vous souvent des vêtements neufs ?", collection: ["Très souvent", "Régulièrement", "Occasionnellement", "Rarement"] %></div>
+                <div class="col"><%= f.input :input_food_bottled_water, label: "Consommez-vous de l'eau en bouteille ?" %> </div>
+              </div>
+              <div class="row g-2">
+                <div class="col"><%= f.input :input_consumption_tech, label: "Combien avez-vous d'appareils numériques de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %></div>
+                <div class="col"><%= f.input :input_consumption_appliances, label: "Combien avez-vous d'électroménager de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %></div>
+              </div>
+                <div class="d-flex justify-content-center">
                     <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     Précédent
                     </i>
+                    <i type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <%= f.submit "Calculer", class: "btn-caroussel-next mx-2" %>
+                    </i>
+                </div>
               </div>
+            </div>
+          <% end %>
+            <div class="carousel-item justify-center-center">
+              <h5>Résultat</h5>
+              <div class="caroussel-fixed overflow-auto">
+                <%= AnnualFootprint.last.annual_footprint_kgCO2e %>
               </div>
-            <% end %>
             </div>
           </div>
           <%# <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
