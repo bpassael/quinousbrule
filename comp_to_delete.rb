@@ -455,7 +455,7 @@ end
 
 ## water
 if food_water == "Y"
-  fp_food_total += food_water
+  fp_food_total += 153.3
 end
 
 
