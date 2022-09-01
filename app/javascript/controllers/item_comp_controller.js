@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 
 // Connects to data-controller="item-comp"
 export default class extends Controller {
-  static targets = ["item", "result", "source"]
+  static targets = ["item", "result", "source", "tweet"]
 
   connect() {
   }
@@ -35,5 +35,9 @@ export default class extends Controller {
     } else if (this.totalJet < 200 && this.totalCarb != 0) {
       this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant ${Number.parseFloat(36000/this.totalCarb).toFixed(2)} ans pour économiser la consommation carbone de 8 heures de vol du jet privé de Vincent Bolloré, ou de 160 kilomètres parcourus par le yacht de Bernard Arnault.`)
     }
+    console.log(this.tweetTarget)
+    this.tweetTarget.classList.remove("d-none")
+    this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte CO2 de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${this.totalJet.toFixed(2)} minutes de vol du jet privé de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ? &hashtags=quinousbrule`
+
   }
 }
