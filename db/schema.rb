@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_01_093827) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,12 +18,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
     t.float "annual_footprint_kgCO2e"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "input_transport_plane?"
+    t.boolean "input_transport_plane"
     t.float "input_transport_flights_short"
     t.float "input_transport_flights_middle"
     t.float "input_transport_flights_long"
     t.float "fp_total_plane"
-    t.boolean "input_transport_car?"
+    t.boolean "input_transport_car"
     t.string "input_transport_car_type"
     t.string "input_transport_car_carburant"
     t.float "input_transport_car_age"
@@ -33,7 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
     t.integer "input_transport_scooter_km"
     t.integer "input_transport_moto_km"
     t.float "fp_total_transport_indiv"
-    t.boolean "input_transport_train?"
+    t.boolean "input_transport_train"
     t.float "input_transport_train_trips_short"
     t.float "input_transport_train_trips_middle"
     t.float "input_transport_train_trips_long"
@@ -41,7 +41,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
     t.float "input_transport_metro_tram_hours_week"
     t.float "fp_total_public_transit"
     t.integer "input_home_surface"
-    t.boolean "input_home_old?"
+    t.boolean "input_home_old"
     t.string "input_home_type"
     t.string "input_home_heat_type"
     t.integer "input_home_elec_monthly_bill"
@@ -55,7 +55,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_31_205911) do
     t.string "input_consumption_appliances"
     t.string "input_consumption_clothing"
     t.float "fp_total_consumption"
-    t.boolean "input_food_bottled_water?"
+    t.boolean "input_food_bottled_water"
   end
 
   create_table "measurements", force: :cascade do |t|
