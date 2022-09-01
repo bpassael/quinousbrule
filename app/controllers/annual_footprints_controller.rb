@@ -93,7 +93,7 @@ class AnnualFootprintsController < ApplicationController
     if @footprint.input_transport_train?
       fp_train += @footprint.input_transport_train_trips_short * 1.5 * 180 * 0.02  # nbr of trips * average hours per trip * average speed in kmh * fp per km
       fp_train += @footprint.input_transport_train_trips_middle * 4 * 200 * 0.02
-      fp_train += @footprint.input_transport_train_trips_long * 12 * 250 * 0.02
+      fp_train += @footprint.input_transport_train_trips_long * 10 * 250 * 0.02
     end
     fp_bus = @footprint.input_transport_bus_hours_week * 1.36 * 52 # hours per week * fp per hour * weeks in year
     fp_metro_tram = @footprint.input_transport_metro_tram_hours_week * 0.08 * 52
