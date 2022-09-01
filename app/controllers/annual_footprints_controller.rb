@@ -1,15 +1,18 @@
 class AnnualFootprintsController < ApplicationController
+  skip_before_action :authenticate_user!
+
 
   def create
     @footprint = AnnualFootprint.new(annual_footprint_params)
-    compute_total_plane
-    compute_total_transport_indiv
-    compute_total_public_transit
-    compute_total_home
-    compute_total_food
-    compute_total_consumption
-    compute_grand_total
+    #compute_total_plane
+    #compute_total_transport_indiv
+    #compute_total_public_transit
+    #compute_total_home
+    #compute_total_food
+    #compute_total_consumption
+    #compute_grand_total
     @footprint.save!
+    redirect_to root_path
   end
 
 
