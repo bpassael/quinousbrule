@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_01_121147) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_01_123032) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -23,39 +23,39 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_01_121147) do
     t.float "input_transport_flights_middle", default: 1.0
     t.float "input_transport_flights_long", default: 0.0
     t.float "fp_total_plane"
-    t.boolean "input_transport_car"
-    t.string "input_transport_car_type"
-    t.string "input_transport_car_carburant"
-    t.float "input_transport_car_age"
-    t.float "input_transport_car_passengers"
-    t.integer "input_transport_car_km"
-    t.string "input_transport_two_wheels"
-    t.integer "input_transport_scooter_km"
-    t.integer "input_transport_moto_km"
+    t.boolean "input_transport_car", default: true
+    t.string "input_transport_car_type", default: "Moyenne"
+    t.string "input_transport_car_carburant", default: "Thermique"
+    t.float "input_transport_car_age", default: 9.0
+    t.float "input_transport_car_passengers", default: 1.2
+    t.integer "input_transport_car_km", default: 12200
+    t.string "input_transport_two_wheels", default: "Scooter ou moto < 250"
+    t.integer "input_transport_scooter_km", default: 1000
+    t.integer "input_transport_moto_km", default: 0
     t.float "fp_total_transport_indiv"
-    t.boolean "input_transport_train"
-    t.float "input_transport_train_trips_short"
-    t.float "input_transport_train_trips_middle"
-    t.float "input_transport_train_trips_long"
-    t.float "input_transport_bus_hours_week"
-    t.float "input_transport_metro_tram_hours_week"
+    t.boolean "input_transport_train", default: true
+    t.float "input_transport_train_trips_short", default: 1.0
+    t.float "input_transport_train_trips_middle", default: 0.0
+    t.float "input_transport_train_trips_long", default: 1.0
+    t.float "input_transport_bus_hours_week", default: 3.0
+    t.float "input_transport_metro_tram_hours_week", default: 3.0
     t.float "fp_total_public_transit"
-    t.integer "input_home_surface"
-    t.boolean "input_home_old"
-    t.string "input_home_type"
-    t.string "input_home_heat_type"
-    t.integer "input_home_elec_monthly_bill"
-    t.integer "input_home_heat_bill"
-    t.float "input_home_users"
+    t.integer "input_home_surface", default: 80
+    t.boolean "input_home_old", default: false
+    t.string "input_home_type", default: "Maison"
+    t.string "input_home_heat_type", default: "Electricité ou pompe à chaleur"
+    t.integer "input_home_elec_monthly_bill", default: 250
+    t.integer "input_home_heat_bill", default: 0
+    t.float "input_home_users", default: 2.0
     t.float "fp_total_home"
-    t.string "input_food_diet"
-    t.string "input_food_waste"
+    t.string "input_food_diet", default: "Alimentation mixte"
+    t.string "input_food_waste", default: "Je réduis le gaspillage alimentaire"
     t.float "fp_total_food"
-    t.string "input_consumption_tech"
-    t.string "input_consumption_appliances"
-    t.string "input_consumption_clothing"
+    t.string "input_consumption_tech", default: "Moyennement"
+    t.string "input_consumption_appliances", default: "Moyennement"
+    t.string "input_consumption_clothing", default: "Occasionnellement"
     t.float "fp_total_consumption"
-    t.boolean "input_food_bottled_water"
+    t.boolean "input_food_bottled_water", default: true
   end
 
   create_table "measurements", force: :cascade do |t|
