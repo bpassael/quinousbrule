@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_01_093827) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_01_121147) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,10 +18,10 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_01_093827) do
     t.float "annual_footprint_kgCO2e"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "input_transport_plane"
-    t.float "input_transport_flights_short"
-    t.float "input_transport_flights_middle"
-    t.float "input_transport_flights_long"
+    t.boolean "input_transport_plane", default: true
+    t.float "input_transport_flights_short", default: 1.0
+    t.float "input_transport_flights_middle", default: 1.0
+    t.float "input_transport_flights_long", default: 0.0
     t.float "fp_total_plane"
     t.boolean "input_transport_car"
     t.string "input_transport_car_type"
