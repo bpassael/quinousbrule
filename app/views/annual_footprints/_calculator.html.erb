@@ -128,21 +128,12 @@
                     <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     Précédent
                     </i>
-                    <p type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <%= f.submit "Calculer", class: "btn-caroussel-next mx-2" %>
                     </p>
                 </div>
               </div>
             </div>
           <% end %>
-            <div class="carousel-item justify-center-center">
-              <h5>Résultat</h5>
-              <div class="caroussel-fixed overflow-auto">
-                 <% if AnnualFootprint.count > 0 %>
-                  <%= AnnualFootprint.last.annual_footprint_kgCO2e %>
-                <% end %>
-              </div>
-            </div>
           </div>
           <%# <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -153,6 +144,9 @@
             <span class="visually-hidden">Next</span>
           </button> %>
         </div>
+        <%# if AnnualFootprint.count > 0 %>
+                  <%#= AnnualFootprint.last.annual_footprint_kgCO2e %>
+        <%# end %>
       </div>
     </div>
   </div>
