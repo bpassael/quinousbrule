@@ -18,9 +18,9 @@
                 label: "Prenez-vous l'avion ?" %>
               <div class="row g-3 d-none" data-annual-calc-target="plane">
               <p>Combien de vols (aller-retour) effectuez-vous dans l'année ?</p>
-                <div class="col"><%= f.input :input_transport_flights_short, label: "Domestiques (ex: Bordeaux-Lyon)"%></div>
-                <div class="col"><%= f.input :input_transport_flights_middle, label: "Moyen courrier (ex: Paris-Ibiza)" %></div>
-                <div class="col"><%= f.input :input_transport_flights_long, label: "Long courrier (ex: Nice-Hanoï)" %></div>
+                <div class="col"><%= f.input :input_transport_flights_short, label: "Domestiques (ex: Bordeaux-Lyon)", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_flights_middle, label: "Moyen courrier (ex: Paris-Ibiza)", input_html: { min: '0'}  %></div>
+                <div class="col"><%= f.input :input_transport_flights_long, label: "Long courrier (ex: Nice-Hanoï)", input_html: { min: '0'} %></div>
               </div>
               <%= f.input :input_transport_car,
               input_html: {data: {action: "change->annual-calc#displaycar"}},
@@ -32,9 +32,9 @@
                 <div class="col"><%= f.input :input_transport_car_carburant, label: "Type de carburant", collection: ["Thermique", "Hybride", "Electrique"], selected: "Thermique" %></div>
               </div>
               <div class="row g-3">
-                <div class="col"><%= f.input :input_transport_car_age, label: "Age (en années)" %></div>
-                <div class="col"><%= f.input :input_transport_car_passengers, label: "Passagers (en moyenne)" %></div>
-                <div class="col"><%= f.input :input_transport_car_km, class: "col-2", label: "Km parcourus (sur l'année)" %></div>
+                <div class="col"><%= f.input :input_transport_car_age, label: "Age (en années)", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_car_passengers, label: "Passagers (en moyenne)", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_car_km, class: "col-2", label: "Km parcourus (sur l'année)", input_html: { min: '0'} %></div>
               </div>
               </div>
                 <div class="d-flex justify-content-center col-12">
@@ -54,22 +54,22 @@
               selected: "Scooter ou moto < 250" %>
               <p data-annual-calc-target="textmoto">Combien de km parcourez-vous chaque année ?</p>
               <div class="row g-2">
-                <div class="col" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250" %></div>
-                <div class="col d-none" data-annual-calc-target="moto"><%= f.input :input_transport_moto_km, label: "En moto > 250" %></div>
+                <div class="col" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250", input_html: { min: '0'} %></div>
+                <div class="col d-none" data-annual-calc-target="moto"><%= f.input :input_transport_moto_km, label: "En moto > 250", input_html: { min: '0'} %></div>
               </div>
               <%= f.input :input_transport_train,
               input_html: {data: {action: "change->annual-calc#displaytrain"}},
               label: "Prenez-vous le train ?" %>
               <div class="row g-3 d-none" data-annual-calc-target="train">
               <p>Combien de trajets (aller-retour) effectuez-vous dans l'année ?</p>
-                <div class="col"><%= f.input :input_transport_train_trips_short, label: "Courts trajets (ex: Cannes-Nice)"%></div>
-                <div class="col"><%= f.input :input_transport_train_trips_middle, label: "Moyens trajets (ex: Paris-Clermont)" %></div>
-                <div class="col"><%= f.input :input_transport_train_trips_long, label: "Longs trajets (ex: Lille-Nice)" %></div>
+                <div class="col"><%= f.input :input_transport_train_trips_short, label: "Courts trajets (ex: Cannes-Nice)", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_train_trips_middle, label: "Moyens trajets (ex: Paris-Clermont)", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_train_trips_long, label: "Longs trajets (ex: Lille-Nice)", input_html: { min: '0'} %></div>
               </div>
               <p>Combien d'heures passez-vous en moyenne chaque semaine ?</p>
               <div class="row g-2">
-                <div class="col"><%= f.input :input_transport_bus_hours_week, label: "Dans le bus" %></div>
-                <div class="col"><%= f.input :input_transport_metro_tram_hours_week, label: "Dans le métro ou le tram" %></div>
+                <div class="col"><%= f.input :input_transport_bus_hours_week, label: "Dans le bus", input_html: { min: '0'} %></div>
+                <div class="col"><%= f.input :input_transport_metro_tram_hours_week, label: "Dans le métro ou le tram", input_html: { min: '0'} %></div>
               </div>
               <div class="d-flex justify-content-center">
                     <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -87,16 +87,16 @@
               <p>Parlez nous de votre logement</p>
               <%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"], selected: "Maison" %>
               <div class="row g-3">
-                <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?" %></div>
+                <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?", input_html: { min: '0'} %></div>
                 <div class="col"><%= f.input :input_home_old, label: "Votre logement a t'il plus de 50 ans ?" %></div>
-                <div class="col"><%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?" %></div>
+                <div class="col"><%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?", input_html: { min: '0'} %></div>
               </div>
               <%= f.input :input_home_heat_type,
               input_html: {data: {action: "change->annual-calc#displayheatbill"}},
               label: "Comment est chauffé votre logement ?", collection: ["Electricité ou pompe à chaleur", "Gaz", "Fioul", "Bois"], selected: "Electricité ou pompe à chaleur" %>
               <div class="row g-2">
-                <div class="col"><%= f.input :input_home_elec_monthly_bill, label: "Quelle est votre dépense moyenne en électricité par mois ?" %></div>
-                <div class="col d-none" data-annual-calc-target="heatbill"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?" %></div>
+                <div class="col"><%= f.input :input_home_elec_monthly_bill, label: "Quelle est votre dépense moyenne en électricité par mois ?", input_html: { min: '0'} %></div>
+                <div class="col d-none" data-annual-calc-target="heatbill"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?", input_html: { min: '0'} %></div>
               </div>
 
               <div class="d-flex justify-content-center">
