@@ -12,6 +12,12 @@ class AnnualFootprintsController < ApplicationController
     compute_total_consumption
     compute_grand_total
     @footprint.save!
+    # render partial: "annual_footprints/result", locals: {footprint: @footprint}
+    # raise
+    respond_to do |format|
+      format.html { redirect_to annual_footprint_path }
+      format.text { render partial: "annual_footprints/calculator", locals: {footprint: @footprint}, formats: [:html] }
+    end
   end
 
 
@@ -41,6 +47,8 @@ class AnnualFootprintsController < ApplicationController
       elsif (@footprint.input_transport_car_type == "Berline" || @footprint.input_transport_car_type == "SUV") && @footprint.input_transport_car_carburant == "Electrique"
         fp_construction = 13600
       end
+    else
+      fp_construction = 0
     end
 
     if @footprint.input_transport_car_age <= 1 # estimate annual amortization

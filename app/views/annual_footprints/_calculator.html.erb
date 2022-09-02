@@ -2,14 +2,14 @@
  <div class="container my-5 bg-white rounded">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-controller="display-result" data-display-result-target="caroussel">
           <%# <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> %>
           <div class="carousel-inner" data-controller="annual-calc">
-          <%= simple_form_for @footprint,  data: { turbo: false }  do |f| %>
+          <%= simple_form_for @footprint,  html: { data: {display_result_target: "form", action: "submit->display-result#display"} }  do |f| %>
             <div class="carousel-item active justify-center-center">
               <h5 class="my-5">Transports</h5>
               <div class="caroussel-fixed overflow-auto">
@@ -134,6 +134,9 @@
               </div>
             </div>
           <% end %>
+          <div class="d-none">
+          <p class="resultvalue"><%= @footprint.annual_footprint_kgCO2e.nil? ? @footprint.annual_footprint_kgCO2e = 0 : @footprint.annual_footprint_kgCO2e %></p>
+          </div>
           </div>
           <%# <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -2,7 +2,7 @@
   justify-content: space-between;
   background: $dark-blue;
   color: $light-gray;
-  position: sticky;
+  position: static; //sticky
   top:0;
 }
 
