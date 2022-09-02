@@ -28,8 +28,8 @@
               <div class="d-none" data-annual-calc-target="car">
               <p>Comment est la voiture que vous utilisez le plus ?</p>
               <div class="row g-2">
-                <div class="col"><%= f.input :input_transport_car_type, label: "Type de voiture", collection: ["Petite", "Moyenne", "Berline", "SUV"] %></div>
-                <div class="col"><%= f.input :input_transport_car_carburant, label: "Type de carburant", collection: ["Thermique", "Hybride", "Electrique"]%></div>
+                <div class="col"><%= f.input :input_transport_car_type, label: "Type de voiture", collection: ["Petite", "Moyenne", "Berline", "SUV"], selected: "Moyenne" %></div>
+                <div class="col"><%= f.input :input_transport_car_carburant, label: "Type de carburant", collection: ["Thermique", "Hybride", "Electrique"], selected: "Thermique" %></div>
               </div>
               <div class="row g-3">
                 <div class="col"><%= f.input :input_transport_car_age, label: "Age (en années)" %></div>
@@ -50,7 +50,8 @@
               <%= f.input :input_transport_two_wheels,
               input_html: {data: {action: "change->annual-calc#displaymoto"}},
               label: "Avez-vous un scooter ou une moto ?",
-              collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"] %>
+              collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"],
+              selected: "Scooter ou moto < 250" %>
               <p data-annual-calc-target="textmoto">Combien de km parcourez-vous chaque année ?</p>
               <div class="row g-2">
                 <div class="col" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250" %></div>
@@ -84,16 +85,18 @@
               <h5>Je me loge</h5>
               <div class="caroussel-fixed overflow-auto">
               <p>Parlez nous de votre logement</p>
-              <%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"] %>
+              <%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"], selected: "Maison" %>
               <div class="row g-3">
                 <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?" %></div>
                 <div class="col"><%= f.input :input_home_old, label: "Votre logement a t'il plus de 50 ans ?" %></div>
                 <div class="col"><%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?" %></div>
               </div>
-              <%= f.input :input_home_heat_type, label: "Comment est chauffé votre logement ?", collection: ["Electricité ou pompe à chaleur", "Gaz", "Fioul", "Bois"] %>
+              <%= f.input :input_home_heat_type,
+              input_html: {data: {action: "change->annual-calc#displayheatbill"}},
+              label: "Comment est chauffé votre logement ?", collection: ["Electricité ou pompe à chaleur", "Gaz", "Fioul", "Bois"], selected: "Electricité ou pompe à chaleur" %>
               <div class="row g-2">
                 <div class="col"><%= f.input :input_home_elec_monthly_bill, label: "Quelle est votre dépense moyenne en électricité par mois ?" %></div>
-                <div class="col"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?" %></div>
+                <div class="col d-none" data-annual-calc-target="heatbill"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?" %></div>
               </div>
 
               <div class="d-flex justify-content-center">
@@ -110,24 +113,23 @@
               <h5>Je consomme</h5>
               <div class="caroussel-fixed overflow-auto">
               <div class="row g-2">
-                <div class="col"><%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"] %></div>
-                <div class="col"><%= f.input :input_food_waste, label: "Pour vos déchets", collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"] %></div>
+                <div class="col"><%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"], selected: "Alimentation mixte" %></div>
+                <div class="col"><%= f.input :input_food_waste, label: "Pour vos déchets", collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"], selected: "Je réduis le gaspillage alimentaire" %></div>
               </div>
               <div class="row g-2">
-                <div class="col"><%= f.input :input_consumption_clothing, label: "Achetez-vous souvent des vêtements neufs ?", collection: ["Très souvent", "Régulièrement", "Occasionnellement", "Rarement"] %></div>
+                <div class="col"><%= f.input :input_consumption_clothing, label: "Achetez-vous souvent des vêtements neufs ?", collection: ["Très souvent", "Régulièrement", "Occasionnellement", "Rarement"], selected: "Occasionnellement" %></div>
                 <div class="col"><%= f.input :input_food_bottled_water, label: "Consommez-vous de l'eau en bouteille ?" %> </div>
               </div>
               <div class="row g-2">
-                <div class="col"><%= f.input :input_consumption_tech, label: "Combien avez-vous d'appareils numériques de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %></div>
-                <div class="col"><%= f.input :input_consumption_appliances, label: "Combien avez-vous d'électroménager de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"] %></div>
+                <div class="col"><%= f.input :input_consumption_tech, label: "Combien avez-vous d'appareils numériques de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"], selected: "Moyennement" %></div>
+                <div class="col"><%= f.input :input_consumption_appliances, label: "Combien avez-vous d'électroménager de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"], selected: "Moyennement"  %></div>
               </div>
                 <div class="d-flex justify-content-center">
                     <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     Précédent
                     </i>
-                    <i type="button">
                     <%= f.submit "Calculer", class: "btn-caroussel-next mx-2" %>
-                    </i>
+                    </p>
                 </div>
               </div>
             </div>
