@@ -12,7 +12,6 @@ class AnnualFootprintsController < ApplicationController
     compute_total_consumption
     compute_grand_total
     @footprint.save!
-    @current_id = @footprint.id
   end
 
 
