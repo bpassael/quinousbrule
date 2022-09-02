@@ -135,7 +135,9 @@
             <div class="carousel-item justify-center-center">
               <h5>Résultat</h5>
               <div class="caroussel-fixed overflow-auto">
-                <%= AnnualFootprint.last.annual_footprint_kgCO2e %>
+                 <% if AnnualFootprint.count > 0 %>
+                  <%= AnnualFootprint.last.annual_footprint_kgCO2e %>
+                <% end %>
               </div>
             </div>
           </div>
