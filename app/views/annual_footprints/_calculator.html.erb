@@ -1,14 +1,14 @@
  <h2 class="text-center my-5">Calculer mon empreinte carbone annuelle</h2>
- <div class="container my-5 bg-white rounded">
+ <div class="container my-5 rounded" data-controller="display-result">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-6">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-controller="display-result" data-display-result-target="caroussel">
+      <div class="col-12 col-lg-6" >
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-display-result-target="caroussel">
           <%# <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div> %>
-          <div class="carousel-inner" data-controller="annual-calc">
+          <div class="carousel-inner my-4" data-controller="annual-calc">
           <%= simple_form_for @footprint,  html: { data: {display_result_target: "form", action: "submit->display-result#display"} }  do |f| %>
             <div class="carousel-item active justify-center-center">
               <h5 class="my-5">Transports</h5>
@@ -146,6 +146,18 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button> %>
+        </div>
+        <div data-display-result-target="comparated" class="d-none p-5">
+        <p style="text-align:center"s>
+        Votre empreinte carbone annuelle est de <strong data-display-result-target="annualfp"></strong> kgCCO2e.
+        Cela correspond à la consommation en carburant de <strong data-display-result-target="jetmn"></strong> minutes de vol du jet privé
+        de Vincent Bolloré, ou de <strong data-display-result-target="kmyacht"></strong> kilomètres parcourus par le yacht de Bernard Arnault.
+        <br><br>Révolté.e ? <a
+      data-display-result-target="tweet"
+      href=""
+      target="_blank">
+      Partagez votre résultat sur Twitter</a> ou <a href=#>interpellez votre député.e</a>
+        </p>
         </div>
         <%# if AnnualFootprint.count > 0 %>
                   <%#= AnnualFootprint.last.annual_footprint_kgCO2e %>
