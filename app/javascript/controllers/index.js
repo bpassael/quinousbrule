@@ -7,6 +7,9 @@ import { application } from "./application"
 import AnnualCalcController from "./annual_calc_controller"
 application.register("annual-calc", AnnualCalcController)
 
+import DisplayResultController from "./display_result_controller"
+application.register("display-result", DisplayResultController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 

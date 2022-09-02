@@ -5,7 +5,6 @@ export default class extends Controller {
   static targets = ["plane", "car", "train", "moto", "scooter", "textmoto", "heatbill"]
 
   connect() {
-    console.log("hey")
   }
 
   displayplane() {
