@@ -16,7 +16,7 @@ class AnnualFootprintsController < ApplicationController
     # raise
     respond_to do |format|
       format.html { redirect_to annual_footprint_path }
-      format.text { render partial: "annual_footprints/calculator", locals: {footprint: @footprint}, formats: [:html] }
+      format.text { render partial: "partials/calculator", locals: {footprint: @footprint}, formats: [:html] }
     end
   end
 

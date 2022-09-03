@@ -29,7 +29,7 @@ export default class extends Controller {
         this.annualfpTarget.innerText = annualFootprint
         this.jetmnTarget.innerText = jetComparaison
         this.kmyachtTarget.innerText = yachtComparaison
-        this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mon empreinte C02 annuelle est de ${annualFootprint} kgCO2e. Cela correspond à la consommation carburant de ${jetComparaison} minutes de vol du jet privé de Vincent Bolloré, ou de ${yachtComparaison} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ? &hashtags=quinousbrule`
+        this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mon empreinte CO2 annuelle est de ${annualFootprint} kgCO2e. Cela correspond à la consommation carburant de ${jetComparaison} minutes de vol du jet privé de Vincent Bolloré, ou de ${yachtComparaison} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ? &hashtags=quinousbrule`
 
       })
   }
