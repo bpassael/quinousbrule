@@ -1,9 +1,11 @@
 .navbar-quinousbrule {
   justify-content: space-between;
-  background: $dark-blue;
+  background: rgb(34,51,64);
   color: $light-gray;
-  position: static; //sticky
+  position: sticky;
   top:0;
+  height: 10vh;
+  z-index: 999;
 }
 
 .navbar-quinousbrule a {
@@ -20,5 +22,13 @@
 }
 
 .navbar-quinousbrule .navbar-brand img {
-  width: 40px;
+  width:139px;
+  height: 70px;
+  margin-bottom: 8px;
+}
+
+.navbar-quinousbrule a {
+  font-family: $headers-font;
+  margin-top: 8px;
+  text-decoration: none;
 }

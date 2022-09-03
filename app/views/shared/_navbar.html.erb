@@ -1,9 +1,13 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-quinousbrule">
   <div class="container-fluid">
     <%= link_to "#", class: "navbar-brand" do %>
-      🔥
-      <%# <%= image_tag "logo.png" %>
+      <%= image_tag "logo.png" %>
     <% end %>
+
+    <%= link_to "PETITS GESTES", root_path(anchor: :simplecomp) %>
+    <%= link_to "MON EMPREINTE ANNUELLE", root_path(anchor: :calculator) %>
+    <%= link_to "ALERTER MON DÉPUTÉ", root_path %>
+    <%= link_to "COMMUNAUTÉ", root_path(anchor: :community) %>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>

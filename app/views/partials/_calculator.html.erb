@@ -1,5 +1,6 @@
- <h2 class="text-center my-5">Calculer mon empreinte carbone annuelle</h2>
- <div class="container my-5 rounded" data-controller="display-result">
+ <div class="container my-5 rounded calculator-container overflow-auto" id="calculator" data-controller="display-result">
+  <h2 class="text-center mt-5" >Calculer mon empreinte carbone annuelle</h2>
+
     <div class="row justify-content-center">
       <div class="col-12 col-lg-6" >
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-display-result-target="caroussel">
@@ -148,8 +149,8 @@
           </button> %>
         </div>
         <div data-display-result-target="comparated" class="d-none p-5">
-        <p style="text-align:center"s>
-        Votre empreinte carbone annuelle est de <strong data-display-result-target="annualfp"></strong> kgCCO2e.
+        <p style="text-align:center">
+        Votre empreinte carbone annuelle est de <strong data-display-result-target="annualfp"></strong> kgCO2e.
         Cela correspond à la consommation en carburant de <strong data-display-result-target="jetmn"></strong> minutes de vol du jet privé
         de Vincent Bolloré, ou de <strong data-display-result-target="kmyacht"></strong> kilomètres parcourus par le yacht de Bernard Arnault.
         <br><br>Révolté.e ? <a
