@@ -7,7 +7,6 @@ export default class extends Controller {
   static targets = ["item", "source", "tweet", "result"]
 
   connect() {
-    console.log("test F")
   }
 
 

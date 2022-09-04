@@ -5,7 +5,6 @@ import {timeConvert} from './utilities.js';
 export default class extends Controller {
   static targets = ["form", "caroussel", "comparated", "annualfp", "jetmn", "kmyacht", "tweet"]
   connect() {
-    console.log("test5")
   }
 
 

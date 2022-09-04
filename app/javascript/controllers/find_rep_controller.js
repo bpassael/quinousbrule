@@ -6,7 +6,6 @@ export default class extends Controller {
   static targets = ["input", "result", "photo"]
 
   connect() {
-    console.log("findrep16")
   }
 
 
