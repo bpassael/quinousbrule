@@ -77,9 +77,6 @@
         .replace(/[ùûü]/g, 'u')
         .replace(/-/g, ' ')
         .replace(/'/g, ' ');
-        .replace(/\W/g, ' ');
-
-        \W
     return returnValue;
     }
     const maxRecords = 10;
@@ -375,7 +372,7 @@
         for (let c of circos) {
             const num = parseInt(c.split("-")[1], 10);
             const url_c = `https://assets-decodeurs.lemonde.fr/assets-legacy/pol/legislatives/moteur_circo/geojson/${dep}_${num}.json`
-            console.log(url_c)
+            console.log
             const list_poly_c = await fetch(url_c).then(function (response) {
                 return response.json();
             }).catch(function () {

@@ -3,7 +3,7 @@ import {formatInput, get_code3_dep, inside} from './utilities.js';
 
 // Connects to data-controller="find-rep"
 export default class extends Controller {
-  static targets = ["input", "result"]
+  static targets = ["input", "result", "photo"]
 
   connect() {
     console.log("findrep16")
@@ -49,12 +49,10 @@ export default class extends Controller {
             fetch('./deputes.json')
               .then(response => response.json())
               .then((data) => {
-                console.log('THIS IS THE CIRCO AGAIN !')
-                console.log(circo)
                 for (let rep of data) {
                   if (circo === rep['code_circo']) {
                     const rep_name = rep['nom']
-                    this.resultTarget.innerHTML = `Votre adresse est ${address}.<br><br>Votre député.e est ${rep_name}.`
+                    this.resultTarget.innerHTML = `Votre adresse est <strong>${address}</strong>.<br><br>Votre député.e est <strong>${rep_name}</strong>.`
                   }
                 }
               })
