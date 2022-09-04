@@ -1,14 +1,14 @@
 .footer {
   background: $dark-blue;
-  align-items: center;
   height: auto;
   padding: 0px 10px;
   color: $light-gray;
 }
 
 .footer p {
-  max-width: 55ch;
+  max-width: 60ch;
 }
+
 .footer-links {
   display: flex;
 }
