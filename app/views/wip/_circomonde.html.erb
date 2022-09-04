@@ -1,0 +1,405 @@
+<div class="multimedia-embed snippet">
+    <script type="text/javascript" src="https://assets-decodeurs.lemonde.fr/decodeurs/assets/utils_decodeurs/utils_decodeurs.js"></script>
+    <script src="https://assets-decodeurs.lemonde.fr/decodeurs/assets/Autocomplete input/autocomplete.min.js"></script>
+    <link rel="stylesheet" href="https://assets-decodeurs.lemonde.fr/decodeurs/assets/Autocomplete input/autocomplete.min.css">
+    <link rel="stylesheet" href="https://assets-decodeurs.lemonde.fr/redacweb/statics/styles/decodeurs.css">
+<style>
+    .auto-search-wrapper li{
+        font-family: "Marr Sans Condensed",Helvetica Bold,Arial,Roboto,sans-serif;
+    }
+
+    .results{
+        font-family: "Marr Sans",Helvetica,Arial,Roboto,sans-serif;
+        max-width: 580px!important;
+        margin-top: 20px;
+        margin-left:5px;
+    }
+    .auto-search-wrapper{
+        max-width: 580px!important;
+        margin-left:5px;
+    }
+
+      @media screen and (max-width: 500px){
+        .auto-search-wrapper {
+            width: auto;
+            margin-right: 5px;
+        }
+    }
+
+
+    .autocomplete-items {
+        position: absolute;
+        border: 1px solid #d4d4d4;
+        border-bottom: none;
+        border-top: none;
+        z-index: 99;
+        /*position the autocomplete items to be the same width as the container:*/
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+    }
+    .autocomplete-items div:hover {
+        /*when hovering an item:*/
+        background-color: #e9e9e9;
+    }
+    .autocomplete-active {
+        /*when navigating through the items using the arrow keys:*/
+        background-color: DodgerBlue !important;
+        color: #ffffff;
+    }
+</style>
+
+<div class="auto-search-wrapper">
+    <input type="text" id="basic" placeholder="Tapez votre adresse" autocomplete="off"><div class="auto-results-wrapper"><ul id="auto-basic-results" tabindex="0" role="listbox"></ul></div><button class="auto-clear hidden" type="button" title="clear the search query" aria-label="clear the search query"></button>
+</div>
+
+<div class="results">
+</div>
+
+
+<script>
+    const dom_com = {'971': 'ZA', '972': 'ZB', '973': 'ZC', '974': 'ZD', '976': 'ZM', '988': 'ZN', '987': 'ZP', '975': 'ZS', '986': 'ZW', 'ZA': '971', 'ZB': '972', 'ZC': '973', 'ZD': '974', 'ZM': '976', 'ZN': '988', 'ZP': '987', 'ZS': '975', 'ZW': '986'}
+    function sanitizeInput(input) {
+    const returnValue = input.toLowerCase()
+        .replace(/[àâä]/g, 'a')
+        .replace(/[æ]/g, 'ae')
+        .replace(/[ç]/g, 'c')
+        .replace(/[éèêë]/g, 'e')
+        .replace(/[îï]/g, 'i')
+        .replace(/[ô]/g, 'o')
+        .replace(/[œ]/g, 'oe')
+        .replace(/[ùûü]/g, 'u')
+        .replace(/-/g, ' ')
+        .replace(/'/g, ' ');
+        .replace(/\W/g, ' ');
+
+        \W
+    return returnValue;
+    }
+    const maxRecords = 10;
+    const div_result = document.querySelector("div.results");
+    new Autocomplete("basic", {
+      onSearch: ({ currentValue }) => {
+          // A chaque nouvelle lettre
+          const api = `https://api-adresse.data.gouv.fr/search/?q=${
+              currentValue.replaceAll(" ", "+")
+          }&limit=5`;
+          return new Promise((resolve) => {
+              fetch(api)
+                  .then((response) => response.json())
+                  .then((data) => {
+                      resolve(data.features);
+                  })
+                  .catch((error) => {
+                      console.error(error);
+                  });
+          });
+      },
+            onResults: ({ matches }) =>
+            {
+                document.querySelector('.auto-search-wrapper').style.minHeight = matches.length*60 + 'px'
+                return matches.map((el) => `<li>${el.properties.label}</li>`).join("")
+            },
+      onSubmit: async function ({ index, element, object, results }) {
+        // ICI ON LANCE LA SUITE APRÈS SÉLECTION
+          const [lon, lat] = object['geometry']['coordinates'];
+          const name_adresse = object['properties']["label"];
+          const dep = object['properties']["context"].split(',')[0];
+          const code3_dep = get_code3_dep(dep);
+          const dep_lib = object['properties']["context"].split(', ')[1];
+          const result = await get_circo(lat, lon, dep);
+          const num_circo = parseInt(result.split("-")[1], 10);
+          div_result.innerHTML = `Cette adresse est située dans la <b>${ordinal(num_circo)} circonscription ${articles[code3_dep]}${dep_lib}</b>.`;
+          document.querySelector('.auto-search-wrapper').style.minHeight = 'unset';
+          },
+
+      // the callback presents no results
+      noResults: ({ element, template }) => {
+        template(`<li>Pas de résultats : "${element.value}"</li>`);
+      },
+
+    });
+    function get_code3_dep(x){
+        let strx = x.toString();
+        if (strx.length===3)
+            return x;
+        else
+            return "0" + x;
+    }
+
+    function inside(point, vs) {
+        // ray-casting algorithm based on
+        // https://wrf.ecse.rpi.edu/Research/Short_Notes/pnpoly.html/pnpoly.html
+
+        var x = point[0], y = point[1];
+
+        var inside = false;
+        for (var i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+            var xi = vs[i][0], yi = vs[i][1];
+            var xj = vs[j][0], yj = vs[j][1];
+
+            var intersect = ((yi > y) != (yj > y))
+                && (x < (xj - xi) * (y - yi) / (yj - yi) + xi);
+            if (intersect) inside = !inside;
+        }
+
+        return inside;
+    };
+
+    const dict_circo_par_dep = {'001': '001-01;001-02;001-03;001-04;001-05',
+        '002': '002-01;002-02;002-03;002-04;002-05',
+        '003': '003-01;003-02;003-03',
+        '004': '004-01;004-02',
+        '005': '005-01;005-02',
+        '006': '006-01;006-02;006-03;006-04;006-05;006-06;006-07;006-08;006-09',
+        '007': '007-01;007-02;007-03',
+        '008': '008-01;008-02;008-03',
+        '009': '009-01;009-02',
+        '010': '010-01;010-02;010-03',
+        '011': '011-01;011-02;011-03',
+        '012': '012-01;012-02;012-03',
+        '013': '013-01;013-02;013-03;013-04;013-05;013-06;013-07;013-08;013-09;013-10;013-11;013-12;013-13;013-14;013-15;013-16',
+        '014': '014-01;014-02;014-03;014-04;014-05;014-06',
+        '015': '015-01;015-02',
+        '016': '016-01;016-02;016-03',
+        '017': '017-01;017-02;017-03;017-04;017-05',
+        '018': '018-01;018-02;018-03',
+        '019': '019-01;019-02',
+        '021': '021-01;021-02;021-03;021-04;021-05',
+        '022': '022-01;022-02;022-03;022-04;022-05',
+        '023': '023-01',
+        '024': '024-01;024-02;024-03;024-04',
+        '025': '025-01;025-02;025-03;025-04;025-05',
+        '026': '026-01;026-02;026-03;026-04',
+        '027': '027-01;027-02;027-03;027-04;027-05',
+        '028': '028-01;028-02;028-03;028-04',
+        '029': '029-01;029-02;029-03;029-04;029-05;029-06;029-07;029-08',
+        '02A': '02A-01;02A-02',
+        '02B': '02B-01;02B-02',
+        '030': '030-01;030-02;030-03;030-04;030-05;030-06',
+        '031': '031-01;031-02;031-03;031-04;031-05;031-06;031-07;031-08;031-09;031-10',
+        '032': '032-01;032-02',
+        '033': '033-01;033-02;033-03;033-04;033-05;033-06;033-07;033-08;033-09;033-10;033-11;033-12',
+        '034': '034-01;034-02;034-03;034-04;034-05;034-06;034-07;034-08;034-09',
+        '035': '035-01;035-02;035-03;035-04;035-05;035-06;035-07;035-08',
+        '036': '036-01;036-02',
+        '037': '037-01;037-02;037-03;037-04;037-05',
+        '038': '038-01;038-02;038-03;038-04;038-05;038-06;038-07;038-08;038-09;038-10',
+        '039': '039-01;039-02;039-03',
+        '040': '040-01;040-02;040-03',
+        '041': '041-01;041-02;041-03',
+        '042': '042-01;042-02;042-03;042-04;042-05;042-06',
+        '043': '043-01;043-02',
+        '044': '044-01;044-02;044-03;044-04;044-05;044-06;044-07;044-08;044-09;044-10',
+        '045': '045-01;045-02;045-03;045-04;045-05;045-06',
+        '046': '046-01;046-02',
+        '047': '047-01;047-02;047-03',
+        '048': '048-01',
+        '049': '049-01;049-02;049-03;049-04;049-05;049-06;049-07',
+        '050': '050-01;050-02;050-03;050-04',
+        '051': '051-01;051-02;051-03;051-04;051-05',
+        '052': '052-01;052-02',
+        '053': '053-01;053-02;053-03',
+        '054': '054-01;054-02;054-03;054-04;054-05;054-06',
+        '055': '055-01;055-02',
+        '056': '056-01;056-02;056-03;056-04;056-05;056-06',
+        '057': '057-01;057-02;057-03;057-04;057-05;057-06;057-07;057-08;057-09',
+        '058': '058-01;058-02',
+        '059': '059-01;059-02;059-03;059-04;059-05;059-06;059-07;059-08;059-09;059-10;059-11;059-12;059-13;059-14;059-15;059-16;059-17;059-18;059-19;059-20;059-21',
+        '060': '060-01;060-02;060-03;060-04;060-05;060-06;060-07',
+        '061': '061-01;061-02;061-03',
+        '062': '062-01;062-02;062-03;062-04;062-05;062-06;062-07;062-08;062-09;062-10;062-11;062-12',
+        '063': '063-01;063-02;063-03;063-04;063-05',
+        '064': '064-01;064-02;064-03;064-04;064-05;064-06',
+        '065': '065-01;065-02',
+        '066': '066-01;066-02;066-03;066-04',
+        '067': '067-01;067-02;067-03;067-04;067-05;067-06;067-07;067-08;067-09',
+        '068': '068-01;068-02;068-03;068-04;068-05;068-06',
+        '069': '069-01;069-02;069-03;069-04;069-05;069-06;069-07;069-08;069-09;069-10;069-11;069-12;069-13;069-14',
+        '070': '070-01;070-02',
+        '071': '071-01;071-02;071-03;071-04;071-05',
+        '072': '072-01;072-02;072-03;072-04;072-05',
+        '073': '073-01;073-02;073-03;073-04',
+        '074': '074-01;074-02;074-03;074-04;074-05;074-06',
+        '075': '075-01;075-02;075-03;075-04;075-05;075-06;075-07;075-08;075-09;075-10;075-11;075-12;075-13;075-14;075-15;075-16;075-17;075-18',
+        '076': '076-01;076-02;076-03;076-04;076-05;076-06;076-07;076-08;076-09;076-10',
+        '077': '077-01;077-02;077-03;077-04;077-05;077-06;077-07;077-08;077-09;077-10;077-11',
+        '078': '078-01;078-02;078-03;078-04;078-05;078-06;078-07;078-08;078-09;078-10;078-11;078-12',
+        '079': '079-01;079-02;079-03',
+        '080': '080-01;080-02;080-03;080-04;080-05',
+        '081': '081-01;081-02;081-03',
+        '082': '082-01;082-02',
+        '083': '083-01;083-02;083-03;083-04;083-05;083-06;083-07;083-08',
+        '084': '084-01;084-02;084-03;084-04;084-05',
+        '085': '085-01;085-02;085-03;085-04;085-05',
+        '086': '086-01;086-02;086-03;086-04',
+        '087': '087-01;087-02;087-03',
+        '088': '088-01;088-02;088-03;088-04',
+        '089': '089-01;089-02;089-03',
+        '090': '090-01;090-02',
+        '091': '091-01;091-02;091-03;091-04;091-05;091-06;091-07;091-08;091-09;091-10',
+        '092': '092-01;092-02;092-03;092-04;092-05;092-06;092-07;092-08;092-09;092-10;092-11;092-12;092-13',
+        '093': '093-01;093-02;093-03;093-04;093-05;093-06;093-07;093-08;093-09;093-10;093-11;093-12',
+        '094': '094-01;094-02;094-03;094-04;094-05;094-06;094-07;094-08;094-09;094-10;094-11',
+        '095': '095-01;095-02;095-03;095-04;095-05;095-06;095-07;095-08;095-09;095-10',
+        '971': '971-01;971-02;971-03;971-04',
+        '972': '972-01;972-02;972-03;972-04',
+        '973': '973-01;973-02',
+        '974': '974-01;974-02;974-03;974-04;974-05;974-06;974-07',
+        '975': '975-01',
+        '976': '976-01;976-02',
+        '977': '977-01',
+        '978': '978-01',
+        '986': '986-01',
+        '987': '987-01;987-02;987-03',
+        '988': '988-01;988-02'}
+    const articles = {'001': "de l'",
+        '002': "de l'",
+        '003': "de l'",
+        '004': 'des ',
+        '005': 'des ',
+        '006': 'des ',
+        '007': "de l'",
+        '008': 'des ',
+        '009': "de l'",
+        '010': "de l'",
+        '011': "de l'",
+        '012': "de l'",
+        '013': 'des ',
+        '014': 'du ',
+        '015': 'du ',
+        '016': 'de ',
+        '017': 'de ',
+        '018': 'du ',
+        '019': 'de la ',
+        '02A': 'de la ',
+        '02B': 'de la ',
+        '021': 'de la ',
+        '022': 'des ',
+        '023': 'de la ',
+        '024': 'de la ',
+        '025': 'du ',
+        '026': 'de la ',
+        '027': "de l'",
+        '028': "de l'",
+        '029': 'du ',
+        '030': 'du ',
+        '031': 'de la ',
+        '032': 'du ',
+        '033': 'de la ',
+        '034': "de l'",
+        '035': "de l'",
+        '036': "de l'",
+        '037': "de l'",
+        '038': "de l'",
+        '039': 'du ',
+        '040': 'des ',
+        '041': 'du ',
+        '042': 'de la ',
+        '043': 'de la ',
+        '044': 'de la ',
+        '045': 'du ',
+        '046': 'du ',
+        '047': 'du ',
+        '048': 'de la ',
+        '049': 'du ',
+        '050': 'de la ',
+        '051': 'de la ',
+        '052': 'de la ',
+        '053': 'de la ',
+        '054': 'de la ',
+        '055': 'de la ',
+        '056': 'du ',
+        '057': 'de la ',
+        '058': 'de la ',
+        '059': 'du ',
+        '060': "de l'",
+        '061': "de l'",
+        '062': 'du ',
+        '063': 'du ',
+        '064': 'des ',
+        '065': 'des ',
+        '066': 'des ',
+        '067': 'du ',
+        '068': 'du ',
+        '069': 'du ',
+        '070': 'de la ',
+        '071': 'de la ',
+        '072': 'de la ',
+        '073': 'de la ',
+        '074': 'de la ',
+        '075': 'de ',
+        '076': 'de ',
+        '077': 'de ',
+        '078': 'des ',
+        '079': 'des ',
+        '080': 'de la ',
+        '081': 'du ',
+        '082': 'du ',
+        '083': 'du ',
+        '084': 'du ',
+        '085': 'de la ',
+        '086': 'de la ',
+        '087': 'de la ',
+        '088': 'des ',
+        '089': "de l'",
+        '090': 'du ',
+        '091': "de l'",
+        '092': 'des ',
+        '093': 'de ',
+        '094': 'du ',
+        '095': 'du ',
+        '971': 'de la ',
+        '972': 'de la ',
+        '973': 'de la ',
+        '974': 'de ',
+        '975': 'de ',
+        '976': 'de ',
+        '977': 'de ',
+        '986': 'de ',
+        '987': 'de la ',
+        '988': 'de ',
+        '99': 'des '}
+    async function get_circo(lat, lon, dep) {
+        const point = [lon, lat];
+        const code3_dep = get_code3_dep(dep);
+        const circos = dict_circo_par_dep[code3_dep].split(";");
+        if (circos.length === 1)
+            return circos[0]
+        for (let c of circos) {
+            const num = parseInt(c.split("-")[1], 10);
+            const url_c = `https://assets-decodeurs.lemonde.fr/assets-legacy/pol/legislatives/moteur_circo/geojson/${dep}_${num}.json`
+            console.log(url_c)
+            const list_poly_c = await fetch(url_c).then(function (response) {
+                return response.json();
+            }).catch(function () {
+                return undefined;
+            });
+            if (list_poly_c === undefined){
+                continue
+            }
+            for (let poly_dict of list_poly_c.features) {
+                ref = poly_dict["properties"]["REF"];
+                poly = poly_dict["geometry"]["coordinates"][0];
+                if (inside(point, poly))
+                    return ref;
+            }
+        }
+        return undefined;
+    }
+
+    function ordinal(i){
+        if (i === 1){
+            return "1<sup>re</sup>";
+        }
+        return `${i}<sup>e</sup>`;
+    }
+
+
+</script></div>
