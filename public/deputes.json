@@ -1,0 +1,3458 @@
+[
+  {
+    "nom": "Xavier Breton",
+    "code_circo": "001-01",
+    "emails": "Xavier.Breton@assemblee-nationale.fr",
+    "twitter": "bretonxavier"
+  },
+  {
+    "nom": "Romain Daubié",
+    "code_circo": "001-02",
+    "emails": "romain.daubie@assemblee-nationale.fr",
+    "twitter": "romaindaubie"
+  },
+  {
+    "nom": "Olga Givernet",
+    "code_circo": "001-03",
+    "emails": "Olga.Givernet@assemblee-nationale.fr",
+    "twitter": "OlgaGivernet"
+  },
+  {
+    "nom": "Jérôme Buisson",
+    "code_circo": "001-04",
+    "emails": "jerome.buisson@assemblee-nationale.fr",
+    "twitter": "Bkk01"
+  },
+  {
+    "nom": "Damien Abad",
+    "code_circo": "001-05",
+    "emails": "Damien.Abad@assemblee-nationale.fr",
+    "twitter": "damienabad"
+  },
+  {
+    "nom": "Nicolas Dragon",
+    "code_circo": "002-01",
+    "emails": "nicolas.dragon@assemblee-nationale.fr",
+    "twitter": "NicolasDragon"
+  },
+  {
+    "nom": "Julien Dive",
+    "code_circo": "002-02",
+    "emails": "Julien.Dive@assemblee-nationale.fr",
+    "twitter": "juliendive"
+  },
+  {
+    "nom": "Jean-Louis Bricout",
+    "code_circo": "002-03",
+    "emails": "Jean-Louis.Bricout@assemblee-nationale.fr",
+    "twitter": "jlbricout"
+  },
+  {
+    "nom": "José Beaurain",
+    "code_circo": "002-04",
+    "emails": "jose.beaurain@assemblee-nationale.fr",
+    "twitter": "BeaurainJose"
+  },
+  {
+    "nom": "Jocelyn Dessigny",
+    "code_circo": "002-05",
+    "emails": "jocelyn.dessigny@assemblee-nationale.fr",
+    "twitter": "JocelynDessigny"
+  },
+  {
+    "nom": "Yannick Monnet",
+    "code_circo": "003-01",
+    "emails": "yannick.monnet@assemblee-nationale.fr",
+    "twitter": "YannickMonnet3"
+  },
+  {
+    "nom": "Jorys Bovet",
+    "code_circo": "003-02",
+    "emails": "jorys.bovet@assemblee-nationale.fr",
+    "twitter": "JorysB3"
+  },
+  {
+    "nom": "Nicolas Ray",
+    "code_circo": "003-03",
+    "emails": "nicolas.ray@assemblee-nationale.fr",
+    "twitter": "NicolasRay03"
+  },
+  {
+    "nom": "Christian Girard",
+    "code_circo": "004-01",
+    "emails": "christian.girard@assemblee-nationale.fr",
+    "twitter": "C_GirardRN"
+  },
+  {
+    "nom": "Léo Walter",
+    "code_circo": "004-02",
+    "emails": "leo.walter@assemblee-nationale.fr",
+    "twitter": "LeoWalter04"
+  },
+  {
+    "nom": "Éric Ciotti",
+    "code_circo": "006-01",
+    "emails": "Eric.Ciotti@assemblee-nationale.fr",
+    "twitter": "ECiotti"
+  },
+  {
+    "nom": "Lionel Tivoli",
+    "code_circo": "006-02",
+    "emails": "lionel.tivoli@assemblee-nationale.fr",
+    "twitter": "Lionel_Tivoli"
+  },
+  {
+    "nom": "Philippe Pradal",
+    "code_circo": "006-03",
+    "emails": "philippe.pradal@assemblee-nationale.fr",
+    "twitter": "p_pradal"
+  },
+  {
+    "nom": "Alexandra Masson",
+    "code_circo": "006-04",
+    "emails": "alexandra.masson@assemblee-nationale.fr",
+    "twitter": "A_Masson06"
+  },
+  {
+    "nom": "Christelle D'Intorni",
+    "code_circo": "006-05",
+    "emails": "christelle.dintorni@assemblee-nationale.fr",
+    "twitter": "C_Dintorni"
+  },
+  {
+    "nom": "Bryan Masson",
+    "code_circo": "006-06",
+    "emails": "bryan.masson@assemblee-nationale.fr",
+    "twitter": "MassonBryan"
+  },
+  {
+    "nom": "Éric Pauget",
+    "code_circo": "006-07",
+    "emails": "Eric.Pauget@assemblee-nationale.fr",
+    "twitter": "EricPAUGET1"
+  },
+  {
+    "nom": "Alexandra Martin",
+    "code_circo": "006-08",
+    "emails": "alexandra.martin@assemblee-nationale.fr",
+    "twitter": "MartinAlex06"
+  },
+  {
+    "nom": "Michèle Tabarot",
+    "code_circo": "006-09",
+    "emails": "Michele.Tabarot@assemblee-nationale.fr",
+    "twitter": "MTabarot"
+  },
+  {
+    "nom": "Hervé Saulignac",
+    "code_circo": "007-01",
+    "emails": "Herve.Saulignac@assemblee-nationale.fr",
+    "twitter": "hsaulignac"
+  },
+  {
+    "nom": "Laurence Heydel Grillere",
+    "code_circo": "007-02",
+    "emails": "laurence.heydelgrillere@assemblee-nationale.fr",
+    "twitter": "LHeydelGrillere"
+  },
+  {
+    "nom": "Fabrice Brun",
+    "code_circo": "007-03",
+    "emails": "Fabrice.Brun@assemblee-nationale.fr",
+    "twitter": "FabriceBrun"
+  },
+  {
+    "nom": "Lionel Vuibert",
+    "code_circo": "008-01",
+    "emails": "lionel.vuibert@assemblee-nationale.fr",
+    "twitter": "LionelVuibert"
+  },
+  {
+    "nom": "Pierre Cordier",
+    "code_circo": "008-02",
+    "emails": "Pierre.Cordier@assemblee-nationale.fr",
+    "twitter": "CORDIERPierre08"
+  },
+  {
+    "nom": "Jean-Luc Warsmann",
+    "code_circo": "008-03",
+    "emails": "Jean-Luc.Warsmann@assemblee-nationale.fr",
+    "twitter": "warsmann"
+  },
+  {
+    "nom": "Bénédicte Taurine",
+    "code_circo": "009-01",
+    "emails": "Benedicte.Taurine@assemblee-nationale.fr",
+    "twitter": "BenedictTaurine"
+  },
+  {
+    "nom": "Laurent Panifous",
+    "code_circo": "009-02",
+    "emails": "laurent.panifous@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Jordan Guitton",
+    "code_circo": "010-01",
+    "emails": "jordan.guitton@assemblee-nationale.fr",
+    "twitter": "jordan_guitton"
+  },
+  {
+    "nom": "Valérie Bazin-Malgras",
+    "code_circo": "010-02",
+    "emails": "Valerie.Bazin-Malgras@assemblee-nationale.fr",
+    "twitter": "vbazinmalgras"
+  },
+  {
+    "nom": "Angélique Ranc",
+    "code_circo": "010-03",
+    "emails": "angelique.ranc@assemblee-nationale.fr",
+    "twitter": "angelique_ranc"
+  },
+  {
+    "nom": "Christophe Barthès",
+    "code_circo": "011-01",
+    "emails": "christophe.barthes@assemblee-nationale.fr",
+    "twitter": "BarthesChristop"
+  },
+  {
+    "nom": "Frédéric Falcon",
+    "code_circo": "011-02",
+    "emails": "frederic.falcon@assemblee-nationale.fr",
+    "twitter": "FalconFrederic"
+  },
+  {
+    "nom": "Julien Rancoule",
+    "code_circo": "011-03",
+    "emails": "julien.rancoule@assemblee-nationale.fr",
+    "twitter": "J_Rancoule"
+  },
+  {
+    "nom": "Stéphane Mazars",
+    "code_circo": "012-01",
+    "emails": "Stephane.Mazars@assemblee-nationale.fr",
+    "twitter": "s_mazars"
+  },
+  {
+    "nom": "Laurent Alexandre",
+    "code_circo": "012-02",
+    "emails": "laurent.alexandre@assemblee-nationale.fr",
+    "twitter": "LauAlexandre12"
+  },
+  {
+    "nom": "Jean-François Rousset",
+    "code_circo": "012-03",
+    "emails": "jean-francois.rousset@assemblee-nationale.fr",
+    "twitter": "JF_Rousset2"
+  },
+  {
+    "nom": "Sandra Regol",
+    "code_circo": "067-01",
+    "emails": "sandra.regol@assemblee-nationale.fr",
+    "twitter": "sandraregol"
+  },
+  {
+    "nom": "Emmanuel Fernandes",
+    "code_circo": "067-02",
+    "emails": "emmanuel.fernandes@assemblee-nationale.fr",
+    "twitter": "emmanfernandes"
+  },
+  {
+    "nom": "Bruno Studer",
+    "code_circo": "067-03",
+    "emails": "Bruno.Studer@assemblee-nationale.fr",
+    "twitter": "brunostuder67"
+  },
+  {
+    "nom": "Françoise Buffet",
+    "code_circo": "067-04",
+    "emails": "francoise.buffet@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Charles Sitzenstuhl",
+    "code_circo": "067-05",
+    "emails": "charles.sitzenstuhl@assemblee-nationale.fr",
+    "twitter": "CSitzenstuhl"
+  },
+  {
+    "nom": "Louise Morel",
+    "code_circo": "067-06",
+    "emails": "louise.morel@assemblee-nationale.fr",
+    "twitter": "LouiseMorel11"
+  },
+  {
+    "nom": "Patrick Hetzel",
+    "code_circo": "067-07",
+    "emails": "Patrick.Hetzel@assemblee-nationale.fr",
+    "twitter": "patrickhetzel"
+  },
+  {
+    "nom": "Stéphanie Kochert",
+    "code_circo": "067-08",
+    "emails": "stephanie.kochert@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Vincent Thiébaut",
+    "code_circo": "067-09",
+    "emails": "Vincent.Thiebaut@assemblee-nationale.fr",
+    "twitter": "VincentThiebaut"
+  },
+  {
+    "nom": "Sabrina Agresti-Roubache",
+    "code_circo": "013-01",
+    "emails": "sabrina.agrestiroubache@assemblee-nationale.fr",
+    "twitter": "sabrinaroubache"
+  },
+  {
+    "nom": "Claire Pitollat",
+    "code_circo": "013-02",
+    "emails": "Claire.Pitollat@assemblee-nationale.fr",
+    "twitter": "clairepitollat"
+  },
+  {
+    "nom": "Gisèle Lelouis",
+    "code_circo": "013-03",
+    "emails": "gisele.lelouis@assemblee-nationale.fr",
+    "twitter": "gisele_lelouis"
+  },
+  {
+    "nom": "Manuel Bompard",
+    "code_circo": "013-04",
+    "emails": "manuel.bompard@assemblee-nationale.fr",
+    "twitter": "mbompard"
+  },
+  {
+    "nom": "Hendrik Davi",
+    "code_circo": "013-05",
+    "emails": "hendrik.davi@assemblee-nationale.fr",
+    "twitter": "hendrik_davi"
+  },
+  {
+    "nom": "Lionel Royer-Perreaut",
+    "code_circo": "013-06",
+    "emails": "lionel.royer-perreaut@assemblee-nationale.fr",
+    "twitter": "RoyerPerreaut"
+  },
+  {
+    "nom": "Sébastien Delogu",
+    "code_circo": "013-07",
+    "emails": "sebastien.delogu@assemblee-nationale.fr",
+    "twitter": "sebastiendelogu"
+  },
+  {
+    "nom": "Jean-Marc Zulesi",
+    "code_circo": "013-08",
+    "emails": "Jean-Marc.Zulesi@assemblee-nationale.fr",
+    "twitter": "jmzulesi"
+  },
+  {
+    "nom": "Joëlle Mélin",
+    "code_circo": "013-09",
+    "emails": "joelle.melin@assemblee-nationale.fr",
+    "twitter": "JoelleMelinRN"
+  },
+  {
+    "nom": "José Gonzalez",
+    "code_circo": "013-10",
+    "emails": "jose.gonzalez@assemblee-nationale.fr",
+    "twitter": "Jose_GonzalezFN"
+  },
+  {
+    "nom": "Mohamed Laqhila",
+    "code_circo": "013-11",
+    "emails": "Mohamed.Laqhila@assemblee-nationale.fr",
+    "twitter": "laqhila"
+  },
+  {
+    "nom": "Franck Allisio",
+    "code_circo": "013-12",
+    "emails": "franck.allisio@assemblee-nationale.fr",
+    "twitter": "franckallisio"
+  },
+  {
+    "nom": "Pierre Dharréville",
+    "code_circo": "013-13",
+    "emails": "Pierre.Dharreville@assemblee-nationale.fr",
+    "twitter": "pdharreville"
+  },
+  {
+    "nom": "Anne-Laurence Petel",
+    "code_circo": "013-14",
+    "emails": "Anne-Laurence.Petel@assemblee-nationale.fr",
+    "twitter": "al_petel"
+  },
+  {
+    "nom": "Romain Baubry",
+    "code_circo": "013-15",
+    "emails": "romain.baubry@assemblee-nationale.fr",
+    "twitter": "BaubryR"
+  },
+  {
+    "nom": "Emmanuel Taché de la Pagerie",
+    "code_circo": "013-16",
+    "emails": "emmanuel.tachedelapagerie@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Fabrice Le Vigoureux",
+    "code_circo": "014-01",
+    "emails": "Fabrice.LeVigoureux@assemblee-nationale.fr",
+    "twitter": "LeVigoureuxF"
+  },
+  {
+    "nom": "Arthur Delaporte",
+    "code_circo": "014-02",
+    "emails": "arthur.delaporte@assemblee-nationale.fr",
+    "twitter": "arthurdelaporte"
+  },
+  {
+    "nom": "Jérémie Patrier-Leitus",
+    "code_circo": "014-03",
+    "emails": "jeremie.patrier-leitus@assemblee-nationale.fr",
+    "twitter": "JPatrierLeitus"
+  },
+  {
+    "nom": "Christophe Blanchet",
+    "code_circo": "014-04",
+    "emails": "Christophe.Blanchet@assemblee-nationale.fr",
+    "twitter": "christoblanchet"
+  },
+  {
+    "nom": "Bertrand Bouyx",
+    "code_circo": "014-05",
+    "emails": "Bertrand.Bouyx@assemblee-nationale.fr",
+    "twitter": "BertrandBouyx"
+  },
+  {
+    "nom": "Freddy Sertin",
+    "code_circo": "014-06",
+    "emails": "freddy.sertin@assemblee-nationale.fr",
+    "twitter": "SertinFreddy"
+  },
+  {
+    "nom": "Vincent Descoeur",
+    "code_circo": "015-01",
+    "emails": "Vincent.Descoeur@assemblee-nationale.fr",
+    "twitter": "VincentDescoeur"
+  },
+  {
+    "nom": "Jean-Yves Bony",
+    "code_circo": "015-02",
+    "emails": "Jean-Yves.Bony@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Thomas Mesnier",
+    "code_circo": "016-01",
+    "emails": "Thomas.Mesnier@assemblee-nationale.fr",
+    "twitter": "TMesnier"
+  },
+  {
+    "nom": "Sandra Marsaud",
+    "code_circo": "016-02",
+    "emails": "Sandra.Marsaud@assemblee-nationale.fr",
+    "twitter": "MARSAUDSandra"
+  },
+  {
+    "nom": "Caroline Colombier",
+    "code_circo": "016-03",
+    "emails": "caroline.colombier@assemblee-nationale.fr",
+    "twitter": "CColombier_RN"
+  },
+  {
+    "nom": "Olivier Falorni",
+    "code_circo": "017-01",
+    "emails": "Olivier.Falorni@assemblee-nationale.fr",
+    "twitter": "OlivierFalorni"
+  },
+  {
+    "nom": "Anne-Laure Babault",
+    "code_circo": "017-02",
+    "emails": "anne-laure.babault@assemblee-nationale.fr",
+    "twitter": "BabaultAlaure17"
+  },
+  {
+    "nom": "Jean-Philippe Ardouin",
+    "code_circo": "017-03",
+    "emails": "Jean-Philippe.Ardouin@assemblee-nationale.fr",
+    "twitter": "jean_ardouin"
+  },
+  {
+    "nom": "Raphaël Gérard",
+    "code_circo": "017-04",
+    "emails": "Raphael.Gerard@assemblee-nationale.fr",
+    "twitter": "RaphaelGerard17"
+  },
+  {
+    "nom": "Christophe Plassard",
+    "code_circo": "017-05",
+    "emails": "christophe.plassard@assemblee-nationale.fr",
+    "twitter": "cplassard"
+  },
+  {
+    "nom": "François Cormier-Bouligeon",
+    "code_circo": "018-01",
+    "emails": "Francois.Cormier-Bouligeon@assemblee-nationale.fr",
+    "twitter": "FCBDeputeduCher"
+  },
+  {
+    "nom": "Nicolas Sansu",
+    "code_circo": "018-02",
+    "emails": "nicolas.sansu@assemblee-nationale.fr",
+    "twitter": "NicolasSansu"
+  },
+  {
+    "nom": "Loïc Kervran",
+    "code_circo": "018-03",
+    "emails": "Loic.Kervran@assemblee-nationale.fr",
+    "twitter": "LoicKervran18"
+  },
+  {
+    "nom": "Francis Dubois",
+    "code_circo": "019-01",
+    "emails": "francis.dubois@assemblee-nationale.fr",
+    "twitter": "DuboisFrancis19"
+  },
+  {
+    "nom": "Frédérique Meunier",
+    "code_circo": "019-02",
+    "emails": "Frederique.Meunier@assemblee-nationale.fr",
+    "twitter": "fmeunier19"
+  },
+  {
+    "nom": "Laurent Marcangeli",
+    "code_circo": "02A-01",
+    "emails": "laurent.marcangeli@assemblee-nationale.fr",
+    "twitter": "LMarcangeli"
+  },
+  {
+    "nom": "Paul-André Colombani",
+    "code_circo": "02A-02",
+    "emails": "Paul-Andre.Colombani@assemblee-nationale.fr",
+    "twitter": "pacolombani"
+  },
+  {
+    "nom": "Didier Martin",
+    "code_circo": "021-01",
+    "emails": "Didier.Martin@assemblee-nationale.fr",
+    "twitter": "dmartindijon"
+  },
+  {
+    "nom": "Benoît Bordat",
+    "code_circo": "021-02",
+    "emails": "benoit.bordat@assemblee-nationale.fr",
+    "twitter": "bordatbenoit"
+  },
+  {
+    "nom": "Fadila Khattabi",
+    "code_circo": "021-03",
+    "emails": "Fadila.Khattabi@assemblee-nationale.fr",
+    "twitter": "fadila_khattabi"
+  },
+  {
+    "nom": "Hubert Brigand",
+    "code_circo": "021-04",
+    "emails": "hubert.brigand@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Didier Paris",
+    "code_circo": "021-05",
+    "emails": "Didier.Paris@assemblee-nationale.fr",
+    "twitter": "_DidierParis"
+  },
+  {
+    "nom": "Mickaël Cosson",
+    "code_circo": "022-01",
+    "emails": "mickael.cosson@assemblee-nationale.fr",
+    "twitter": "MickaelCosson22"
+  },
+  {
+    "nom": "Chantal Bouloux",
+    "code_circo": "022-02",
+    "emails": "chantal.bouloux@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Marc Le Fur",
+    "code_circo": "022-03",
+    "emails": "Marc.LeFur@assemblee-nationale.fr",
+    "twitter": "marclefur"
+  },
+  {
+    "nom": "Murielle Lepvraud",
+    "code_circo": "022-04",
+    "emails": "murielle.lepvraud@assemblee-nationale.fr",
+    "twitter": "MLepvraud"
+  },
+  {
+    "nom": "Éric Bothorel",
+    "code_circo": "022-05",
+    "emails": "Eric.Bothorel@assemblee-nationale.fr",
+    "twitter": "ebothorel"
+  },
+  {
+    "nom": "Catherine Couturier",
+    "code_circo": "023-01",
+    "emails": "catherine.couturier@assemblee-nationale.fr",
+    "twitter": "CouturierCathy"
+  },
+  {
+    "nom": "Bastien Marchive",
+    "code_circo": "079-01",
+    "emails": "bastien.marchive@assemblee-nationale.fr",
+    "twitter": "B_Marchive"
+  },
+  {
+    "nom": "Delphine Batho",
+    "code_circo": "079-02",
+    "emails": "Delphine.Batho@assemblee-nationale.fr",
+    "twitter": "delphinebatho"
+  },
+  {
+    "nom": "Jean-Marie Fiévet",
+    "code_circo": "079-03",
+    "emails": "Jean-Marie.Fievet@assemblee-nationale.fr",
+    "twitter": "JeanMarieFIEVET"
+  },
+  {
+    "nom": "Pascale Martin",
+    "code_circo": "024-01",
+    "emails": "pascale.martin@assemblee-nationale.fr",
+    "twitter": "PascaleMartin24"
+  },
+  {
+    "nom": "Serge Muller",
+    "code_circo": "024-02",
+    "emails": "serge.muller@assemblee-nationale.fr",
+    "twitter": "muller49_muller"
+  },
+  {
+    "nom": "Jean-Pierre Cubertafon",
+    "code_circo": "024-03",
+    "emails": "Jean-Pierre.Cubertafon@assemblee-nationale.fr",
+    "twitter": "dep_cubertafon"
+  },
+  {
+    "nom": "Sébastien Peytavie",
+    "code_circo": "024-04",
+    "emails": "sebastien.peytavie@assemblee-nationale.fr",
+    "twitter": "speytavie"
+  },
+  {
+    "nom": "Laurent Croizier",
+    "code_circo": "025-01",
+    "emails": "laurent.croizier@assemblee-nationale.fr",
+    "twitter": "CroizierLaurent"
+  },
+  {
+    "nom": "Éric Alauzet",
+    "code_circo": "025-02",
+    "emails": "Eric.Alauzet@assemblee-nationale.fr",
+    "twitter": "ericalauzet"
+  },
+  {
+    "nom": "Nicolas Pacquot",
+    "code_circo": "025-03",
+    "emails": "nicolas.pacquot@assemblee-nationale.fr",
+    "twitter": "Nicolas_Pacquot"
+  },
+  {
+    "nom": "Géraldine Grangier",
+    "code_circo": "025-04",
+    "emails": "geraldine.grangier@assemblee-nationale.fr",
+    "twitter": "GrangierGe"
+  },
+  {
+    "nom": "Annie Genevard",
+    "code_circo": "025-05",
+    "emails": "Annie.Genevard@assemblee-nationale.fr",
+    "twitter": "AnnieGenevard"
+  },
+  {
+    "nom": "Mireille Clapot",
+    "code_circo": "026-01",
+    "emails": "Mireille.Clapot@assemblee-nationale.fr",
+    "twitter": "clapotmireille"
+  },
+  {
+    "nom": "Lisette Pollet",
+    "code_circo": "026-02",
+    "emails": "lisette.pollet@assemblee-nationale.fr",
+    "twitter": "LisettePollet"
+  },
+  {
+    "nom": "Marie Pochon",
+    "code_circo": "026-03",
+    "emails": "marie.pochon@assemblee-nationale.fr",
+    "twitter": "mariepochon"
+  },
+  {
+    "nom": "Emmanuelle Anthoine",
+    "code_circo": "026-04",
+    "emails": "Emmanuelle.Anthoine@assemblee-nationale.fr",
+    "twitter": "eanthoine26"
+  },
+  {
+    "nom": "Farida Amrani",
+    "code_circo": "091-01",
+    "emails": "farida.amrani@assemblee-nationale.fr",
+    "twitter": "Farida_Amrani_"
+  },
+  {
+    "nom": "Nathalie Da Conceicao Carvalho",
+    "code_circo": "091-02",
+    "emails": "nathalie.daconceicaocarvalho@assemblee-nationale.fr",
+    "twitter": "NathCarvalho91"
+  },
+  {
+    "nom": "Alexis Izard",
+    "code_circo": "091-03",
+    "emails": "alexis.izard@assemblee-nationale.fr",
+    "twitter": "Alexis_IZARD"
+  },
+  {
+    "nom": "Marie-Pierre Rixain",
+    "code_circo": "091-04",
+    "emails": "Marie-Pierre.Rixain@assemblee-nationale.fr",
+    "twitter": "RixainMP"
+  },
+  {
+    "nom": "Paul Midy",
+    "code_circo": "091-05",
+    "emails": "paul.midy@assemblee-nationale.fr",
+    "twitter": "midy_paul"
+  },
+  {
+    "nom": "Jérôme Guedj",
+    "code_circo": "091-06",
+    "emails": "jerome.guedj@assemblee-nationale.fr",
+    "twitter": "JeromeGuedj"
+  },
+  {
+    "nom": "Robin Reda",
+    "code_circo": "091-07",
+    "emails": "Robin.Reda@assemblee-nationale.fr",
+    "twitter": "robinreda"
+  },
+  {
+    "nom": "Nicolas Dupont-Aignan",
+    "code_circo": "091-08",
+    "emails": "Nicolas.Dupont-Aignan@assemblee-nationale.fr",
+    "twitter": "dupontaignan"
+  },
+  {
+    "nom": "Marie Guévenoux",
+    "code_circo": "091-09",
+    "emails": "Marie.Guevenoux@assemblee-nationale.fr",
+    "twitter": "mguevenoux"
+  },
+  {
+    "nom": "Antoine Léaument",
+    "code_circo": "091-10",
+    "emails": "antoine.leaument@assemblee-nationale.fr",
+    "twitter": "ALeaument"
+  },
+  {
+    "nom": "Christine Loir",
+    "code_circo": "027-01",
+    "emails": "christine.loir@assemblee-nationale.fr",
+    "twitter": "ChristineLoirRN"
+  },
+  {
+    "nom": "Katiana Levavasseur",
+    "code_circo": "027-02",
+    "emails": "katiana.levavasseur@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Kévin Mauvieux",
+    "code_circo": "027-03",
+    "emails": "kevin.mauvieux@assemblee-nationale.fr",
+    "twitter": "MauvieuxKevin"
+  },
+  {
+    "nom": "Philippe Brun",
+    "code_circo": "027-04",
+    "emails": "philippe.brun@assemblee-nationale.fr",
+    "twitter": "p_brun"
+  },
+  {
+    "nom": "Timothée Houssin",
+    "code_circo": "027-05",
+    "emails": "timothee.houssin@assemblee-nationale.fr",
+    "twitter": "T_Houssin"
+  },
+  {
+    "nom": "Guillaume Kasbarian",
+    "code_circo": "028-01",
+    "emails": "Guillaume.Kasbarian@assemblee-nationale.fr",
+    "twitter": "guillaumekasba"
+  },
+  {
+    "nom": "Olivier Marleix",
+    "code_circo": "028-02",
+    "emails": "Olivier.Marleix@assemblee-nationale.fr",
+    "twitter": "oliviermarleix"
+  },
+  {
+    "nom": "Luc Lamirault",
+    "code_circo": "028-03",
+    "emails": "luc.lamirault@assemblee-nationale.fr",
+    "twitter": "LamiraultLuc"
+  },
+  {
+    "nom": "Philippe Vigier",
+    "code_circo": "028-04",
+    "emails": "Philippe.Vigier@assemblee-nationale.fr",
+    "twitter": "VigierPhilippe"
+  },
+  {
+    "nom": "Annaïg Le Meur",
+    "code_circo": "029-01",
+    "emails": "Annaig.LeMeur@assemblee-nationale.fr",
+    "twitter": "AnnaigLeMeur_29"
+  },
+  {
+    "nom": "Jean-Charles Larsonneur",
+    "code_circo": "029-02",
+    "emails": "Jean-Charles.Larsonneur@assemblee-nationale.fr",
+    "twitter": "JCLarsonneur"
+  },
+  {
+    "nom": "Didier Le Gac",
+    "code_circo": "029-03",
+    "emails": "Didier.LeGac@assemblee-nationale.fr",
+    "twitter": "didierlegac"
+  },
+  {
+    "nom": "Sandrine Le Feur",
+    "code_circo": "029-04",
+    "emails": "Sandrine.LeFeur@assemblee-nationale.fr",
+    "twitter": "SandrineLeFeur"
+  },
+  {
+    "nom": "Graziella Melchior",
+    "code_circo": "029-05",
+    "emails": "Graziella.Melchior@assemblee-nationale.fr",
+    "twitter": "GrazieMelchior"
+  },
+  {
+    "nom": "Mélanie Thomin",
+    "code_circo": "029-06",
+    "emails": "melanie.thomin@assemblee-nationale.fr",
+    "twitter": "mel_thomin"
+  },
+  {
+    "nom": "Liliana Tanguy",
+    "code_circo": "029-07",
+    "emails": "Liliana.Tanguy@assemblee-nationale.fr",
+    "twitter": "lilianatanguy"
+  },
+  {
+    "nom": "Erwan Balanant",
+    "code_circo": "029-08",
+    "emails": "Erwan.Balanant@assemblee-nationale.fr",
+    "twitter": "erwanbalanant"
+  },
+  {
+    "nom": "Christopher Weissberg",
+    "code_circo": "",
+    "emails": "christopher.weissberg@assemblee-nationale.fr",
+    "twitter": "cjweissberg"
+  },
+  {
+    "nom": "Eléonore Caroit",
+    "code_circo": "",
+    "emails": "eleonore.caroit@assemblee-nationale.fr",
+    "twitter": "CaroitEleonore"
+  },
+  {
+    "nom": "Alexandre Holroyd",
+    "code_circo": "",
+    "emails": "Alexandre.Holroyd@assemblee-nationale.fr",
+    "twitter": "alexIholroyd"
+  },
+  {
+    "nom": "Pieyre-Alexandre Anglade",
+    "code_circo": "",
+    "emails": "Pieyre-Alexandre.Anglade@assemblee-nationale.fr",
+    "twitter": "PA_Anglade"
+  },
+  {
+    "nom": "Stéphane Vojetta",
+    "code_circo": "",
+    "emails": "stephane.vojetta@assemblee-nationale.fr",
+    "twitter": "StephaneVojetta"
+  },
+  {
+    "nom": "Marc Ferracci",
+    "code_circo": "",
+    "emails": "marc.ferracci@assemblee-nationale.fr",
+    "twitter": "FerracciMarc"
+  },
+  {
+    "nom": "Frédéric Petit",
+    "code_circo": "",
+    "emails": "Frederic.Petit@assemblee-nationale.fr",
+    "twitter": "fpetitAN"
+  },
+  {
+    "nom": "Meyer Habib",
+    "code_circo": "",
+    "emails": "Meyer.Habib@assemblee-nationale.fr",
+    "twitter": "Meyer_Habib"
+  },
+  {
+    "nom": "Karim Ben Cheikh",
+    "code_circo": "",
+    "emails": "karim.bencheikh@assemblee-nationale.fr",
+    "twitter": "K_BenCheikh"
+  },
+  {
+    "nom": "Amélia Lakrafi",
+    "code_circo": "",
+    "emails": "amelia.lakrafi@assemblee-nationale.fr",
+    "twitter": "amelia_lkf"
+  },
+  {
+    "nom": "Anne Genetet",
+    "code_circo": "",
+    "emails": "Anne.Genetet@assemblee-nationale.fr",
+    "twitter": "AGenetet"
+  },
+  {
+    "nom": "Yoann Gillet",
+    "code_circo": "030-01",
+    "emails": "yoann.gillet@assemblee-nationale.fr",
+    "twitter": "YoannGillet30"
+  },
+  {
+    "nom": "Nicolas Meizonnet",
+    "code_circo": "030-02",
+    "emails": "nicolas.meizonnet@assemblee-nationale.fr",
+    "twitter": "NMeizonnet"
+  },
+  {
+    "nom": "Pascale Bordes",
+    "code_circo": "030-03",
+    "emails": "pascale.bordes@assemblee-nationale.fr",
+    "twitter": "BordesAvocat"
+  },
+  {
+    "nom": "Pierre Meurin",
+    "code_circo": "030-04",
+    "emails": "pierre.meurin@assemblee-nationale.fr",
+    "twitter": "Meurin_P"
+  },
+  {
+    "nom": "Michel Sala",
+    "code_circo": "030-05",
+    "emails": "michel.sala@assemblee-nationale.fr",
+    "twitter": "AvecMichelSala"
+  },
+  {
+    "nom": "Philippe Berta",
+    "code_circo": "030-06",
+    "emails": "Philippe.Berta@assemblee-nationale.fr",
+    "twitter": "PBertaGard"
+  },
+  {
+    "nom": "Jean-René Cazeneuve",
+    "code_circo": "032-01",
+    "emails": "Jean-Rene.Cazeneuve@assemblee-nationale.fr",
+    "twitter": "jrcazeneuve"
+  },
+  {
+    "nom": "David Taupiac",
+    "code_circo": "032-02",
+    "emails": "david.taupiac@assemblee-nationale.fr",
+    "twitter": "davidtaupiac"
+  },
+  {
+    "nom": "Thomas Cazenave",
+    "code_circo": "033-01",
+    "emails": "thomas.cazenave@assemblee-nationale.fr",
+    "twitter": "T_Cazenave"
+  },
+  {
+    "nom": "Nicolas Thierry",
+    "code_circo": "033-02",
+    "emails": "nicolas.thierry@assemblee-nationale.fr",
+    "twitter": "nthierry"
+  },
+  {
+    "nom": "Loïc Prud'homme",
+    "code_circo": "033-03",
+    "emails": "Loic.Prudhomme@assemblee-nationale.fr",
+    "twitter": "PrudhommeLoic"
+  },
+  {
+    "nom": "Alain David",
+    "code_circo": "033-04",
+    "emails": "Alain.David@assemblee-nationale.fr",
+    "twitter": "AlainDavid_AN"
+  },
+  {
+    "nom": "Grégoire de Fournas",
+    "code_circo": "033-05",
+    "emails": "gregoire.defournas@assemblee-nationale.fr",
+    "twitter": "gdefournas"
+  },
+  {
+    "nom": "Éric Poulliat",
+    "code_circo": "033-06",
+    "emails": "Eric.Poulliat@assemblee-nationale.fr",
+    "twitter": "EPoulliat"
+  },
+  {
+    "nom": "Frédéric Zgainski",
+    "code_circo": "033-07",
+    "emails": "frederic.zgainski@assemblee-nationale.fr",
+    "twitter": "FZ_Cestas"
+  },
+  {
+    "nom": "Sophie Panonacle",
+    "code_circo": "033-08",
+    "emails": "Sophie.Panonacle@assemblee-nationale.fr",
+    "twitter": "SoPanonacle"
+  },
+  {
+    "nom": "Sophie Mette",
+    "code_circo": "033-09",
+    "emails": "Sophie.Mette@assemblee-nationale.fr",
+    "twitter": "SophieMette1"
+  },
+  {
+    "nom": "Florent Boudié",
+    "code_circo": "033-10",
+    "emails": "Florent.Boudie@assemblee-nationale.fr",
+    "twitter": "florent_boudie"
+  },
+  {
+    "nom": "Edwige Diaz",
+    "code_circo": "033-11",
+    "emails": "edwige.diaz@assemblee-nationale.fr",
+    "twitter": "diaz_edwige"
+  },
+  {
+    "nom": "Pascal Lavergne",
+    "code_circo": "033-12",
+    "emails": "pascal.lavergne@assemblee-nationale.fr",
+    "twitter": "pasclavergne"
+  },
+  {
+    "nom": "Olivier Serva",
+    "code_circo": "971-01",
+    "emails": "Olivier.Serva@assemblee-nationale.fr",
+    "twitter": "olivier_serva"
+  },
+  {
+    "nom": "Christian Baptiste",
+    "code_circo": "971-02",
+    "emails": "christian.baptiste@assemblee-nationale.fr",
+    "twitter": "ChrisBapt"
+  },
+  {
+    "nom": "Max Mathiasin",
+    "code_circo": "971-03",
+    "emails": "Max.Mathiasin@assemblee-nationale.fr",
+    "twitter": "MaxMathiasin"
+  },
+  {
+    "nom": "Elie Califer",
+    "code_circo": "971-04",
+    "emails": "elie.califer@assemblee-nationale.fr",
+    "twitter": "ElieCalifer2022"
+  },
+  {
+    "nom": "Jean-Victor Castor",
+    "code_circo": "973-01",
+    "emails": "jean-victor.castor@assemblee-nationale.fr",
+    "twitter": "CASTORJeanVict1"
+  },
+  {
+    "nom": "Davy Rimane",
+    "code_circo": "973-02",
+    "emails": "davy.rimane@assemblee-nationale.fr",
+    "twitter": "DavyRimane"
+  },
+  {
+    "nom": "Brigitte Klinkert",
+    "code_circo": "068-01",
+    "emails": "brigitte.klinkert@assemblee-nationale.fr",
+    "twitter": "KlinkertBrigitt"
+  },
+  {
+    "nom": "Hubert Ott",
+    "code_circo": "068-02",
+    "emails": "hubert.ott@assemblee-nationale.fr",
+    "twitter": "HubertOttAlsace"
+  },
+  {
+    "nom": "Didier Lemaire",
+    "code_circo": "068-03",
+    "emails": "didier.lemaire@assemblee-nationale.fr",
+    "twitter": "didier_lemaire_"
+  },
+  {
+    "nom": "Raphaël Schellenberger",
+    "code_circo": "068-04",
+    "emails": "Raphael.Schellenberger@assemblee-nationale.fr",
+    "twitter": "RSCactu"
+  },
+  {
+    "nom": "Charlotte Goetschy-Bolognese",
+    "code_circo": "068-05",
+    "emails": "charlotte.goetschy-bolognese@assemblee-nationale.fr",
+    "twitter": "C_GoetschyB"
+  },
+  {
+    "nom": "Bruno Fuchs",
+    "code_circo": "068-06",
+    "emails": "Bruno.Fuchs@assemblee-nationale.fr",
+    "twitter": "bruno_fuchs"
+  },
+  {
+    "nom": "Michel Castellani",
+    "code_circo": "02B-01",
+    "emails": "Michel.Castellani@assemblee-nationale.fr",
+    "twitter": "Castellani_"
+  },
+  {
+    "nom": "Jean-Félix Acquaviva",
+    "code_circo": "02B-02",
+    "emails": "Jean-Felix.Acquaviva@assemblee-nationale.fr",
+    "twitter": "JF_Acquaviva"
+  },
+  {
+    "nom": "Hadrien Clouet",
+    "code_circo": "031-01",
+    "emails": "hadrien.clouet@assemblee-nationale.fr",
+    "twitter": "HadrienClouet"
+  },
+  {
+    "nom": "Anne Stambach-Terrenoir",
+    "code_circo": "031-02",
+    "emails": "anne.stambach-terrenoir@assemblee-nationale.fr",
+    "twitter": "anne_stambach"
+  },
+  {
+    "nom": "Corinne Vignon",
+    "code_circo": "031-03",
+    "emails": "Corinne.Vignon@assemblee-nationale.fr",
+    "twitter": "corinnevignon"
+  },
+  {
+    "nom": "François Piquemal",
+    "code_circo": "031-04",
+    "emails": "francois.piquemal@assemblee-nationale.fr",
+    "twitter": "FraPiquemal"
+  },
+  {
+    "nom": "Jean-François Portarrieu",
+    "code_circo": "031-05",
+    "emails": "Jean-Francois.Portarrieu@assemblee-nationale.fr",
+    "twitter": "jfportarrieu"
+  },
+  {
+    "nom": "Monique Iborra",
+    "code_circo": "031-06",
+    "emails": "Monique.Iborra@assemblee-nationale.fr",
+    "twitter": "MoniqueIborra"
+  },
+  {
+    "nom": "Christophe Bex",
+    "code_circo": "031-07",
+    "emails": "christophe.bex@assemblee-nationale.fr",
+    "twitter": "ChristopheBex"
+  },
+  {
+    "nom": "Joël Aviragnet",
+    "code_circo": "031-08",
+    "emails": "Joel.Aviragnet@assemblee-nationale.fr",
+    "twitter": "JAviragnet"
+  },
+  {
+    "nom": "Christine Arrighi",
+    "code_circo": "031-09",
+    "emails": "christine.arrighi@assemblee-nationale.fr",
+    "twitter": "ChArrighi"
+  },
+  {
+    "nom": "Laurent Esquenet-Goxes",
+    "code_circo": "031-10",
+    "emails": "laurent.esquenet@assemblee-nationale.fr",
+    "twitter": "LaurentESQUENET"
+  },
+  {
+    "nom": "Isabelle Valentin",
+    "code_circo": "043-01",
+    "emails": "Isabelle.Valentin@assemblee-nationale.fr",
+    "twitter": "isavalentin43"
+  },
+  {
+    "nom": "Jean-Pierre Vigier",
+    "code_circo": "043-02",
+    "emails": "Jean-Pierre.Vigier@assemblee-nationale.fr",
+    "twitter": "j_pVigier"
+  },
+  {
+    "nom": "Christophe Bentz",
+    "code_circo": "052-01",
+    "emails": "christophe.bentz@assemblee-nationale.fr",
+    "twitter": "BentzChristophe"
+  },
+  {
+    "nom": "Laurence Robert-Dehault",
+    "code_circo": "052-02",
+    "emails": "laurence.robert-dehault@assemblee-nationale.fr",
+    "twitter": "LRDehault"
+  },
+  {
+    "nom": "Antoine Villedieu",
+    "code_circo": "070-01",
+    "emails": "antoine.villedieu@assemblee-nationale.fr",
+    "twitter": "villedieu_a"
+  },
+  {
+    "nom": "Emeric Salmon",
+    "code_circo": "070-02",
+    "emails": "emeric.salmon@assemblee-nationale.fr",
+    "twitter": "EmericSalmon"
+  },
+  {
+    "nom": "Véronique Riotton",
+    "code_circo": "074-01",
+    "emails": "Veronique.Riotton@assemblee-nationale.fr",
+    "twitter": "V_Riotton"
+  },
+  {
+    "nom": "Antoine Armand",
+    "code_circo": "074-02",
+    "emails": "antoine.armand@assemblee-nationale.fr",
+    "twitter": "antoine_armand"
+  },
+  {
+    "nom": "Christelle Petex-Levet",
+    "code_circo": "074-03",
+    "emails": "christelle.petex-levet@assemblee-nationale.fr",
+    "twitter": "christellepetex"
+  },
+  {
+    "nom": "Virginie Duby-Muller",
+    "code_circo": "074-04",
+    "emails": "Virginie.Duby-Muller@assemblee-nationale.fr",
+    "twitter": "DubyMuller"
+  },
+  {
+    "nom": "Anne-Cécile Violland",
+    "code_circo": "074-05",
+    "emails": "anne-cecile.violland@assemblee-nationale.fr",
+    "twitter": "annececilevio"
+  },
+  {
+    "nom": "Xavier Roseren",
+    "code_circo": "074-06",
+    "emails": "Xavier.Roseren@assemblee-nationale.fr",
+    "twitter": "XavierRoseren"
+  },
+  {
+    "nom": "Damien Maudet",
+    "code_circo": "087-01",
+    "emails": "damien.maudet@assemblee-nationale.fr",
+    "twitter": "damienmaudt"
+  },
+  {
+    "nom": "Stéphane Delautrette",
+    "code_circo": "087-02",
+    "emails": "stephane.delautrette@assemblee-nationale.fr",
+    "twitter": "SDelautrette"
+  },
+  {
+    "nom": "Manon Meunier",
+    "code_circo": "087-03",
+    "emails": "manon.meunier@assemblee-nationale.fr",
+    "twitter": "ManonMeunier_UP"
+  },
+  {
+    "nom": "Pascale Boyer",
+    "code_circo": "005-01",
+    "emails": "Pascale.Boyer@assemblee-nationale.fr",
+    "twitter": "pascaleboyerem"
+  },
+  {
+    "nom": "Joël Giraud",
+    "code_circo": "005-02",
+    "emails": "joel.giraud@assemblee-nationale.fr",
+    "twitter": "JoelGiraud05"
+  },
+  {
+    "nom": "Sylvie Ferrer",
+    "code_circo": "065-01",
+    "emails": "sylvie.ferrer@assemblee-nationale.fr",
+    "twitter": "FerrerSylvie11"
+  },
+  {
+    "nom": "Benoit Mournet",
+    "code_circo": "065-02",
+    "emails": "benoit.mournet@assemblee-nationale.fr",
+    "twitter": "BenoitMournet"
+  },
+  {
+    "nom": "Elsa Faucillon",
+    "code_circo": "092-01",
+    "emails": "Elsa.Faucillon@assemblee-nationale.fr",
+    "twitter": "elsafaucillon"
+  },
+  {
+    "nom": "Francesca Pasquini",
+    "code_circo": "092-02",
+    "emails": "francesca.pasquini@assemblee-nationale.fr",
+    "twitter": "FMPasquini"
+  },
+  {
+    "nom": "Philippe Juvin",
+    "code_circo": "092-03",
+    "emails": "philippe.juvin@assemblee-nationale.fr",
+    "twitter": "philippejuvin"
+  },
+  {
+    "nom": "Sabrina Sebaihi",
+    "code_circo": "092-04",
+    "emails": "sabrina.sebaihi@assemblee-nationale.fr",
+    "twitter": "SabrinaSebaihi"
+  },
+  {
+    "nom": "Céline Calvez",
+    "code_circo": "092-05",
+    "emails": "Celine.Calvez@assemblee-nationale.fr",
+    "twitter": "celinecalvez"
+  },
+  {
+    "nom": "Constance Le Grip",
+    "code_circo": "092-06",
+    "emails": "Constance.LeGrip@assemblee-nationale.fr",
+    "twitter": "ConstanceLeGrip"
+  },
+  {
+    "nom": "Pierre Cazeneuve",
+    "code_circo": "092-07",
+    "emails": "pierre.cazeneuve@assemblee-nationale.fr",
+    "twitter": "PierreCazeneuve"
+  },
+  {
+    "nom": "Prisca Thevenot",
+    "code_circo": "092-08",
+    "emails": "prisca.thevenot@assemblee-nationale.fr",
+    "twitter": "priscathevenot"
+  },
+  {
+    "nom": "Emmanuel Pellerin",
+    "code_circo": "092-09",
+    "emails": "emmanuel.pellerin@assemblee-nationale.fr",
+    "twitter": "EmmanuelPeller1"
+  },
+  {
+    "nom": "Claire Guichard",
+    "code_circo": "092-10",
+    "emails": "claire.guichard@assemblee-nationale.fr",
+    "twitter": "guichard_claire"
+  },
+  {
+    "nom": "Aurélien Saintoul",
+    "code_circo": "092-11",
+    "emails": "aurelien.saintoul@assemblee-nationale.fr",
+    "twitter": "A_Saintoul"
+  },
+  {
+    "nom": "Jean-Louis Bourlanges",
+    "code_circo": "092-12",
+    "emails": "Jean-Louis.Bourlanges@assemblee-nationale.fr",
+    "twitter": "JLBourlanges"
+  },
+  {
+    "nom": "Maud Bregeon",
+    "code_circo": "092-13",
+    "emails": "maud.bregeon@assemblee-nationale.fr",
+    "twitter": "MaudBregeon"
+  },
+  {
+    "nom": "Philippe Sorez",
+    "code_circo": "034-01",
+    "emails": "philippe.sorez@assemblee-nationale.fr",
+    "twitter": "philippe_sorez"
+  },
+  {
+    "nom": "Nathalie Oziol",
+    "code_circo": "034-02",
+    "emails": "nathalie.oziol@assemblee-nationale.fr",
+    "twitter": "NathalieOziol"
+  },
+  {
+    "nom": "Laurence Cristol",
+    "code_circo": "034-03",
+    "emails": "laurence.cristol@assemblee-nationale.fr",
+    "twitter": "LaurenceCristol"
+  },
+  {
+    "nom": "Sébastien Rome",
+    "code_circo": "034-04",
+    "emails": "sebastien.rome@assemblee-nationale.fr",
+    "twitter": "SebRome"
+  },
+  {
+    "nom": "Stéphanie Galzy",
+    "code_circo": "034-05",
+    "emails": "stephanie.galzy@assemblee-nationale.fr",
+    "twitter": "GalzyStephanie"
+  },
+  {
+    "nom": "Emmanuelle Ménard",
+    "code_circo": "034-06",
+    "emails": "Emmanuelle.Menard@assemblee-nationale.fr",
+    "twitter": "emenard34"
+  },
+  {
+    "nom": "Aurélien Lopez-Liguori",
+    "code_circo": "034-07",
+    "emails": "aurelien.lopezliguori@assemblee-nationale.fr",
+    "twitter": "lopezliguori"
+  },
+  {
+    "nom": "Sylvain Carrière",
+    "code_circo": "034-08",
+    "emails": "sylvain.carriere@assemblee-nationale.fr",
+    "twitter": "Sylv20CARRIERE"
+  },
+  {
+    "nom": "Patrick Vignal",
+    "code_circo": "034-09",
+    "emails": "Patrick.Vignal@assemblee-nationale.fr",
+    "twitter": "PatrickVignal"
+  },
+  {
+    "nom": "Frédéric Mathieu",
+    "code_circo": "035-01",
+    "emails": "frederic.mathieu@assemblee-nationale.fr",
+    "twitter": "frdric_mathieu"
+  },
+  {
+    "nom": "Laurence Maillart-Méhaignerie",
+    "code_circo": "035-02",
+    "emails": "Laurence.Maillart-Mehaignerie@assemblee-nationale.fr",
+    "twitter": "LMaillart"
+  },
+  {
+    "nom": "Claudia Rouaux",
+    "code_circo": "035-03",
+    "emails": "claudia.rouaux@assemblee-nationale.fr",
+    "twitter": "claudia_rouaux"
+  },
+  {
+    "nom": "Mathilde Hignet",
+    "code_circo": "035-04",
+    "emails": "mathilde.hignet@assemblee-nationale.fr",
+    "twitter": "MathildeHignet"
+  },
+  {
+    "nom": "Christine Le Nabour",
+    "code_circo": "035-05",
+    "emails": "Christine.Lenabour@assemblee-nationale.fr",
+    "twitter": "ChrisLenabour"
+  },
+  {
+    "nom": "Thierry Benoit",
+    "code_circo": "035-06",
+    "emails": "Thierry.Benoit@assemblee-nationale.fr",
+    "twitter": "ThierryBenoit35"
+  },
+  {
+    "nom": "Jean-Luc Bourgeaux",
+    "code_circo": "035-07",
+    "emails": "jean-luc.bourgeaux@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Mickaël Bouloux",
+    "code_circo": "035-08",
+    "emails": "mickael.bouloux@assemblee-nationale.fr",
+    "twitter": "MickaelBouloux"
+  },
+  {
+    "nom": "François Jolivet",
+    "code_circo": "036-01",
+    "emails": "Francois.Jolivet@assemblee-nationale.fr",
+    "twitter": "FJolivet36"
+  },
+  {
+    "nom": "Nicolas Forissier",
+    "code_circo": "036-02",
+    "emails": "Nicolas.Forissier@assemblee-nationale.fr",
+    "twitter": "N_Forissier"
+  },
+  {
+    "nom": "Charles Fournier",
+    "code_circo": "037-01",
+    "emails": "charles.fournier@assemblee-nationale.fr",
+    "twitter": "cfourniereelv"
+  },
+  {
+    "nom": "Daniel Labaronne",
+    "code_circo": "037-02",
+    "emails": "Daniel.Labaronne@assemblee-nationale.fr",
+    "twitter": "LabaronneDaniel"
+  },
+  {
+    "nom": "Henri Alfandari",
+    "code_circo": "037-03",
+    "emails": "henri.alfandari@assemblee-nationale.fr",
+    "twitter": "Henri_Alfandari"
+  },
+  {
+    "nom": "Fabienne Colboc",
+    "code_circo": "037-04",
+    "emails": "Fabienne.Colboc@assemblee-nationale.fr",
+    "twitter": "fabiennecolboc"
+  },
+  {
+    "nom": "Sabine Thillaye",
+    "code_circo": "037-05",
+    "emails": "Sabine.Thillaye@assemblee-nationale.fr",
+    "twitter": "SabineThillaye"
+  },
+  {
+    "nom": "Servane Hugues",
+    "code_circo": "038-01",
+    "emails": "servane.hugues@assemblee-nationale.fr",
+    "twitter": "ServaneHugues"
+  },
+  {
+    "nom": "Cyrielle Chatelain",
+    "code_circo": "038-02",
+    "emails": "cyrielle.chatelain@assemblee-nationale.fr",
+    "twitter": "Cyrielle_Chtl"
+  },
+  {
+    "nom": "Élisa Martin",
+    "code_circo": "038-03",
+    "emails": "elisa.martin@assemblee-nationale.fr",
+    "twitter": "ElisaMartinGre"
+  },
+  {
+    "nom": "Marie-Noëlle Battistel",
+    "code_circo": "038-04",
+    "emails": "Marie-Noelle.Battistel@assemblee-nationale.fr",
+    "twitter": "BattistelMarie"
+  },
+  {
+    "nom": "Jérémie Iordanoff",
+    "code_circo": "038-05",
+    "emails": "jeremie.iordanoff@assemblee-nationale.fr",
+    "twitter": "iordanoff"
+  },
+  {
+    "nom": "Alexis Jolly",
+    "code_circo": "038-06",
+    "emails": "alexis.jolly@assemblee-nationale.fr",
+    "twitter": "alexisjollyrn"
+  },
+  {
+    "nom": "Yannick Neuder",
+    "code_circo": "038-07",
+    "emails": "yannick.neuder@assemblee-nationale.fr",
+    "twitter": "yannickneuder"
+  },
+  {
+    "nom": "Caroline Abadie",
+    "code_circo": "038-08",
+    "emails": "Caroline.Abadie@assemblee-nationale.fr",
+    "twitter": "AbadieCaroline"
+  },
+  {
+    "nom": "Élodie Jacquier-Laforge",
+    "code_circo": "038-09",
+    "emails": "Elodie.Jacquier-Laforge@assemblee-nationale.fr",
+    "twitter": "elodiejala"
+  },
+  {
+    "nom": "Marjolaine Meynier-Millefert",
+    "code_circo": "038-10",
+    "emails": "Marjolaine.Meynier-Millefert@assemblee-nationale.fr",
+    "twitter": "M_MeynierM"
+  },
+  {
+    "nom": "Danielle Brulebois",
+    "code_circo": "039-01",
+    "emails": "Danielle.Brulebois@assemblee-nationale.fr",
+    "twitter": "dbrulebois"
+  },
+  {
+    "nom": "Marie-Christine Dalloz",
+    "code_circo": "039-02",
+    "emails": "Marie-Christine.Dalloz@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Justine Gruet",
+    "code_circo": "039-03",
+    "emails": "justine.gruet@assemblee-nationale.fr",
+    "twitter": "JustineGruet"
+  },
+  {
+    "nom": "Fabien Lainé",
+    "code_circo": "040-01",
+    "emails": "Fabien.Laine@assemblee-nationale.fr",
+    "twitter": "fabien_laine"
+  },
+  {
+    "nom": "Lionel Causse",
+    "code_circo": "040-02",
+    "emails": "Lionel.Causse@assemblee-nationale.fr",
+    "twitter": "DeputeCausse"
+  },
+  {
+    "nom": "Boris Vallaud",
+    "code_circo": "040-03",
+    "emails": "Boris.Vallaud@assemblee-nationale.fr",
+    "twitter": "borisvallaud"
+  },
+  {
+    "nom": "Mathilde Desjonquères",
+    "code_circo": "041-01",
+    "emails": "mathilde.desjonqueres@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Roger Chudeau",
+    "code_circo": "041-02",
+    "emails": "roger.chudeau@assemblee-nationale.fr",
+    "twitter": "ChudeauR"
+  },
+  {
+    "nom": "Christophe Marion",
+    "code_circo": "041-03",
+    "emails": "christophe.marion@assemblee-nationale.fr",
+    "twitter": "MarionDepute41"
+  },
+  {
+    "nom": "Quentin Bataillon",
+    "code_circo": "042-01",
+    "emails": "quentin.bataillon@assemblee-nationale.fr",
+    "twitter": "qbataillon"
+  },
+  {
+    "nom": "Andrée Taurinya",
+    "code_circo": "042-02",
+    "emails": "andree.taurinya@assemblee-nationale.fr",
+    "twitter": "AndreeTaurinya"
+  },
+  {
+    "nom": "Emmanuel Mandon",
+    "code_circo": "042-03",
+    "emails": "emmanuel.mandon@assemblee-nationale.fr",
+    "twitter": "EmmanuelMandon"
+  },
+  {
+    "nom": "Dino Cinieri",
+    "code_circo": "042-04",
+    "emails": "Dino.Cinieri@assemblee-nationale.fr",
+    "twitter": "DinoCinieri"
+  },
+  {
+    "nom": "Antoine Vermorel-Marques",
+    "code_circo": "042-05",
+    "emails": "antoine.vermorel-marques@assemblee-nationale.fr",
+    "twitter": "antoinevermorel"
+  },
+  {
+    "nom": "Jean-Pierre Taite",
+    "code_circo": "042-06",
+    "emails": "jean-pierre.taite@assemblee-nationale.fr",
+    "twitter": "JPIerre_Taite"
+  },
+  {
+    "nom": "Mounir Belhamiti",
+    "code_circo": "044-01",
+    "emails": "mounir.belhamiti@assemblee-nationale.fr",
+    "twitter": "MounirBelhamiti"
+  },
+  {
+    "nom": "Andy Kerbrat",
+    "code_circo": "044-02",
+    "emails": "andy.kerbrat@assemblee-nationale.fr",
+    "twitter": "AndyKerbrat2022"
+  },
+  {
+    "nom": "Ségolène Amiot",
+    "code_circo": "044-03",
+    "emails": "segolene.amiot@assemblee-nationale.fr",
+    "twitter": "SegoleneAmiot"
+  },
+  {
+    "nom": "Julie Laernoes",
+    "code_circo": "044-04",
+    "emails": "julie.laernoes@assemblee-nationale.fr",
+    "twitter": "laernoes"
+  },
+  {
+    "nom": "Luc Geismar",
+    "code_circo": "044-05",
+    "emails": "luc.geismar@assemblee-nationale.fr",
+    "twitter": "GeismarLuc"
+  },
+  {
+    "nom": "Jean-Claude Raux",
+    "code_circo": "044-06",
+    "emails": "jean-claude.raux@assemblee-nationale.fr",
+    "twitter": "JeanClaudeRaux"
+  },
+  {
+    "nom": "Sandrine Josso",
+    "code_circo": "044-07",
+    "emails": "Sandrine.Josso@assemblee-nationale.fr",
+    "twitter": "sandrinejossoan"
+  },
+  {
+    "nom": "Matthias Tavel",
+    "code_circo": "044-08",
+    "emails": "matthias.tavel@assemblee-nationale.fr",
+    "twitter": "MatthiasTavel"
+  },
+  {
+    "nom": "Yannick Haury",
+    "code_circo": "044-09",
+    "emails": "Yannick.Haury@assemblee-nationale.fr",
+    "twitter": "YHaury44"
+  },
+  {
+    "nom": "Sophie Errante",
+    "code_circo": "044-10",
+    "emails": "Sophie.Errante@assemblee-nationale.fr",
+    "twitter": "SophieErrante"
+  },
+  {
+    "nom": "Stéphanie Rist",
+    "code_circo": "045-01",
+    "emails": "Stephanie.Rist@assemblee-nationale.fr",
+    "twitter": "stephanie_rist"
+  },
+  {
+    "nom": "Caroline Janvier",
+    "code_circo": "045-02",
+    "emails": "Caroline.Janvier@assemblee-nationale.fr",
+    "twitter": "CarolineJanvier"
+  },
+  {
+    "nom": "Mathilde Paris",
+    "code_circo": "045-03",
+    "emails": "mathilde.paris@assemblee-nationale.fr",
+    "twitter": "MathildePARIS45"
+  },
+  {
+    "nom": "Thomas Ménagé",
+    "code_circo": "045-04",
+    "emails": "thomas.menage@assemblee-nationale.fr",
+    "twitter": "Thomas_Mng"
+  },
+  {
+    "nom": "Anthony Brosse",
+    "code_circo": "045-05",
+    "emails": "anthony.brosse@assemblee-nationale.fr",
+    "twitter": "BrosseAnthony"
+  },
+  {
+    "nom": "Richard Ramos",
+    "code_circo": "045-06",
+    "emails": "Richard.Ramos@assemblee-nationale.fr",
+    "twitter": "_richardramos"
+  },
+  {
+    "nom": "Aurélien Pradié",
+    "code_circo": "046-01",
+    "emails": "Aurelien.Pradie@assemblee-nationale.fr",
+    "twitter": "AurelienPradie"
+  },
+  {
+    "nom": "Huguette Tiegna",
+    "code_circo": "046-02",
+    "emails": "Huguette.Tiegna@assemblee-nationale.fr",
+    "twitter": "Huguette_Tiegna"
+  },
+  {
+    "nom": "Michel Lauzzana",
+    "code_circo": "047-01",
+    "emails": "Michel.Lauzzana@assemblee-nationale.fr",
+    "twitter": "lauzzanamichel"
+  },
+  {
+    "nom": "Hélène Laporte",
+    "code_circo": "047-02",
+    "emails": "helene.laporte@assemblee-nationale.fr",
+    "twitter": "HeleneLaporteRN"
+  },
+  {
+    "nom": "Annick Cousin",
+    "code_circo": "047-03",
+    "emails": "annick.cousin@assemblee-nationale.fr",
+    "twitter": "AnnickCousin_RN"
+  },
+  {
+    "nom": "Pierre Morel-À-L'Huissier",
+    "code_circo": "048-01",
+    "emails": "Pierre.Morel-A-LHuissier@assemblee-nationale.fr",
+    "twitter": "MORELPIERRE"
+  },
+  {
+    "nom": "François Gernigon",
+    "code_circo": "049-01",
+    "emails": "francois.gernigon@assemblee-nationale.fr",
+    "twitter": "F_Gernigon"
+  },
+  {
+    "nom": "Stella Dupont",
+    "code_circo": "049-02",
+    "emails": "Stella.Dupont@assemblee-nationale.fr",
+    "twitter": "stelladupont"
+  },
+  {
+    "nom": "Anne-Laure Blin",
+    "code_circo": "049-03",
+    "emails": "anne-laure.blin@assemblee-nationale.fr",
+    "twitter": "annelaureblin"
+  },
+  {
+    "nom": "Laetitia Saint-Paul",
+    "code_circo": "049-04",
+    "emails": "Laetitia.Saint-Paul@assemblee-nationale.fr",
+    "twitter": "l_saintpaul"
+  },
+  {
+    "nom": "Denis Masséglia",
+    "code_circo": "049-05",
+    "emails": "Denis.Masseglia@assemblee-nationale.fr",
+    "twitter": "denis_Masseglia"
+  },
+  {
+    "nom": "Nicole Dubré-Chirat",
+    "code_circo": "049-06",
+    "emails": "Nicole.Dubre-Chirat@assemblee-nationale.fr",
+    "twitter": "NicoleDubre17"
+  },
+  {
+    "nom": "Philippe Bolo",
+    "code_circo": "049-07",
+    "emails": "Philippe.Bolo@assemblee-nationale.fr",
+    "twitter": "phbolo"
+  },
+  {
+    "nom": "Philippe Gosselin",
+    "code_circo": "050-01",
+    "emails": "philippe.gosselin@assemblee-nationale.fr",
+    "twitter": "phgosselin"
+  },
+  {
+    "nom": "Bertrand Sorre",
+    "code_circo": "050-02",
+    "emails": "Bertrand.Sorre@assemblee-nationale.fr",
+    "twitter": "sorre_depute"
+  },
+  {
+    "nom": "Stéphane Travert",
+    "code_circo": "050-03",
+    "emails": "Stephane.Travert@assemblee-nationale.fr",
+    "twitter": "StTRAVERT"
+  },
+  {
+    "nom": "Anna Pic",
+    "code_circo": "050-04",
+    "emails": "anna.pic@assemblee-nationale.fr",
+    "twitter": "PicAnna3"
+  },
+  {
+    "nom": "Xavier Albertini",
+    "code_circo": "051-01",
+    "emails": "xavier.albertini@assemblee-nationale.fr",
+    "twitter": "xavieralbertini"
+  },
+  {
+    "nom": "Anne-Sophie Frigout",
+    "code_circo": "051-02",
+    "emails": "anne-sophie.frigout@assemblee-nationale.fr",
+    "twitter": "asfrigout"
+  },
+  {
+    "nom": "Éric Girardin",
+    "code_circo": "051-03",
+    "emails": "Eric.Girardin@assemblee-nationale.fr",
+    "twitter": "GirardinEric"
+  },
+  {
+    "nom": "Lise Magnier",
+    "code_circo": "051-04",
+    "emails": "Lise.Magnier@assemblee-nationale.fr",
+    "twitter": "lise_magnier"
+  },
+  {
+    "nom": "Charles de Courson",
+    "code_circo": "051-05",
+    "emails": "Charles.deCourson@assemblee-nationale.fr",
+    "twitter": "C_deCourson"
+  },
+  {
+    "nom": "Jiovanny William",
+    "code_circo": "972-01",
+    "emails": "jiovanny.william@assemblee-nationale.fr",
+    "twitter": "WilliamJiovanny"
+  },
+  {
+    "nom": "Marcellin Nadeau",
+    "code_circo": "972-02",
+    "emails": "marcellin.nadeau@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Johnny Hajjar",
+    "code_circo": "972-03",
+    "emails": "johnny.hajjar@assemblee-nationale.fr",
+    "twitter": "JohnnyHajjarMQ"
+  },
+  {
+    "nom": "Jean-Philippe Nilor",
+    "code_circo": "972-04",
+    "emails": "Jean-Philippe.Nilor@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Guillaume Garot",
+    "code_circo": "053-01",
+    "emails": "Guillaume.Garot@assemblee-nationale.fr",
+    "twitter": "guillaumegarot"
+  },
+  {
+    "nom": "Géraldine Bannier",
+    "code_circo": "053-02",
+    "emails": "Geraldine.Bannier@assemblee-nationale.fr",
+    "twitter": "Bannier_G"
+  },
+  {
+    "nom": "Yannick Favennec-Bécot",
+    "code_circo": "053-03",
+    "emails": "Yannick.Favennec@assemblee-nationale.fr",
+    "twitter": "yfavennec"
+  },
+  {
+    "nom": "Estelle Youssouffa",
+    "code_circo": "976-01",
+    "emails": "estelle.youssouffa@assemblee-nationale.fr",
+    "twitter": "EYoussouffa"
+  },
+  {
+    "nom": "Mansour Kamardine",
+    "code_circo": "976-02",
+    "emails": "Mansour.Kamardine@assemblee-nationale.fr",
+    "twitter": "Kamardine_M"
+  },
+  {
+    "nom": "Philippe Guillemard",
+    "code_circo": "054-01",
+    "emails": "philippe.guillemard@assemblee-nationale.fr",
+    "twitter": "P_Guillemard"
+  },
+  {
+    "nom": "Emmanuel Lacresse",
+    "code_circo": "054-02",
+    "emails": "emmanuel.lacresse@assemblee-nationale.fr",
+    "twitter": "E_LACRESSE"
+  },
+  {
+    "nom": "Martine Etienne",
+    "code_circo": "054-03",
+    "emails": "martine.etienne@assemblee-nationale.fr",
+    "twitter": "MartineEtienne_"
+  },
+  {
+    "nom": "Thibault Bazin",
+    "code_circo": "054-04",
+    "emails": "Thibault.Bazin@assemblee-nationale.fr",
+    "twitter": "thibault_bazin"
+  },
+  {
+    "nom": "Dominique Potier",
+    "code_circo": "054-05",
+    "emails": "Dominique.Potier@assemblee-nationale.fr",
+    "twitter": "potierdominique"
+  },
+  {
+    "nom": "Caroline Fiat",
+    "code_circo": "054-06",
+    "emails": "Caroline.Fiat@assemblee-nationale.fr",
+    "twitter": "CarolineFiat54"
+  },
+  {
+    "nom": "Bertrand Pancher",
+    "code_circo": "055-01",
+    "emails": "Bertrand.Pancher@assemblee-nationale.fr",
+    "twitter": "BertrandPancher"
+  },
+  {
+    "nom": "Florence Goulet",
+    "code_circo": "055-02",
+    "emails": "florence.goulet@assemblee-nationale.fr",
+    "twitter": "FlorenceGoulet4"
+  },
+  {
+    "nom": "Anne Le Hénanff",
+    "code_circo": "056-01",
+    "emails": "anne.lehenanff@assemblee-nationale.fr",
+    "twitter": "ALehenanff"
+  },
+  {
+    "nom": "Jimmy Pahun",
+    "code_circo": "056-02",
+    "emails": "Jimmy.Pahun@assemblee-nationale.fr",
+    "twitter": "JimmyPahun"
+  },
+  {
+    "nom": "Nicole Le Peih",
+    "code_circo": "056-03",
+    "emails": "Nicole.LePeih@assemblee-nationale.fr",
+    "twitter": "NicoleLePeih"
+  },
+  {
+    "nom": "Paul Molac",
+    "code_circo": "056-04",
+    "emails": "Paul.Molac@assemblee-nationale.fr",
+    "twitter": "paul_molac"
+  },
+  {
+    "nom": "Lysiane Métayer",
+    "code_circo": "056-05",
+    "emails": "lysiane.metayer@assemblee-nationale.fr",
+    "twitter": "Lysiane_Metayer"
+  },
+  {
+    "nom": "Jean-Michel Jacques",
+    "code_circo": "056-06",
+    "emails": "Jean-Michel.Jacques@assemblee-nationale.fr",
+    "twitter": "J_M_Jacques"
+  },
+  {
+    "nom": "Belkhir Belhaddad",
+    "code_circo": "057-01",
+    "emails": "Belkhir.Belhaddad@assemblee-nationale.fr",
+    "twitter": "b_belhaddad"
+  },
+  {
+    "nom": "Ludovic Mendes",
+    "code_circo": "057-02",
+    "emails": "Ludovic.Mendes@assemblee-nationale.fr",
+    "twitter": "LudovicMDS"
+  },
+  {
+    "nom": "Charlotte Leduc",
+    "code_circo": "057-03",
+    "emails": "charlotte.leduc@assemblee-nationale.fr",
+    "twitter": "CharlotteLeducV"
+  },
+  {
+    "nom": "Fabien Di Filippo",
+    "code_circo": "057-04",
+    "emails": "Fabien.DiFilippo@assemblee-nationale.fr",
+    "twitter": "FabienDiFilippo"
+  },
+  {
+    "nom": "Vincent Seitlinger",
+    "code_circo": "057-05",
+    "emails": "vincent.seitlinger@assemblee-nationale.fr",
+    "twitter": "vseitlinger"
+  },
+  {
+    "nom": "Kévin Pfeffer",
+    "code_circo": "057-06",
+    "emails": "kevin.pfeffer@assemblee-nationale.fr",
+    "twitter": "k_pfeffer"
+  },
+  {
+    "nom": "Alexandre Loubet",
+    "code_circo": "057-07",
+    "emails": "alexandre.loubet@assemblee-nationale.fr",
+    "twitter": "alexandreloubet"
+  },
+  {
+    "nom": "Laurent Jacobelli",
+    "code_circo": "057-08",
+    "emails": "laurent.jacobelli@assemblee-nationale.fr",
+    "twitter": "ljacobelli"
+  },
+  {
+    "nom": "Isabelle Rauch",
+    "code_circo": "057-09",
+    "emails": "Isabelle.Rauch@assemblee-nationale.fr",
+    "twitter": "isabellerauch"
+  },
+  {
+    "nom": "Perrine Goulet",
+    "code_circo": "058-01",
+    "emails": "Perrine.Goulet@assemblee-nationale.fr",
+    "twitter": "perrinegoulet"
+  },
+  {
+    "nom": "Patrice Perrot",
+    "code_circo": "058-02",
+    "emails": "Patrice.Perrot@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Adrien Quatennens",
+    "code_circo": "059-01",
+    "emails": "Adrien.Quatennens@assemblee-nationale.fr",
+    "twitter": "AQuatennens"
+  },
+  {
+    "nom": "Ugo Bernalicis",
+    "code_circo": "059-02",
+    "emails": "Ugo.Bernalicis@assemblee-nationale.fr",
+    "twitter": "ugobernalicis"
+  },
+  {
+    "nom": "Benjamin Saint-Huile",
+    "code_circo": "059-03",
+    "emails": "benjamin.saint-huile@assemblee-nationale.fr",
+    "twitter": "BSaintHuile"
+  },
+  {
+    "nom": "Brigitte Liso",
+    "code_circo": "059-04",
+    "emails": "Brigitte.Liso@assemblee-nationale.fr",
+    "twitter": "brigitte_liso"
+  },
+  {
+    "nom": "Victor Catteau",
+    "code_circo": "059-05",
+    "emails": "victor.catteau@assemblee-nationale.fr",
+    "twitter": "victorcatteau"
+  },
+  {
+    "nom": "Charlotte Parmentier-Lecocq",
+    "code_circo": "059-06",
+    "emails": "Charlotte.Lecocq@assemblee-nationale.fr",
+    "twitter": "lecocqcharlotte"
+  },
+  {
+    "nom": "Félicie Gérard",
+    "code_circo": "059-07",
+    "emails": "felicie.gerard@assemblee-nationale.fr",
+    "twitter": "FelicieGerard"
+  },
+  {
+    "nom": "David Guiraud",
+    "code_circo": "059-08",
+    "emails": "david.guiraud@assemblee-nationale.fr",
+    "twitter": "guiraudind"
+  },
+  {
+    "nom": "Violette Spillebout",
+    "code_circo": "059-09",
+    "emails": "violette.spillebout@assemblee-nationale.fr",
+    "twitter": "Vspillebout"
+  },
+  {
+    "nom": "Vincent Ledoux",
+    "code_circo": "059-10",
+    "emails": "Vincent.Ledoux@assemblee-nationale.fr",
+    "twitter": "VincentLedoux59"
+  },
+  {
+    "nom": "Roger Vicot",
+    "code_circo": "059-11",
+    "emails": "roger.vicot@assemblee-nationale.fr",
+    "twitter": "rvicot"
+  },
+  {
+    "nom": "Michaël Taverne",
+    "code_circo": "059-12",
+    "emails": "michael.taverne@assemblee-nationale.fr",
+    "twitter": "TaverneMichael"
+  },
+  {
+    "nom": "Christine Decodts",
+    "code_circo": "059-13",
+    "emails": "christine.decodts@assemblee-nationale.fr",
+    "twitter": "Christinedecod1"
+  },
+  {
+    "nom": "Paul Christophe",
+    "code_circo": "059-14",
+    "emails": "Paul.Christophe@assemblee-nationale.fr",
+    "twitter": "christophe_p"
+  },
+  {
+    "nom": "Pierrick Berteloot",
+    "code_circo": "059-15",
+    "emails": "pierrick.berteloot@assemblee-nationale.fr",
+    "twitter": "pierrickbrtlo"
+  },
+  {
+    "nom": "Matthieu Marchio",
+    "code_circo": "059-16",
+    "emails": "matthieu.marchio@assemblee-nationale.fr",
+    "twitter": "MarchioMatthieu"
+  },
+  {
+    "nom": "Thibaut François",
+    "code_circo": "059-17",
+    "emails": "thibaut.francois@assemblee-nationale.fr",
+    "twitter": "thib_francois"
+  },
+  {
+    "nom": "Guy Bricout",
+    "code_circo": "059-18",
+    "emails": "Guy.Bricout@assemblee-nationale.fr",
+    "twitter": "GuyBricout"
+  },
+  {
+    "nom": "Sébastien Chenu",
+    "code_circo": "059-19",
+    "emails": "Sebastien.Chenu@assemblee-nationale.fr",
+    "twitter": "sebchenu"
+  },
+  {
+    "nom": "Fabien Roussel",
+    "code_circo": "059-20",
+    "emails": "Fabien.Roussel@assemblee-nationale.fr",
+    "twitter": "Fabien_Roussel"
+  },
+  {
+    "nom": "Béatrice Descamps",
+    "code_circo": "059-21",
+    "emails": "Beatrice.Descamps@assemblee-nationale.fr",
+    "twitter": "beadescamps"
+  },
+  {
+    "nom": "Philippe Dunoyer",
+    "code_circo": "988-01",
+    "emails": "Philippe.Dunoyer@assemblee-nationale.fr",
+    "twitter": "DunoyerPhilippe"
+  },
+  {
+    "nom": "Nicolas Metzdorf",
+    "code_circo": "988-02",
+    "emails": "nicolas.metzdorf@assemblee-nationale.fr",
+    "twitter": "NicolasMetzdorf"
+  },
+  {
+    "nom": "Victor Habert-Dassault",
+    "code_circo": "060-01",
+    "emails": "victor.habert-dassault@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Philippe Ballard",
+    "code_circo": "060-02",
+    "emails": "philippe.ballard@assemblee-nationale.fr",
+    "twitter": "BallardPhilippe"
+  },
+  {
+    "nom": "Alexandre Sabatou",
+    "code_circo": "060-03",
+    "emails": "alexandre.sabatou@assemblee-nationale.fr",
+    "twitter": "ASabatou"
+  },
+  {
+    "nom": "Éric Woerth",
+    "code_circo": "060-04",
+    "emails": "Eric.Woerth@assemblee-nationale.fr",
+    "twitter": "ericwoerth"
+  },
+  {
+    "nom": "Pierre Vatin",
+    "code_circo": "060-05",
+    "emails": "Pierre.Vatin@assemblee-nationale.fr",
+    "twitter": "pierrevatinoff"
+  },
+  {
+    "nom": "Michel Guiniot",
+    "code_circo": "060-06",
+    "emails": "michel.guiniot@assemblee-nationale.fr",
+    "twitter": "MichelGuiniot"
+  },
+  {
+    "nom": "Maxime Minot",
+    "code_circo": "060-07",
+    "emails": "Maxime.Minot@assemblee-nationale.fr",
+    "twitter": "MaximeMinot"
+  },
+  {
+    "nom": "Chantal Jourdan",
+    "code_circo": "061-01",
+    "emails": "chantal.jourdan@assemblee-nationale.fr",
+    "twitter": "ChantalJourdan"
+  },
+  {
+    "nom": "Véronique Louwagie",
+    "code_circo": "061-02",
+    "emails": "Veronique.Louwagie@assemblee-nationale.fr",
+    "twitter": "VeroLouwagie"
+  },
+  {
+    "nom": "Jérôme Nury",
+    "code_circo": "061-03",
+    "emails": "Jerome.Nury@assemblee-nationale.fr",
+    "twitter": "jeromenury"
+  },
+  {
+    "nom": "Sylvain Maillard",
+    "code_circo": "075-01",
+    "emails": "Sylvain.Maillard@assemblee-nationale.fr",
+    "twitter": "sylvainmaillard"
+  },
+  {
+    "nom": "Gilles Le Gendre",
+    "code_circo": "075-02",
+    "emails": "gilles.le.gendre@assemblee-nationale.fr",
+    "twitter": "GillesLeGendre"
+  },
+  {
+    "nom": "Caroline Yadan",
+    "code_circo": "075-03",
+    "emails": "caroline.yadan@assemblee-nationale.fr",
+    "twitter": "CarolineYADAN"
+  },
+  {
+    "nom": "Astrid Panosyan-Bouvet",
+    "code_circo": "075-04",
+    "emails": "astrid.panosyan-bouvet@assemblee-nationale.fr",
+    "twitter": "AstridPanosyan"
+  },
+  {
+    "nom": "Julien Bayou",
+    "code_circo": "075-05",
+    "emails": "julien.bayou@assemblee-nationale.fr",
+    "twitter": "JulienBayou"
+  },
+  {
+    "nom": "Sophia Chikirou",
+    "code_circo": "075-06",
+    "emails": "sophia.chikirou@assemblee-nationale.fr",
+    "twitter": "chikirouparis"
+  },
+  {
+    "nom": "Clara Chassaniol",
+    "code_circo": "075-07",
+    "emails": "clara.chassaniol@assemblee-nationale.fr",
+    "twitter": "Cl_Chassaniol"
+  },
+  {
+    "nom": "Eva Sas",
+    "code_circo": "075-08",
+    "emails": "eva.sas@assemblee-nationale.fr",
+    "twitter": "_EvaSas"
+  },
+  {
+    "nom": "Sandrine Rousseau",
+    "code_circo": "075-09",
+    "emails": "sandrine.rousseau@assemblee-nationale.fr",
+    "twitter": "sandrousseau"
+  },
+  {
+    "nom": "Rodrigo Arenas",
+    "code_circo": "075-10",
+    "emails": "rodrigo.arenas@assemblee-nationale.fr",
+    "twitter": "arenasrodrigo_"
+  },
+  {
+    "nom": "Maud Gatel",
+    "code_circo": "075-11",
+    "emails": "maud.gatel@assemblee-nationale.fr",
+    "twitter": "maudgatel"
+  },
+  {
+    "nom": "Fanta Berete",
+    "code_circo": "075-12",
+    "emails": "fanta.berete@assemblee-nationale.fr",
+    "twitter": "Fanta_B"
+  },
+  {
+    "nom": "David Amiel",
+    "code_circo": "075-13",
+    "emails": "david.amiel@assemblee-nationale.fr",
+    "twitter": "Amiel_David_"
+  },
+  {
+    "nom": "Benjamin Haddad",
+    "code_circo": "075-14",
+    "emails": "benjamin.haddad@assemblee-nationale.fr",
+    "twitter": "benjaminhaddad"
+  },
+  {
+    "nom": "Danielle Simonnet",
+    "code_circo": "075-15",
+    "emails": "danielle.simonnet@assemblee-nationale.fr",
+    "twitter": "SimonnetDeputee"
+  },
+  {
+    "nom": "Sarah Legrain",
+    "code_circo": "075-16",
+    "emails": "sarah.legrain@assemblee-nationale.fr",
+    "twitter": "S_Legrain"
+  },
+  {
+    "nom": "Danièle Obono",
+    "code_circo": "075-17",
+    "emails": "Daniele.Obono@assemblee-nationale.fr",
+    "twitter": "Deputee_Obono"
+  },
+  {
+    "nom": "Aymeric Caron",
+    "code_circo": "075-18",
+    "emails": "aymeric.caron@assemblee-nationale.fr",
+    "twitter": "CaronAymericoff"
+  },
+  {
+    "nom": "Emmanuel Blairy",
+    "code_circo": "062-01",
+    "emails": "emmanuel.blairy@assemblee-nationale.fr",
+    "twitter": "BlairyEmmanuel"
+  },
+  {
+    "nom": "Jacqueline Maquet",
+    "code_circo": "062-02",
+    "emails": "Jacqueline.Maquet@assemblee-nationale.fr",
+    "twitter": "J_Maquet2022"
+  },
+  {
+    "nom": "Jean-Marc Tellier",
+    "code_circo": "062-03",
+    "emails": "jean-marc.tellier@assemblee-nationale.fr",
+    "twitter": "jeanmarctellier"
+  },
+  {
+    "nom": "Philippe Fait",
+    "code_circo": "062-04",
+    "emails": "philippe.fait@assemblee-nationale.fr",
+    "twitter": "PhilippeFait22"
+  },
+  {
+    "nom": "Jean-Pierre Pont",
+    "code_circo": "062-05",
+    "emails": "Jean-Pierre.Pont@assemblee-nationale.fr",
+    "twitter": "JeanPierrePont"
+  },
+  {
+    "nom": "Christine Engrand",
+    "code_circo": "062-06",
+    "emails": "christine.engrand@assemblee-nationale.fr",
+    "twitter": "Cengrand_RN"
+  },
+  {
+    "nom": "Pierre-Henri Dumont",
+    "code_circo": "062-07",
+    "emails": "Pierre-Henri.Dumont@assemblee-nationale.fr",
+    "twitter": "phdumont"
+  },
+  {
+    "nom": "Bertrand Petit",
+    "code_circo": "062-08",
+    "emails": "bertrand.petit@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Caroline Parmentier",
+    "code_circo": "062-09",
+    "emails": "caroline.parmentier@assemblee-nationale.fr",
+    "twitter": "Parmentier_RN"
+  },
+  {
+    "nom": "Thierry Frappé",
+    "code_circo": "062-10",
+    "emails": "thierry.frappe@assemblee-nationale.fr",
+    "twitter": "thierry_frappe"
+  },
+  {
+    "nom": "Marine Le Pen",
+    "code_circo": "062-11",
+    "emails": "Marine.LePen@assemblee-nationale.fr",
+    "twitter": "MLP_officiel"
+  },
+  {
+    "nom": "Bruno Bilde",
+    "code_circo": "062-12",
+    "emails": "Bruno.Bilde@assemblee-nationale.fr",
+    "twitter": "BrunoBilde"
+  },
+  {
+    "nom": "Tematai Le Gayic",
+    "code_circo": "987-01",
+    "emails": "tematai.legayic@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Steve Chailloux",
+    "code_circo": "987-02",
+    "emails": "steve.chailloux@assemblee-nationale.fr",
+    "twitter": "steve_parakao"
+  },
+  {
+    "nom": "Moetai Brotherson",
+    "code_circo": "987-03",
+    "emails": "Moetai.Brotherson@assemblee-nationale.fr",
+    "twitter": "Moetai1"
+  },
+  {
+    "nom": "Marianne Maximi",
+    "code_circo": "063-01",
+    "emails": "marianne.maximi@assemblee-nationale.fr",
+    "twitter": "MarianneMaximi"
+  },
+  {
+    "nom": "Christine Pires Beaune",
+    "code_circo": "063-02",
+    "emails": "Christine.PiresBeaune@assemblee-nationale.fr",
+    "twitter": "cpiresbeaune"
+  },
+  {
+    "nom": "Laurence Vichnievsky",
+    "code_circo": "063-03",
+    "emails": "Laurence.Vichnievsky@assemblee-nationale.fr",
+    "twitter": "Lvichnievsky"
+  },
+  {
+    "nom": "Delphine Lingemann",
+    "code_circo": "063-04",
+    "emails": "delphine.lingemann@assemblee-nationale.fr",
+    "twitter": "DelphLingemann"
+  },
+  {
+    "nom": "André Chassaigne",
+    "code_circo": "063-05",
+    "emails": "Andre.Chassaigne@assemblee-nationale.fr",
+    "twitter": "AndreChassaigne"
+  },
+  {
+    "nom": "Josy Poueyto",
+    "code_circo": "064-01",
+    "emails": "Josy.Poueyto@assemblee-nationale.fr",
+    "twitter": "josypoueyto"
+  },
+  {
+    "nom": "Jean-Paul Mattei",
+    "code_circo": "064-02",
+    "emails": "Jean-Paul.Mattei@assemblee-nationale.fr",
+    "twitter": "jp_mattei"
+  },
+  {
+    "nom": "David Habib",
+    "code_circo": "064-03",
+    "emails": "David.Habib@assemblee-nationale.fr",
+    "twitter": "DavidDhabib"
+  },
+  {
+    "nom": "Inaki Echaniz",
+    "code_circo": "064-04",
+    "emails": "inaki.echaniz@assemblee-nationale.fr",
+    "twitter": "Inakiechaniz"
+  },
+  {
+    "nom": "Florence Lasserre",
+    "code_circo": "064-05",
+    "emails": "florence.lasserre@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Vincent Bru",
+    "code_circo": "064-06",
+    "emails": "Vincent.Bru@assemblee-nationale.fr",
+    "twitter": "bru_vincent"
+  },
+  {
+    "nom": "Sophie Blanc",
+    "code_circo": "066-01",
+    "emails": "sophie.blanc@assemblee-nationale.fr",
+    "twitter": "sblanc66000"
+  },
+  {
+    "nom": "Anaïs Sabatini",
+    "code_circo": "066-02",
+    "emails": "anais.sabatini@assemblee-nationale.fr",
+    "twitter": "Anais_Sabatini"
+  },
+  {
+    "nom": "Sandrine Dogor-Such",
+    "code_circo": "066-03",
+    "emails": "sandrine.dogor-such@assemblee-nationale.fr",
+    "twitter": "Sandrine_Dogor"
+  },
+  {
+    "nom": "Michèle Martinez",
+    "code_circo": "066-04",
+    "emails": "michele.martinez@assemblee-nationale.fr",
+    "twitter": "MichleMartinez3"
+  },
+  {
+    "nom": "Philippe Naillet",
+    "code_circo": "974-01",
+    "emails": "philippe.naillet@assemblee-nationale.fr",
+    "twitter": "PNaillet"
+  },
+  {
+    "nom": "Karine Lebon",
+    "code_circo": "974-02",
+    "emails": "karine.lebon@assemblee-nationale.fr",
+    "twitter": "KarineLebon"
+  },
+  {
+    "nom": "Nathalie Bassire",
+    "code_circo": "974-03",
+    "emails": "Nathalie.Bassire@assemblee-nationale.fr",
+    "twitter": "NathalieBassire"
+  },
+  {
+    "nom": "Emeline K/Bidi",
+    "code_circo": "974-04",
+    "emails": "emeline.kbidi@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Jean-Hugues Ratenon",
+    "code_circo": "974-05",
+    "emails": "Jean-Hugues.Ratenon@assemblee-nationale.fr",
+    "twitter": "DeputeRatenon"
+  },
+  {
+    "nom": "Frédéric Maillot",
+    "code_circo": "974-06",
+    "emails": "frederic.maillot@assemblee-nationale.fr",
+    "twitter": "frdric_maillot"
+  },
+  {
+    "nom": "Perceval Gaillard",
+    "code_circo": "974-07",
+    "emails": "perceval.gaillard@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Thomas Rudigoz",
+    "code_circo": "069-01",
+    "emails": "Thomas.Rudigoz@assemblee-nationale.fr",
+    "twitter": "trudigoz"
+  },
+  {
+    "nom": "Hubert Julien-Laferrière",
+    "code_circo": "069-02",
+    "emails": "Hubert.Julien-Laferriere@assemblee-nationale.fr",
+    "twitter": "hub_laferriere"
+  },
+  {
+    "nom": "Marie-Charlotte Garin",
+    "code_circo": "069-03",
+    "emails": "marie-charlotte.garin@assemblee-nationale.fr",
+    "twitter": "MC_Garin"
+  },
+  {
+    "nom": "Anne Brugnera",
+    "code_circo": "069-04",
+    "emails": "Anne.Brugnera@assemblee-nationale.fr",
+    "twitter": "AnneBrugnera"
+  },
+  {
+    "nom": "Blandine Brocard",
+    "code_circo": "069-05",
+    "emails": "Blandine.Brocard@assemblee-nationale.fr",
+    "twitter": "bbrocard"
+  },
+  {
+    "nom": "Gabriel Amard",
+    "code_circo": "069-06",
+    "emails": "gabriel.amard@assemblee-nationale.fr",
+    "twitter": "gabrielamard"
+  },
+  {
+    "nom": "Alexandre Vincendet",
+    "code_circo": "069-07",
+    "emails": "alexandre.vincendet@assemblee-nationale.fr",
+    "twitter": "AlexVincendet"
+  },
+  {
+    "nom": "Nathalie Serre",
+    "code_circo": "069-08",
+    "emails": "nathalie.serre@assemblee-nationale.fr",
+    "twitter": "NathalieSerre"
+  },
+  {
+    "nom": "Alexandre Portier",
+    "code_circo": "069-09",
+    "emails": "alexandre.portier@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Thomas Gassilloud",
+    "code_circo": "069-10",
+    "emails": "Thomas.Gassilloud@assemblee-nationale.fr",
+    "twitter": "tgassilloud"
+  },
+  {
+    "nom": "Jean-Luc Fugit",
+    "code_circo": "069-11",
+    "emails": "Jean-Luc.Fugit@assemblee-nationale.fr",
+    "twitter": "Jean_LucFUGIT"
+  },
+  {
+    "nom": "Cyrille Isaac-Sibille",
+    "code_circo": "069-12",
+    "emails": "Cyrille.Isaac-Sibille@assemblee-nationale.fr",
+    "twitter": "Cisaacsibille"
+  },
+  {
+    "nom": "Sarah Tanzilli",
+    "code_circo": "069-13",
+    "emails": "sarah.tanzilli@assemblee-nationale.fr",
+    "twitter": "sarah_tanzilli"
+  },
+  {
+    "nom": "Idir Boumertit",
+    "code_circo": "069-14",
+    "emails": "idir.boumertit@assemblee-nationale.fr",
+    "twitter": "boumertitidir"
+  },
+  {
+    "nom": "Frantz Gumbs",
+    "code_circo": "977-01",
+    "emails": "frantz.gumbs@assemblee-nationale.fr",
+    "twitter": "frantzgumbs"
+  },
+  {
+    "nom": "Stéphane Lenormand",
+    "code_circo": "975-01",
+    "emails": "stephane.lenormand@assemblee-nationale.fr",
+    "twitter": "StphaneLenorma1"
+  },
+  {
+    "nom": "Benjamin Dirx",
+    "code_circo": "071-01",
+    "emails": "Benjamin.Dirx@assemblee-nationale.fr",
+    "twitter": "BenjaminDirx"
+  },
+  {
+    "nom": "Josiane Corneloup",
+    "code_circo": "071-02",
+    "emails": "Josiane.Corneloup@assemblee-nationale.fr",
+    "twitter": "J_Corneloup"
+  },
+  {
+    "nom": "Rémy Rebeyrotte",
+    "code_circo": "071-03",
+    "emails": "Remy.Rebeyrotte@assemblee-nationale.fr",
+    "twitter": "RRebeyrotte"
+  },
+  {
+    "nom": "Cécile Untermaier",
+    "code_circo": "071-04",
+    "emails": "Cecile.Untermaier@assemblee-nationale.fr",
+    "twitter": "ceciluntermaier"
+  },
+  {
+    "nom": "Louis Margueritte",
+    "code_circo": "071-05",
+    "emails": "louis.margueritte@assemblee-nationale.fr",
+    "twitter": "l_margueritte"
+  },
+  {
+    "nom": "Julie Delpech",
+    "code_circo": "072-01",
+    "emails": "julie.delpech@assemblee-nationale.fr",
+    "twitter": "juliedelpech72"
+  },
+  {
+    "nom": "Marietta Karamanli",
+    "code_circo": "072-02",
+    "emails": "Marietta.Karamanli@assemblee-nationale.fr",
+    "twitter": "MKaramanli72"
+  },
+  {
+    "nom": "Éric Martineau",
+    "code_circo": "072-03",
+    "emails": "eric.martineau@assemblee-nationale.fr",
+    "twitter": "EMericmartineau"
+  },
+  {
+    "nom": "Élise Leboucher",
+    "code_circo": "072-04",
+    "emails": "elise.leboucher@assemblee-nationale.fr",
+    "twitter": "leboucher_elise"
+  },
+  {
+    "nom": "Jean-Carles Grelier",
+    "code_circo": "072-05",
+    "emails": "Jean-Carles.Grelier@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Marina Ferrari",
+    "code_circo": "073-01",
+    "emails": "marina.ferrari@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Vincent Rolland",
+    "code_circo": "073-02",
+    "emails": "Vincent.Rolland@assemblee-nationale.fr",
+    "twitter": "VRolland73"
+  },
+  {
+    "nom": "Émilie Bonnivard",
+    "code_circo": "073-03",
+    "emails": "Emilie.Bonnivard@assemblee-nationale.fr",
+    "twitter": "BonnivardE"
+  },
+  {
+    "nom": "Jean-François Coulomme",
+    "code_circo": "073-04",
+    "emails": "jean-francois.coulomme@assemblee-nationale.fr",
+    "twitter": "jfcoulomme"
+  },
+  {
+    "nom": "Aude Luquet",
+    "code_circo": "077-01",
+    "emails": "Aude.Luquet@assemblee-nationale.fr",
+    "twitter": "AudeLuquet77"
+  },
+  {
+    "nom": "Frédéric Valletoux",
+    "code_circo": "077-02",
+    "emails": "frederic.valletoux@assemblee-nationale.fr",
+    "twitter": "fredvalletoux"
+  },
+  {
+    "nom": "Jean-Louis Thiériot",
+    "code_circo": "077-03",
+    "emails": "Jean-Louis.Thieriot@assemblee-nationale.fr",
+    "twitter": "JL_Thieriot"
+  },
+  {
+    "nom": "Isabelle Périgault",
+    "code_circo": "077-04",
+    "emails": "isabelle.perigault@assemblee-nationale.fr",
+    "twitter": "IsabellePERIGA2"
+  },
+  {
+    "nom": "Patricia Lemoine",
+    "code_circo": "077-05",
+    "emails": "Patricia.Lemoine@assemblee-nationale.fr",
+    "twitter": "P_Lemoine"
+  },
+  {
+    "nom": "Béatrice Roullaud",
+    "code_circo": "077-06",
+    "emails": "beatrice.roullaud@assemblee-nationale.fr",
+    "twitter": "ROULLAUDBEATRIC"
+  },
+  {
+    "nom": "Ersilia Soudais",
+    "code_circo": "077-07",
+    "emails": "ersilia.soudais@assemblee-nationale.fr",
+    "twitter": "ErsiliaSoudais"
+  },
+  {
+    "nom": "Hadrien Ghomi",
+    "code_circo": "077-08",
+    "emails": "hadrien.ghomi@assemblee-nationale.fr",
+    "twitter": "HadrienGhomi"
+  },
+  {
+    "nom": "Michèle Peyron",
+    "code_circo": "077-09",
+    "emails": "Michele.Peyron@assemblee-nationale.fr",
+    "twitter": "MichelePeyron"
+  },
+  {
+    "nom": "Maxime Laisney",
+    "code_circo": "077-10",
+    "emails": "maxime.laisney@assemblee-nationale.fr",
+    "twitter": "MaximeLaisneyFi"
+  },
+  {
+    "nom": "Olivier Faure",
+    "code_circo": "077-11",
+    "emails": "Olivier.Faure@assemblee-nationale.fr",
+    "twitter": "faureolivier"
+  },
+  {
+    "nom": "Damien Adam",
+    "code_circo": "076-01",
+    "emails": "Damien.Adam@assemblee-nationale.fr",
+    "twitter": "damienadam76"
+  },
+  {
+    "nom": "Annie Vidal",
+    "code_circo": "076-02",
+    "emails": "Annie.Vidal@assemblee-nationale.fr",
+    "twitter": "Vidal7602"
+  },
+  {
+    "nom": "Hubert Wulfranc",
+    "code_circo": "076-03",
+    "emails": "Hubert.Wulfranc@assemblee-nationale.fr",
+    "twitter": "HubertWulfranc"
+  },
+  {
+    "nom": "Alma Dufour",
+    "code_circo": "076-04",
+    "emails": "alma.dufour@assemblee-nationale.fr",
+    "twitter": "alma_dufour"
+  },
+  {
+    "nom": "Gérard Leseul",
+    "code_circo": "076-05",
+    "emails": "gerard.leseul@assemblee-nationale.fr",
+    "twitter": "LeseulG"
+  },
+  {
+    "nom": "Sébastien Jumel",
+    "code_circo": "076-06",
+    "emails": "Sebastien.Jumel@assemblee-nationale.fr",
+    "twitter": "sebastienjumel"
+  },
+  {
+    "nom": "Agnès Carel",
+    "code_circo": "076-07",
+    "emails": "agnes.carel@assemblee-nationale.fr",
+    "twitter": "AgnesCarel76"
+  },
+  {
+    "nom": "Jean-Paul Lecoq",
+    "code_circo": "076-08",
+    "emails": "Jean-Paul.Lecoq@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Marie-Agnès Poussier-Winsback",
+    "code_circo": "076-09",
+    "emails": "marieagnes.poussier-winsback@assemblee-nationale.fr",
+    "twitter": "mapoussier"
+  },
+  {
+    "nom": "Xavier Batut",
+    "code_circo": "076-10",
+    "emails": "Xavier.Batut@assemblee-nationale.fr",
+    "twitter": "XavierBatut"
+  },
+  {
+    "nom": "Éric Coquerel",
+    "code_circo": "093-01",
+    "emails": "Eric.Coquerel@assemblee-nationale.fr",
+    "twitter": "ericcoquerel"
+  },
+  {
+    "nom": "Stéphane Peu",
+    "code_circo": "093-02",
+    "emails": "Stephane.Peu@assemblee-nationale.fr",
+    "twitter": "stephane1peu"
+  },
+  {
+    "nom": "Thomas Portes",
+    "code_circo": "093-03",
+    "emails": "thomas.portes@assemblee-nationale.fr",
+    "twitter": "Portes_Thomas"
+  },
+  {
+    "nom": "Soumya Bourouaha",
+    "code_circo": "093-04",
+    "emails": "soumya.bourouaha@assemblee-nationale.fr",
+    "twitter": "S_Bourouaha"
+  },
+  {
+    "nom": "Raquel Garrido",
+    "code_circo": "093-05",
+    "emails": "raquel.garrido@assemblee-nationale.fr",
+    "twitter": "RaquelGarridoFr"
+  },
+  {
+    "nom": "Bastien Lachaud",
+    "code_circo": "093-06",
+    "emails": "Bastien.Lachaud@assemblee-nationale.fr",
+    "twitter": "lachaudb"
+  },
+  {
+    "nom": "Alexis Corbière",
+    "code_circo": "093-07",
+    "emails": "Alexis.Corbiere@assemblee-nationale.fr",
+    "twitter": "alexiscorbiere"
+  },
+  {
+    "nom": "Fatiha Keloua Hachi",
+    "code_circo": "093-08",
+    "emails": "fatiha.kelouahachi@assemblee-nationale.fr",
+    "twitter": "KelouaF"
+  },
+  {
+    "nom": "Aurélie Trouvé",
+    "code_circo": "093-09",
+    "emails": "aurelie.trouve@assemblee-nationale.fr",
+    "twitter": "TrouveAurelie"
+  },
+  {
+    "nom": "Nadège Abomangoli",
+    "code_circo": "093-10",
+    "emails": "nadege.abomangoli@assemblee-nationale.fr",
+    "twitter": "abomangoli"
+  },
+  {
+    "nom": "Clémentine Autain",
+    "code_circo": "093-11",
+    "emails": "Clementine.Autain@assemblee-nationale.fr",
+    "twitter": "Clem_Autain"
+  },
+  {
+    "nom": "Jérôme Legavre",
+    "code_circo": "093-12",
+    "emails": "jerome.legavre@assemblee-nationale.fr",
+    "twitter": "LegavreJerome"
+  },
+  {
+    "nom": "François Ruffin",
+    "code_circo": "080-01",
+    "emails": "Francois.Ruffin@assemblee-nationale.fr",
+    "twitter": "Francois_Ruffin"
+  },
+  {
+    "nom": "Barbara Pompili",
+    "code_circo": "080-02",
+    "emails": "barbara.pompili@assemblee-nationale.fr",
+    "twitter": "barbarapompili"
+  },
+  {
+    "nom": "Emmanuel Maquet",
+    "code_circo": "080-03",
+    "emails": "Emmanuel.Maquet@assemblee-nationale.fr",
+    "twitter": "emmanuel_maquet"
+  },
+  {
+    "nom": "Jean-Philippe Tanguy",
+    "code_circo": "080-04",
+    "emails": "jean-philippe.tanguy@assemblee-nationale.fr",
+    "twitter": "Jphtanguy"
+  },
+  {
+    "nom": "Yaël Menache",
+    "code_circo": "080-05",
+    "emails": "yael.menache@assemblee-nationale.fr",
+    "twitter": "YaelMenache"
+  },
+  {
+    "nom": "Frédéric Cabrolier",
+    "code_circo": "081-01",
+    "emails": "frederic.cabrolier@assemblee-nationale.fr",
+    "twitter": "Fr_Cabrolier"
+  },
+  {
+    "nom": "Karen Erodi",
+    "code_circo": "081-02",
+    "emails": "karen.erodi@assemblee-nationale.fr",
+    "twitter": "KarenErodi"
+  },
+  {
+    "nom": "Jean Terlier",
+    "code_circo": "081-03",
+    "emails": "Jean.Terlier@assemblee-nationale.fr",
+    "twitter": "JeanTerlier"
+  },
+  {
+    "nom": "Valérie Rabault",
+    "code_circo": "082-01",
+    "emails": "Valerie.Rabault@assemblee-nationale.fr",
+    "twitter": "Valerie_Rabault"
+  },
+  {
+    "nom": "Marine Hamelet",
+    "code_circo": "082-02",
+    "emails": "marine.hamelet@assemblee-nationale.fr",
+    "twitter": "marine_hamelet"
+  },
+  {
+    "nom": "Ian Boucard",
+    "code_circo": "090-01",
+    "emails": "Ian.Boucard@assemblee-nationale.fr",
+    "twitter": "IanBoucard"
+  },
+  {
+    "nom": "Florian Chauche",
+    "code_circo": "090-02",
+    "emails": "florian.chauche@assemblee-nationale.fr",
+    "twitter": "FlorianChauche9"
+  },
+  {
+    "nom": "Émilie Chandler",
+    "code_circo": "095-01",
+    "emails": "emilie.chandler@assemblee-nationale.fr",
+    "twitter": "EmilieChandler"
+  },
+  {
+    "nom": "Guillaume Vuilletet",
+    "code_circo": "095-02",
+    "emails": "Guillaume.Vuilletet@assemblee-nationale.fr",
+    "twitter": "g_vuilletet"
+  },
+  {
+    "nom": "Cécile Rilhac",
+    "code_circo": "095-03",
+    "emails": "Cecile.Rilhac@assemblee-nationale.fr",
+    "twitter": "Cecile_Rilhac"
+  },
+  {
+    "nom": "Naïma Moutchou",
+    "code_circo": "095-04",
+    "emails": "Naima.Moutchou@assemblee-nationale.fr",
+    "twitter": "NaimaMoutchou"
+  },
+  {
+    "nom": "Paul Vannier",
+    "code_circo": "095-05",
+    "emails": "paul.vannier@assemblee-nationale.fr",
+    "twitter": "PaulVannierFI"
+  },
+  {
+    "nom": "Estelle Folest",
+    "code_circo": "095-06",
+    "emails": "estelle.folest@assemblee-nationale.fr",
+    "twitter": "efolest"
+  },
+  {
+    "nom": "Dominique Da Silva",
+    "code_circo": "095-07",
+    "emails": "Dominique.DaSilva@assemblee-nationale.fr",
+    "twitter": "DDaSilva95"
+  },
+  {
+    "nom": "Carlos Martens Bilongo",
+    "code_circo": "095-08",
+    "emails": "carlosmartens.bilongo@assemblee-nationale.fr",
+    "twitter": "bilongocarlos"
+  },
+  {
+    "nom": "Arnaud Le Gall",
+    "code_circo": "095-09",
+    "emails": "arnaud.legall@assemblee-nationale.fr",
+    "twitter": "Arnaud_Le_Gall_"
+  },
+  {
+    "nom": "Aurélien Taché",
+    "code_circo": "095-10",
+    "emails": "Aurelien.Tache@assemblee-nationale.fr",
+    "twitter": "Aurelientache"
+  },
+  {
+    "nom": "Frédéric Descrozaille",
+    "code_circo": "094-01",
+    "emails": "Frederic.Descrozaille@assemblee-nationale.fr",
+    "twitter": "fdescrozaille"
+  },
+  {
+    "nom": "Clémence Guetté",
+    "code_circo": "094-02",
+    "emails": "clemence.guette@assemblee-nationale.fr",
+    "twitter": "Clemence_Guette"
+  },
+  {
+    "nom": "Louis Boyard",
+    "code_circo": "094-03",
+    "emails": "louis.boyard@assemblee-nationale.fr",
+    "twitter": "LouisBoyard"
+  },
+  {
+    "nom": "Maud Petit",
+    "code_circo": "094-04",
+    "emails": "Maud.Petit@assemblee-nationale.fr",
+    "twitter": "MaudPetit_AN94"
+  },
+  {
+    "nom": "Mathieu Lefèvre",
+    "code_circo": "094-05",
+    "emails": "mathieu.lefevre@assemblee-nationale.fr",
+    "twitter": "MathieuMlefevre"
+  },
+  {
+    "nom": "Guillaume Gouffier-Cha",
+    "code_circo": "094-06",
+    "emails": "Guillaume.Gouffier-Cha@assemblee-nationale.fr",
+    "twitter": "g_gouffiercha"
+  },
+  {
+    "nom": "Rachel Keke",
+    "code_circo": "094-07",
+    "emails": "rachel.keke@assemblee-nationale.fr",
+    "twitter": "KekeRachel"
+  },
+  {
+    "nom": "Michel Herbillon",
+    "code_circo": "094-08",
+    "emails": "Michel.Herbillon@assemblee-nationale.fr",
+    "twitter": "Michelherbillon"
+  },
+  {
+    "nom": "Isabelle Santiago",
+    "code_circo": "094-09",
+    "emails": "isabelle.santiago@assemblee-nationale.fr",
+    "twitter": "isasantiago_94"
+  },
+  {
+    "nom": "Mathilde Panot",
+    "code_circo": "094-10",
+    "emails": "Mathilde.Panot@assemblee-nationale.fr",
+    "twitter": "mathildepanot"
+  },
+  {
+    "nom": "Sophie Taillé-Polian",
+    "code_circo": "094-11",
+    "emails": "sophie.taille-polian@assemblee-nationale.fr",
+    "twitter": "STaillePolian"
+  },
+  {
+    "nom": "Yannick Chenevard",
+    "code_circo": "083-01",
+    "emails": "yannick.chenevard@assemblee-nationale.fr",
+    "twitter": "ychenevard83"
+  },
+  {
+    "nom": "Laure Lavalette",
+    "code_circo": "083-02",
+    "emails": "laure.lavalette@assemblee-nationale.fr",
+    "twitter": "LaureLavalette"
+  },
+  {
+    "nom": "Stéphane Rambaud",
+    "code_circo": "083-03",
+    "emails": "stephane.rambaud@assemblee-nationale.fr",
+    "twitter": "stephan1Rambaud"
+  },
+  {
+    "nom": "Philippe Lottiaux",
+    "code_circo": "083-04",
+    "emails": "philippe.lottiaux@assemblee-nationale.fr",
+    "twitter": "phlottiaux"
+  },
+  {
+    "nom": "Julie Lechanteux",
+    "code_circo": "083-05",
+    "emails": "julie.lechanteux@assemblee-nationale.fr",
+    "twitter": "JLechanteux"
+  },
+  {
+    "nom": "Frank Giletti",
+    "code_circo": "083-06",
+    "emails": "frank.giletti@assemblee-nationale.fr",
+    "twitter": "FrankGiletti"
+  },
+  {
+    "nom": "Frédéric Boccaletti",
+    "code_circo": "083-07",
+    "emails": "frederic.boccaletti@assemblee-nationale.fr",
+    "twitter": "Boccaletti83"
+  },
+  {
+    "nom": "Philippe Schreck",
+    "code_circo": "083-08",
+    "emails": "philippe.schreck@assemblee-nationale.fr",
+    "twitter": "Ph_Schreck"
+  },
+  {
+    "nom": "Joris Hébrard",
+    "code_circo": "084-01",
+    "emails": "joris.hebrard@assemblee-nationale.fr",
+    "twitter": ""
+  },
+  {
+    "nom": "Bénédicte Auzanot",
+    "code_circo": "084-02",
+    "emails": "benedicte.auzanot@assemblee-nationale.fr",
+    "twitter": "BeneAuzanot"
+  },
+  {
+    "nom": "Hervé de Lépinau",
+    "code_circo": "084-03",
+    "emails": "herve.delepinau@assemblee-nationale.fr",
+    "twitter": "HdeLepinau"
+  },
+  {
+    "nom": "Marie-France Lorho",
+    "code_circo": "084-04",
+    "emails": "Marie-France.Lorho@assemblee-nationale.fr",
+    "twitter": "FranceLorho"
+  },
+  {
+    "nom": "Jean-François Lovisolo",
+    "code_circo": "084-05",
+    "emails": "jean-francois.lovisolo@assemblee-nationale.fr",
+    "twitter": "lovisolo2022"
+  },
+  {
+    "nom": "Philippe Latombe",
+    "code_circo": "085-01",
+    "emails": "Philippe.Latombe@assemblee-nationale.fr",
+    "twitter": "platombe"
+  },
+  {
+    "nom": "Béatrice Bellamy",
+    "code_circo": "085-02",
+    "emails": "beatrice.bellamy@assemblee-nationale.fr",
+    "twitter": "BeaBellamy85"
+  },
+  {
+    "nom": "Stéphane Buchou",
+    "code_circo": "085-03",
+    "emails": "Stephane.Buchou@assemblee-nationale.fr",
+    "twitter": "StephaneBuchou"
+  },
+  {
+    "nom": "Véronique Besse",
+    "code_circo": "085-04",
+    "emails": "veronique.besse@assemblee-nationale.fr",
+    "twitter": "veroniquebesse"
+  },
+  {
+    "nom": "Pierre Henriet",
+    "code_circo": "085-05",
+    "emails": "Pierre.Henriet@assemblee-nationale.fr",
+    "twitter": "HenrietPierre"
+  },
+  {
+    "nom": "Lisa Belluco",
+    "code_circo": "086-01",
+    "emails": "lisa.belluco@assemblee-nationale.fr",
+    "twitter": "LisaBelluco"
+  },
+  {
+    "nom": "Sacha Houlié",
+    "code_circo": "086-02",
+    "emails": "Sacha.Houlie@assemblee-nationale.fr",
+    "twitter": "SachaHoulie"
+  },
+  {
+    "nom": "Pascal Lecamp",
+    "code_circo": "086-03",
+    "emails": "pascal.lecamp@assemblee-nationale.fr",
+    "twitter": "plecamp"
+  },
+  {
+    "nom": "Nicolas Turquois",
+    "code_circo": "086-04",
+    "emails": "Nicolas.Turquois@assemblee-nationale.fr",
+    "twitter": "TurquoisNicolas"
+  },
+  {
+    "nom": "Stéphane Viry",
+    "code_circo": "088-01",
+    "emails": "Stephane.Viry@assemblee-nationale.fr",
+    "twitter": "ViryStephane"
+  },
+  {
+    "nom": "David Valence",
+    "code_circo": "088-02",
+    "emails": "david.valence@assemblee-nationale.fr",
+    "twitter": "david_valence"
+  },
+  {
+    "nom": "Christophe Naegelen",
+    "code_circo": "088-03",
+    "emails": "Christophe.Naegelen@assemblee-nationale.fr",
+    "twitter": "naegelenchris"
+  },
+  {
+    "nom": "Jean-Jacques Gaultier",
+    "code_circo": "088-04",
+    "emails": "Jean-Jacques.Gaultier@assemblee-nationale.fr",
+    "twitter": "JJ_Gaultier"
+  },
+  {
+    "nom": "Mikaele Seo",
+    "code_circo": "986-01",
+    "emails": "mikaele.seo@assemblee-nationale.fr",
+    "twitter": "MikaeleSeo"
+  },
+  {
+    "nom": "Daniel Grenon",
+    "code_circo": "089-01",
+    "emails": "daniel.grenon@assemblee-nationale.fr",
+    "twitter": "DanielGrenon89"
+  },
+  {
+    "nom": "André Villiers",
+    "code_circo": "089-02",
+    "emails": "Andre.Villiers@assemblee-nationale.fr",
+    "twitter": "andrevilliers89"
+  },
+  {
+    "nom": "Julien Odoul",
+    "code_circo": "089-03",
+    "emails": "julien.odoul@assemblee-nationale.fr",
+    "twitter": "JulienOdoul"
+  },
+  {
+    "nom": "Charles Rodwell",
+    "code_circo": "078-01",
+    "emails": "charles.rodwell@assemblee-nationale.fr",
+    "twitter": "charlesrodwell_"
+  },
+  {
+    "nom": "Béatrice Piron",
+    "code_circo": "078-02",
+    "emails": "Beatrice.Piron@assemblee-nationale.fr",
+    "twitter": "beatricepiron"
+  },
+  {
+    "nom": "Marie Lebec",
+    "code_circo": "078-03",
+    "emails": "Marie.Lebec@assemblee-nationale.fr",
+    "twitter": "marielebec78"
+  },
+  {
+    "nom": "Yaël Braun-Pivet",
+    "code_circo": "078-04",
+    "emails": "Yael.Braun-Pivet@assemblee-nationale.fr",
+    "twitter": "YaelBRAUNPIVET"
+  },
+  {
+    "nom": "Natalia Pouzyreff",
+    "code_circo": "078-05",
+    "emails": "Natalia.Pouzyreff@assemblee-nationale.fr",
+    "twitter": "npouzyreff78"
+  },
+  {
+    "nom": "Nadia Hai",
+    "code_circo": "078-06",
+    "emails": "nadia.hai@assemblee-nationale.fr",
+    "twitter": "NadiaHai78"
+  },
+  {
+    "nom": "Benjamin Lucas",
+    "code_circo": "078-07",
+    "emails": "benjamin.lucas@assemblee-nationale.fr",
+    "twitter": "Benjam1Lucas"
+  },
+  {
+    "nom": "Bruno Millienne",
+    "code_circo": "078-08",
+    "emails": "Bruno.Millienne@assemblee-nationale.fr",
+    "twitter": "BrunoMillienne"
+  },
+  {
+    "nom": "Aurore Bergé",
+    "code_circo": "078-09",
+    "emails": "Aurore.Berge@assemblee-nationale.fr",
+    "twitter": "auroreberge"
+  },
+  {
+    "nom": "William Martinet",
+    "code_circo": "078-10",
+    "emails": "william.martinet@assemblee-nationale.fr",
+    "twitter": "WilliamMartinet"
+  },
+  {
+    "nom": "Karl Olive",
+    "code_circo": "078-11",
+    "emails": "karl.olive@assemblee-nationale.fr",
+    "twitter": "karlolive"
+  }
+]

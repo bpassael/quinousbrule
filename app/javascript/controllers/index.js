@@ -10,6 +10,9 @@ application.register("annual-calc", AnnualCalcController)
 import DisplayResultController from "./display_result_controller"
 application.register("display-result", DisplayResultController)
 
+import FindRepController from "./find_rep_controller"
+application.register("find-rep", FindRepController)
+
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
