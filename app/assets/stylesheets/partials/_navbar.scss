@@ -1,21 +1,11 @@
 .navbar-quinousbrule {
-  justify-content: space-between;
-  background: rgb(34,51,64);
+  justify-content: space-around;
   color: $light-gray;
-  position: sticky;
+  position: static;
   top:0;
   height: 10vh;
-  z-index: 999;
+  // z-index: 999;
 }
-
-.navbar-quinousbrule a {
-  color: $light-gray;
-}
-
-.navbar-quinousbrule a:hover {
-  color: $yellow;
-}
-
 
 .navbar-quinousbrule .navbar-collapse {
   flex-grow: 0;
@@ -31,4 +21,9 @@
   font-family: $headers-font;
   margin-top: 8px;
   text-decoration: none;
+  color: $light-gray;
+}
+
+.navbar-quinousbrule a:hover {
+  color: $yellow;
 }
