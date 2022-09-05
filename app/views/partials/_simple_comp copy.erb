@@ -1,7 +1,7 @@
-<div class="simple-comp-container container overflow-auto" id="simplecomp" data-controller="item-comp">
-  <h2 class="text-center m-5">Comparer mes petits gestes</h2>
-  <div class="row d-flex simple-comp-menu">
-    <div class="col-8 w-50 d-flex"><% @measurements.each do |measurement| %> <div class="d-flex-inline" data-controller="source-flip">
+<div class="simple-comp-container container overflow-auto" id="simplecomp">
+  <div class="row d-flex" data-controller="item-comp">
+    <h2 class="text-center">Comparer mes petits gestes</h2>
+    <div class="col-12 col-lg-6 w-50 d-flex flex-wrap"><% @measurements.each do |measurement| %> <div class="d-flex-inline" data-controller="source-flip">
         <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %>
           <i class="d-none"><%= measurement.kgCO2e_year %> </i>
           <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
@@ -16,9 +16,8 @@
         </div>
 
       </div><% end %> </div>
-  </div>
-  <div class="row d-flex justify-content-center">
-    <div class="col-8 w-50 simple-comp-result">
+
+    <div class="col-12 col-lg-6 w-50 simple-comp-result">
       <p class="text-center my-5 pt-3" data-item-comp-target="result">Cochez une ou plusieurs cases pour estimer vos économies carbone</p>
       </p>
       <div data-controller="find-rep" id="contactrep" class="d-none" data-item-comp-target="rep">
@@ -37,6 +36,5 @@
       <a class="d-none" data-find-rep-target='textlink' href="" target="_blank"> Tweet</a>
       <p class="d-none" data-item-comp-target="tweettext" data-find-rep-target='twitterhandletext'></p>
     </div>
-  </div>
   </div>
 </div>
