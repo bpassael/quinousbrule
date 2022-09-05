@@ -3,15 +3,16 @@ import {formatInput, get_code3_dep, inside} from './utilities.js';
 
 // Connects to data-controller="find-rep"
 export default class extends Controller {
-  static targets = ["input", "represult", "photo", "twitterhandletext", "textlink"]
+  static targets = ["input", "represult", "photo", "twitterhandletext", "twitterlink", "mailheadertext", "mailtolink"]
 
   connect() {
-    console.log("test rep 23")
+    console.log("test rep 25")
   }
 
 
   find(event) {
     event.preventDefault()
+    this.represultTarget.innerText = "Nous recherchons votre député.e ..."
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
     console.log(url)
     fetch(url)
@@ -21,7 +22,6 @@ export default class extends Controller {
           this.represultTarget.innerText = "Nous n'avons pas trouvé, ressaisissez votre adresse"
           return
         }
-        this.represultTarget.innerText = "Nous recherchons votre député.e ..."
         const address = data['features'][0]['properties']['label']
         console.log(address)
         const [lon, lat] = data['features'][0]['geometry']['coordinates']
@@ -55,9 +55,12 @@ export default class extends Controller {
                     const rep_email = rep['emails']
                     const rep_twitter = rep['twitter']
                     this.twitterhandletextTarget.insertAdjacentText("afterbegin",`https://twitter.com/intent/tweet?text=@${rep_twitter} `)
-                    this.textlinkTarget.href = this.twitterhandletextTarget.innerText
-                    this.textlinkTarget.classList.remove("d-none")
-                    this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong>, ${rep_email}, ${rep_twitter} (pour l'adresse : ${address}).`
+                    this.twitterlinkTarget.href = this.twitterhandletextTarget.innerText
+                    this.twitterlinkTarget.classList.remove("d-none")
+                    this.mailheadertextTarget.insertAdjacentText("afterbegin",`mailto:${rep_email}?subject=Que faites vous contre le réchauffement climatique ?&body=Madame la députée, Monsieur le député,%0D%0A%0D%0A `)
+                    this.mailtolinkTarget.href = this.mailheadertextTarget.innerText
+                    this.mailtolinkTarget.classList.remove("d-none")
+                    this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong> (pour l'adresse : ${address}).`
                   }
                 }
               })
