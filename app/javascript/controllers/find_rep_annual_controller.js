@@ -16,7 +16,7 @@ export default class extends Controller {
     event.preventDefault()
     this.represultTarget.innerHTML = `Nous recherchons votre député.e <span class="dots"></span>`
     var dots = new Typed('.dots', {
-      strings: ["....................................................................................."],
+      strings: ["............................................................................................................."],
       typeSpeed: 100
     });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
