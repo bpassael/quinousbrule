@@ -3,7 +3,7 @@ import {formatInput, get_code3_dep, inside} from './utilities.js';
 
 // Connects to data-controller="find-rep"
 export default class extends Controller {
-  static targets = ["input", "result", "photo"]
+  static targets = ["input", "represult", "photo"]
 
   connect() {
   }
@@ -17,10 +17,10 @@ export default class extends Controller {
       .then(response => response.json())
       .then((data) => {
         if (data['features'].length === 0) {
-          this.resultTarget.innerText = "Nous n'avons pas trouvé, ressaisissez votre adresse"
+          this.represultTarget.innerText = "Nous n'avons pas trouvé, ressaisissez votre adresse"
           return
         }
-        this.resultTarget.innerText = "Nous recherchons votre député.e ..."
+        this.represultTarget.innerText = "Nous recherchons votre député.e ..."
         const address = data['features'][0]['properties']['label']
         console.log(address)
         const [lon, lat] = data['features'][0]['geometry']['coordinates']
@@ -51,7 +51,7 @@ export default class extends Controller {
                 for (let rep of data) {
                   if (circo === rep['code_circo']) {
                     const rep_name = rep['nom']
-                    this.resultTarget.innerHTML = `Votre adresse est <strong>${address}</strong>.<br><br>Votre député.e est <strong>${rep_name}</strong>.`
+                    this.represultTarget.innerHTML = `Votre adresse est <strong>${address}</strong>.<br><br>Votre député.e est <strong>${rep_name}</strong>.`
                   }
                 }
               })
