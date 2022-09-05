@@ -1,25 +1,28 @@
 .item-element {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
-  border: solid $green 2px;
   padding: 5px 10px 5px 10px;
   color: $dark-blue;
   width: 200px;
   height: 120px;
 }
 
+.item-element i {
+  color: $yellow;
+}
+
 .item-element:hover {
-  background-color: rgba(124, 165, 67, 0.2);
+  background-color: rgba(244, 185, 69, 0.4);
   color: $dark-blue;
 }
 
 .item-element-selected {
-  border: solid $orange 2px;
   border-radius: 5px;
   padding: 5px 10px 5px 10px;
   color: $light-gray;
   width: 200px;
   height: 120px;
-  background-color: rgba(186, 86, 36, 0.6);
+  background-color: $yellow;
 }
 
 .source {

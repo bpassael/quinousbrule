@@ -1,8 +1,21 @@
-.simple-comp-container {
-  height: auto;
+.simple-comp-menu {
+  width: auto;
+  overflow: scroll;
 }
 
-.simple-comp-result {
-  top: 0;
+.simple-comp-container {
   position: sticky;
 }
+
+.simple-comp-container h2 {
+  color: $yellow;
+}
+// .simple-comp-container {
+//   height: auto;
+//   width: auto;
+// }
+
+// .simple-comp-result {
+//   top: 0;
+//   position: sticky;
+// }
