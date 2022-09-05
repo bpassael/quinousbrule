@@ -15,12 +15,17 @@
           <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
         </div>
 
-      </div><% end %> </div>
+      </div><% end %>
+    </div>
   </div>
   <div class="row d-flex justify-content-center">
     <div class="col-8 w-50 simple-comp-result">
       <p class="text-center my-5 pt-3" data-item-comp-target="result">Cochez une ou plusieurs cases pour estimer vos économies carbone</p>
       </p>
+      <div class="row">
+          <div class="col-6 text-center wrap-plane"><p class="inner"><span class="key-number">13</span> min<br> de jet privé de x</p></div>
+          <div class="col-6 text-center wrap-yacht"><p class="inner"><span class="key-number">40</span> km<br> dans le yacth de x</p></div>
+      </div>
       <div data-controller="find-rep-simple" id="contactrep" class="d-none" data-item-comp-target="rep">
         <form class="row justify-content-center">
         <div class="col-6">
@@ -30,16 +35,22 @@
           <input type="submit" class="btn btn-flat" data-action="click->find-rep-simple#find" value="Rechercher">
         </div>
         </form>
-       <div class="row justify-content-center my-5">
-        <div class="col-6">
-        <p data-find-rep-simple-target="represult"></p>
-       </div>
-      <a class="d-none" data-find-rep-simple-target='twitterlink' href="" target="_blank"> Interpellez sur Twitter</a>
-      <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
-      <a class="d-none" data-find-rep-simple-target='mailtolink' href="" target="_blank"> Interpellez par e-mail</a>
-      <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
-
+        <div class="row justify-content-center my-5">
+          <div class="col-6">
+          <p data-find-rep-simple-target="represult"></p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <a class="d-none" data-find-rep-simple-target='twitterlink' href="" target="_blank"><i class="btn-flat"> Interpeller sur Twitter</i></a>
+              <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
+            </div>
+            <div class="col-6">
+              <a class="d-none" data-find-rep-simple-target='mailtolink' href="" target="_blank"><i class="btn-flat"> Interpeller par e-mail</i></a>
+              <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
   </div>
 </div>

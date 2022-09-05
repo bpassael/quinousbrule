@@ -10,6 +10,63 @@
 .simple-comp-container h2 {
   color: $yellow;
 }
+
+.simple-comp-container a {
+  text-decoration: none;
+}
+
+// .simple-comp-container .fa-solid {
+//   font-size: 70px;
+//   color: $yellow;
+//   opacity: 0.4;
+// }
+// <i class="fa-solid fa-plane-up"></i>
+// <i class="fa-solid fa-ship"></i>
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap-plane {
+  position: relative;
+}
+
+.wrap-plane:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\e22d";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -50px;
+}
+
+.wrap-yacht {
+  position: relative;
+}
+
+.wrap-yacht:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\f21a";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -50px;
+}
+
+.simple-comp-container .key-number {
+  font-size: 42px;
+  font-family: $headers-font;
+  color: $yellow;
+}
 // .simple-comp-container {
 //   height: auto;
 //   width: auto;
