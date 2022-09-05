@@ -3,9 +3,10 @@ import {formatInput, get_code3_dep, inside} from './utilities.js';
 
 // Connects to data-controller="find-rep"
 export default class extends Controller {
-  static targets = ["input", "represult", "photo"]
+  static targets = ["input", "represult", "photo", "twitterhandletext", "textlink"]
 
   connect() {
+    console.log("test rep 23")
   }
 
 
@@ -51,7 +52,12 @@ export default class extends Controller {
                 for (let rep of data) {
                   if (circo === rep['code_circo']) {
                     const rep_name = rep['nom']
-                    this.represultTarget.innerHTML = `Votre adresse est <strong>${address}</strong>.<br><br>Votre député.e est <strong>${rep_name}</strong>.`
+                    const rep_email = rep['emails']
+                    const rep_twitter = rep['twitter']
+                    this.twitterhandletextTarget.insertAdjacentText("afterbegin",`https://twitter.com/intent/tweet?text=@${rep_twitter} `)
+                    this.textlinkTarget.href = this.twitterhandletextTarget.innerText
+                    this.textlinkTarget.classList.remove("d-none")
+                    this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong>, ${rep_email}, ${rep_twitter} (pour l'adresse : ${address}).`
                   }
                 }
               })

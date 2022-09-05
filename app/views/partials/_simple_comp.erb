@@ -14,11 +14,27 @@
         <div class="d-flex justify-content-center">
           <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
         </div>
+
       </div><% end %> </div>
+
     <div class="col-12 col-lg-6 w-50 simple-comp-result">
       <p class="text-center my-5 pt-3" data-item-comp-target="result">Cochez une ou plusieurs cases pour estimer vos économies carbone</p>
       </p>
-      <a class="d-none" data-item-comp-target="tweet" href="" target="_blank"> Tweet</a>
+      <div data-controller="find-rep" id="contactrep" class="d-none" data-item-comp-target="rep">
+        <form class="row justify-content-center">
+        <div class="col-6">
+          <input id="search-input" type="text" class="form-control" data-find-rep-target="input" placeholder="Tapez votre adresse">
+        </div>
+        <div class="col-2">
+          <input type="submit" class="btn btn-flat" data-action="click->find-rep#find" value="Rechercher">
+        </div>
+        </form>
+       <div class="row justify-content-center my-5">
+        <div class="col-6">
+        <p data-find-rep-target="represult"></p>
+       </div>
+      <a class="d-none" data-find-rep-target='textlink' href="" target="_blank"> Tweet</a>
+      <p class="d-none" data-item-comp-target="tweettext" data-find-rep-target='twitterhandletext'></p>
     </div>
   </div>
 </div>
