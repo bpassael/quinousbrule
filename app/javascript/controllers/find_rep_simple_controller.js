@@ -6,13 +6,17 @@ export default class extends Controller {
   static targets = ["input", "represult", "photo", "twitterhandletext", "twitterlink", "mailheadertext", "mailtolink"]
 
   connect() {
-    console.log("test rep 25")
+    console.log("test rep 30")
   }
 
 
   find(event) {
     event.preventDefault()
-    this.represultTarget.innerText = "Nous recherchons votre député.e ..."
+    this.represultTarget.innerHTML = `Nous recherchons votre député.e <span class="dots"></span>`
+    var dots = new Typed('.dots', {
+      strings: ["....................................................................................."],
+      typeSpeed: 100
+    });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
     console.log(url)
     fetch(url)

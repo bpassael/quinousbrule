@@ -14,7 +14,11 @@ export default class extends Controller {
 
   find(event) {
     event.preventDefault()
-    this.represultTarget.innerText = "Nous recherchons votre député.e ..."
+    this.represultTarget.innerHTML = `Nous recherchons votre député.e <span class="dots"></span>`
+    var dots = new Typed('.dots', {
+      strings: ["....................................................................................."],
+      typeSpeed: 100
+    });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
     console.log(url)
     fetch(url)
