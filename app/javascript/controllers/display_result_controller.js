@@ -3,8 +3,9 @@ import {timeConvert} from './utilities.js';
 
 // Connects to data-controller="display-result"
 export default class extends Controller {
-  static targets = ["form", "caroussel", "comparated", "annualfp", "jetmn", "kmyacht", "tweet"]
+  static targets = ["form", "caroussel", "comparated", "annualfp", "jetmn", "kmyacht", "tweet", "rep", "tweettext", "mailtext"]
   connect() {
+    console.log("aaa5")
   }
 
 
@@ -32,6 +33,9 @@ export default class extends Controller {
         this.jetmnTarget.innerText = jetComparaison
         this.kmyachtTarget.innerText = yachtComparaison
         this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mon empreinte CO2 annuelle est de ${annualFootprint} kgCO2e. Cela correspond à la consommation carburant de ${jetComparaison} de vol du jet privé de Vincent Bolloré, ou de ${yachtComparaison} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ? &hashtags=quinousbrule`
+        this.tweettextTarget.innerText = `Mon empreinte annuelle de ${annualFootprint} kgCO2e équivaut à ${jetComparaison} de vol du jet de Vincent Bolloré, ou ${yachtComparaison} kilomètres parcourus par le yacht de Bernard Arnault. Que faites-vous pour lutter contre les responsables du réchauffement climatique ?&hashtags=quinousbrule`
+        this.mailtextTarget.innerText = `Le site quinousbrule.fr m'a permis de réaliser que mon empreinte carbone annuelle de ${annualFootprint} kgCO2e par an équivaut à la consommation carburant de ${jetComparaison} de vol du jet de Vincent Bolloré, ou de ${yachtComparaison} kilomètres parcourus par le yacht de Bernard Arnault.%0D%0A%0D%0AQue faites-vous pour lutter contre les vrais responsables du réchauffement climatique ?%0D%0A%0D%0ACordialement,%0D%0A%0D%0AVOTRE NOM`
+
 
       })
   }

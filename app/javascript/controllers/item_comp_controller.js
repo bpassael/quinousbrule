@@ -4,10 +4,10 @@ import {timeConvert} from './utilities.js';
 
 // Connects to data-controller="item-comp"
 export default class extends Controller {
-  static targets = ["item", "source", "tweettext", "result", "rep"]
+  static targets = ["item", "source", "tweettext", "result", "rep", "mailtext"]
 
   connect() {
-    console.log("test3")
+    console.log("test8")
   }
 
 
@@ -43,7 +43,8 @@ export default class extends Controller {
     if (this.totalCarb != 0) {
       this.resultTarget.insertAdjacentHTML("beforeend", `<br><br><div class="source">Source : informations récoltées par <a href="https://twitter.com/i_fly_Bernard" target="_blank">I Fly Bernard</a> et <a href="https://twitter.com/YachtCO2tracker" target="_blank">YachtCO2tracker</a> à partir de données provenant de <a href="https://www.eia.gov/environment/emissions/co2_vol_mass.php" target="_blank">l'U.S Energy Information Administration</a> et des <a href="https://www.mtu-solutions.com/content/dam/mtu/products/yacht/main-propulsion/mtu-series-4000/3232791_Marine_spec_16V4000M73-L_1B.pdf/_jcr_content/renditions/original./3232791_Marine_spec_16V4000M73-L_1B.pdf" target="_blank">données constructeur du navire</a></div>`)
       this.repTarget.classList.remove("d-none")
-      this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte CO2 de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
+      this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
+      this.mailtextTarget.innerText = `Le site quinousbrule.fr m'a permis de réaliser que mon empreinte carbone annuelle de ${Number.parseInt(this.totalCarb)} kgCO2e par an équivaut à la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault.%0D%0A%0D%0AQue faites-vous pour lutter contre les vrais responsables du réchauffement climatique ?%0D%0A%0D%0ACordialement,%0D%0A%0D%0AVOTRE NOM`
     } else {
       this.repTarget.classList.add("d-none")
     }

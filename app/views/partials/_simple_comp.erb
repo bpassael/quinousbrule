@@ -20,21 +20,24 @@
     <div class="col-12 col-lg-6 w-50 simple-comp-result">
       <p class="text-center my-5 pt-3" data-item-comp-target="result">Cochez une ou plusieurs cases pour estimer vos économies carbone</p>
       </p>
-      <div data-controller="find-rep" id="contactrep" class="d-none" data-item-comp-target="rep">
+      <div data-controller="find-rep-simple" id="contactrep" class="d-none" data-item-comp-target="rep">
         <form class="row justify-content-center">
         <div class="col-6">
-          <input id="search-input" type="text" class="form-control" data-find-rep-target="input" placeholder="Tapez votre adresse">
+          <input id="search-input" type="text" class="form-control" data-find-rep-simple-target="input" placeholder="Tapez votre adresse">
         </div>
         <div class="col-2">
-          <input type="submit" class="btn btn-flat" data-action="click->find-rep#find" value="Rechercher">
+          <input type="submit" class="btn btn-flat" data-action="click->find-rep-simple#find" value="Rechercher">
         </div>
         </form>
        <div class="row justify-content-center my-5">
         <div class="col-6">
-        <p data-find-rep-target="represult"></p>
+        <p data-find-rep-simple-target="represult"></p>
        </div>
-      <a class="d-none" data-find-rep-target='textlink' href="" target="_blank"> Tweet</a>
-      <p class="d-none" data-item-comp-target="tweettext" data-find-rep-target='twitterhandletext'></p>
+      <a class="d-none" data-find-rep-simple-target='twitterlink' href="" target="_blank"> Interpellez sur Twitter</a>
+      <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
+      <a class="d-none" data-find-rep-simple-target='mailtolink' href="" target="_blank"> Interpellez par e-mail</a>
+      <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
+
     </div>
   </div>
 </div>
