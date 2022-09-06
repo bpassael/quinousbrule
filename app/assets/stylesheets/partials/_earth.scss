@@ -1,8 +1,9 @@
 .earth {
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
-  ),  url('earth.jpg');
+  // background-image: linear-gradient(
+  //   rgba(0, 0, 0, 0.5),
+  //   rgba(0, 0, 0, 0.5)
+  // ),  url('earth.jpg');
+  background-color: $yellow;
   background-size: cover;
   height : 90vh;
   position: relative;
