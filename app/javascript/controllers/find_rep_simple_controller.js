@@ -6,7 +6,7 @@ export default class extends Controller {
   static targets = ["input", "represult", "photo", "twitterhandletext", "twitterlink", "mailheadertext", "mailtolink"]
 
   connect() {
-    console.log("test rep 33")
+    console.log("test rep 34")
   }
 
 
@@ -32,7 +32,7 @@ export default class extends Controller {
         console.log([lon, lat])
         const dpt = get_code3_dep(data['features'][0]['properties']["context"].split(',')[0])
         console.log("before fetch")
-        fetch('https://justcors.com/tl_a6acb44/https://unicornvape.com/circopols.json')
+        fetch('https://unicornvape.com/circopols.json')
           .then(response => response.json())
           .then((data) => {
             console.log("just after fetch")
