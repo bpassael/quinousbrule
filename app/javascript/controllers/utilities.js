@@ -1,7 +1,7 @@
 export function timeConvert(n) {
   var num = n;
   if (num < 10) {
-    return num.toFixed(2) + " minutes"
+    return num.toFixed(0) + " minutes"
   }
   var hours = (num / 60);
   var rhours = Math.floor(hours);

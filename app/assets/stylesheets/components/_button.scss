@@ -18,12 +18,41 @@
   border-radius: 5px;
   background: $dark-blue;
   transition: 0.3s ease-in-out;
+  font-family: 'Suez One', serif;
 }
 
 .btn-flat:hover {
   background: $yellow;
   color: $light-gray;
 }
+
+
+.btn-caroussel-prev {
+  background-color: $dark-blue;
+  padding: 8px 20px;
+  color: $light-gray;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  text-align: center;
+  line-height: 1rem;
+  font-family: 'Suez One', serif
+}
+
+
+
+.btn-caroussel-next {
+  background-color: $yellow;
+  padding: 8px 20px;
+  color: $light-gray;
+  border-radius: 5px;
+  height: 35px;
+  border: none;
+  text-align: center;
+  line-height: 1rem;
+  font-family: 'Suez One', serif
+}
+
 
 // .btn-gradient {
 //   color: white;
