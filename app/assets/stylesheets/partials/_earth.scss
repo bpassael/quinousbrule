@@ -1,0 +1,19 @@
+.earth {
+  background-image: url('earth.jpg');
+  height : 90vh;
+  position: relative
+}
+
+
+
+.whitecuttop-earth {
+  bottom: 0;
+  position: absolute
+}
+
+
+.earth h1 {
+  color: $light-gray;
+  text-align: center;
+  vertical-align: middle;
+}

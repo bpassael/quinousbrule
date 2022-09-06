@@ -107,7 +107,7 @@ m7 = Measurement.new(
   kgCO2e_year: 6500,
   eq_minutes_flight_jet_bollore: 83.33,
   eq_km_yacht_arnault: 28.26,
-  additional_info: "Sur une base 4 vols domestiques. 2 vols moyen courrier et 2 vols long courrier dans l'année",
+  additional_info: "Sur une base 4 vols domestiques, 2 vols moyen courrier et 2 vols long courrier dans l'année",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
