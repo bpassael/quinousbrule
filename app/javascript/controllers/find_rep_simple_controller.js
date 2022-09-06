@@ -31,11 +31,14 @@ export default class extends Controller {
         const [lon, lat] = data['features'][0]['geometry']['coordinates']
         console.log([lon, lat])
         const dpt = get_code3_dep(data['features'][0]['properties']["context"].split(',')[0])
+        console.log("before fetch")
         fetch('./circopols.json')
           .then(response => response.json())
           .then((data) => {
+            console.log("just after fetch")
             const possible_polys = []
             for (let poly of data["features"]) {
+              console.log("iterating over polys in file")
               if (dpt === poly['properties']['REF'].substring(0, 3)) {
                 console.log(poly['properties']['REF'])
                 possible_polys.push(poly)
