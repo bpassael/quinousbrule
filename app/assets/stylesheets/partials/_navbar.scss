@@ -1,15 +1,16 @@
 .navbar-quinousbrule {
-  justify-content: space-around;
-  color: $light-gray;
-  position: static;
-  top:0;
-  height: 10vh;
-  // z-index: 999;
+  // display: flex;
+  // justify-content: space-around;
+  // color: $light-gray;
+  //position: static;
+  // top:0;
+  // height: 10vh;
+  z-index: 999;
 }
 
-.navbar-quinousbrule .navbar-collapse {
-  flex-grow: 0;
-}
+// .navbar-quinousbrule .navbar-collapse {
+//   flex-grow: 0;
+// }
 
 .navbar-quinousbrule .navbar-brand img {
   width:139px;
@@ -17,9 +18,9 @@
   margin-bottom: 8px;
 }
 
+
 .navbar-quinousbrule a {
   font-family: $headers-font;
-  margin-top: 8px;
   text-decoration: none;
   color: $light-gray;
 }

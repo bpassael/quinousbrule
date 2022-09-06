@@ -1,16 +1,25 @@
 <div class="banner align-content-flex-start">
-  <div class="navbar navbar-expand-sm navbar-quinousbrule">
-  <%# navbar-light %>
-    <div class="container m-5 p-5">
-      <%= link_to "PETITS GESTES", root_path(anchor: :simplecomp) %>
-      <%= link_to "MON EMPREINTE ANNUELLE", root_path(anchor: :calculator) %>
-      <%= link_to "#", class: "navbar-brand" do %>
-      <%= image_tag "logo_navbar.png" %>
-      <% end %>
-      <%= link_to "COMMUNAUTÉ", root_path(anchor: :community) %>
-      <%= link_to "À PROPOS", root_path(anchor: :about) %>
+
+
+<nav class="navbar navbar-expand-lg navbar-quinousbrule">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav container d-flex justify-content-around align-items-center">
+        <a class="nav-link" aria-current="page" href="#simplecomp">PETITS GESTES</a>
+        <a class="nav-link" href="#calculator">MON EMPREINTE</a>
+        <%= link_to "#", class: "navbar-brand" do %>
+          <%= image_tag "logo_navbar.png" %>
+         <% end %>
+        <a class="nav-link" href="#community">COMMUNAUTÉ</a>
+        <a class="nav-link" href="#about">À PROPOS</a>
+      </div>
     </div>
   </div>
+</nav>
+
   <div class="container mx-5 mt-5 p-5">
     <div class="row">
       <div class="col-8">
