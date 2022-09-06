@@ -15,7 +15,7 @@
 .banner p {
   color: $light-gray;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  max-width: 55ch;
+  max-width: 65ch;
 }
 
 .banner .title {
@@ -26,4 +26,13 @@
 .banner i {
   color: $yellow;
   font-size: 40px;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+
+.whitecuttop {
+  height: 50px;
 }
