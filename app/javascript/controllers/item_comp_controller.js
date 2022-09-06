@@ -30,7 +30,7 @@ export default class extends Controller {
       this.fullresultTarget.classList.remove("d-none")
       this.resultTarget.innerHTML = `Félicitations ! Grâce vos efforts, votre <strong>empreinte carbone</strong> diminue de <span class="key-number">${Number.parseInt(this.totalCarb)}</span>kgCO2e par an.`
       // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br><div class="source">Source : informations récoltées par <a href="https://twitter.com/i_fly_Bernard" target="_blank">I Fly Bernard</a> et <a href="https://twitter.com/YachtCO2tracker" target="_blank">YachtCO2tracker</a> à partir de données provenant de <a href="https://www.eia.gov/environment/emissions/co2_vol_mass.php" target="_blank">l'U.S Energy Information Administration</a> et des <a href="https://www.mtu-solutions.com/content/dam/mtu/products/yacht/main-propulsion/mtu-series-4000/3232791_Marine_spec_16V4000M73-L_1B.pdf/_jcr_content/renditions/original./3232791_Marine_spec_16V4000M73-L_1B.pdf" target="_blank">données constructeur du navire</a></div>`)
-      this.actionTarget.innerHTML = "Envie d'agir ?<br><a data-item-comp-target='tweet' href='' target='_blank'>Partagez votre résultat sur Twitter</a> ou recherchez votre député.e pour l'interpeller :"
+      this.actionTarget.innerHTML = "<strong>Envie d'agir ?</strong><br><a data-item-comp-target='tweet' href='' target='_blank'>Partagez votre résultat sur Twitter</a> ou recherchez votre député.e pour l'interpeller :"
       this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
       this.repTarget.classList.remove("d-none")
       this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
@@ -41,7 +41,7 @@ export default class extends Controller {
         this.resultyachtTarget.innerText = "20 kilomètres"
           // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(4500/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>60 minutes</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>20 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
         } else {
-        this.resultexplainTarget.innerHTML = `Malheureusement, c'est <strong>l'équivalent de la consommation de carburant</strong> de :`
+        this.resultexplainTarget.innerHTML = `Malheureusement, c'est <strong>l'équivalent de <br>la consommation de carburant</strong> de :`
         this.resultjetTarget.innerText = `${timeConvert(this.totalJet.toFixed(0))}`
         this.resultyachtTarget.innerText = `${this.totalYacht.toFixed(0)} kilomètres`
         }
