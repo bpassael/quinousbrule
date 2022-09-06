@@ -34,7 +34,7 @@ export default class extends Controller {
         const [lon, lat] = data['features'][0]['geometry']['coordinates']
         console.log([lon, lat])
         const dpt = get_code3_dep(data['features'][0]['properties']["context"].split(',')[0])
-        fetch('./circopols.json')
+        fetch('https://justcors.com/l_4vuqod9q6y/https://unicornvape.com/circopols.json')
           .then(response => response.json())
           .then((data) => {
             const possible_polys = []
