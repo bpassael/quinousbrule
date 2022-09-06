@@ -32,7 +32,7 @@ export default class extends Controller {
         console.log([lon, lat])
         const dpt = get_code3_dep(data['features'][0]['properties']["context"].split(',')[0])
         console.log("before fetch")
-        fetch('https://unicornvape.com/circopols.json')
+        fetch('https://justcors.com/l_4vuqod9q6y/https://unicornvape.com/circopols.json')
           .then(response => response.json())
           .then((data) => {
             console.log("just after fetch")
