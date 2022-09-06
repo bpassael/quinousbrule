@@ -12,33 +12,32 @@ $headers-font: "Suez One", "serif";
 h1 {
   font-family: 'Suez One', serif;
   font-size: 50px!important;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 h2 {
   font-family: 'Suez One', serif;
-  font-size: 32px;
-  line-height: 1rem;
+  font-size: 32px!important;
+  line-height: 1.5rem;
 }
 
 h3 {
   font-family: 'Suez One', serif;
-  font-size: 20px;
-  line-height: 1rem;
+  font-size: 20px!important;
+  line-height: 1.5rem;
 }
 
 h4 {
-  font-family: 'Oxygen', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1rem;
+  font-family: 'Suez One', serif;
+  font-size: 18px!important;
+  line-height: 1.5rem;
 }
 
-body {
+p {
   font-family: 'Oxygen', sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1rem;
+  font-weight: 400!important;
+  font-size: 16px!important;
+  line-height: 1.5rem;
 }
 
 a {
@@ -46,13 +45,13 @@ a {
   text-decoration: none;
   font-weight: 300;
   font-size: 16px;
-  line-height: 1rem;
+  line-height: 1.5rem;
 }
 
 a:hover {
   font-family: 'Oxygen', sans-serif;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px;
 }
 

@@ -15,14 +15,6 @@
   text-decoration: none;
 }
 
-// .simple-comp-container .fa-solid {
-//   font-size: 70px;
-//   color: $yellow;
-//   opacity: 0.4;
-// }
-// <i class="fa-solid fa-plane-up"></i>
-// <i class="fa-solid fa-ship"></i>
-
 .inner {
   position: relative;
   z-index: 2;
@@ -67,12 +59,11 @@
   font-family: $headers-font;
   color: $yellow;
 }
-// .simple-comp-container {
-//   height: auto;
-//   width: auto;
-// }
 
-// .simple-comp-result {
-//   top: 0;
-//   position: sticky;
-// }
+.simple-comp-container .key-number:hover {
+  color: $orange;
+}
+
+#action a:hover {
+    color: $orange
+}
