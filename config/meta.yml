@@ -1,0 +1,5 @@
+meta_product_name: "Qui nous brûle ?"
+meta_title: "Qui nous brûle ? - Identifier les vrais responsables du réchauffement climatique"
+meta_description: "Comparez l'impact des petits gestes du quotidien et celui de votre empreinte carbone annuelle à l'impact des comportements des plus riches. Interpellez votre député pour réclamer une action politique concrète."
+meta_image: "ogimage.jpg" # should exist in `app/assets/images/`
+twitter_account: "@quinousbrule"   # required for Twitter Cards
