@@ -65,5 +65,10 @@
 }
 
 #action a:hover {
-    color: $orange
+    color: $orange;
+    text-decoration: underline;
+}
+
+p .thin {
+  font-weight: 300;
 }

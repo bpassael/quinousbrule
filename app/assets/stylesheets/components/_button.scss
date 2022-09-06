@@ -26,6 +26,20 @@
   color: $light-gray;
 }
 
+.btn-message {
+  color: $light-gray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: $orange;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+}
+
+.btn-message:hover {
+  background: $dark-blue;
+  color: $light-gray;
+  font-weight: 700;
+}
 
 .btn-caroussel-prev {
   background-color: $dark-blue;
