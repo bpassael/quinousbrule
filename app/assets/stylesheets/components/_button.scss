@@ -53,10 +53,12 @@
   font-family: 'Suez One', serif
 }
 
-
+.btn-caroussel-prev:hover {
+  background-color: rgba(35, 61, 77, 0.9);
+}
 
 .btn-caroussel-next {
-  background-color: $yellow;
+  background-color: $orange;
   padding: 8px 20px;
   color: $light-gray;
   border-radius: 5px;
@@ -65,6 +67,10 @@
   text-align: center;
   line-height: 1rem;
   font-family: 'Suez One', serif
+}
+
+.btn-caroussel-next:hover {
+  background-color: rgba(186, 86, 36, 0.9);
 }
 
 

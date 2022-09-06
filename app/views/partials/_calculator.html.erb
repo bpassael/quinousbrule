@@ -1,10 +1,12 @@
-<div class="container my-5 rounded calculator-container overflow-auto" id="calculator" data-controller="display-result">
-  <h2 class="text-center mt-5">Calculer mon empreinte carbone annuelle </h2>
-  <div class="row justify-content-center">
+<div class="calculator-container earth" id="calculator" data-controller="display-result">
+  <div class="whitecutbottom-earth"><%= image_tag "whitecutbottom.png" %></div>
+  <div class="container p-5">
+  <h2 class="text-center">Calculer mon empreinte carbone annuelle </h2>
+  <div class="row justify-content-center inner-form">
     <div class="col-12 col-lg-9">
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-interval="false" data-display-result-target="caroussel">
-        <div class="carousel-inner my-4" data-controller="annual-calc"><%= simple_form_for @footprint,  html: { data: {display_result_target: "form", action: "submit->display-result#display"} }  do |f| %> <div class="carousel-item active justify-center-center">
-            <h5 class="my-5">Transports </h5>
+        <div class="carousel-inner" data-controller="annual-calc"><%= simple_form_for @footprint,  html: { data: {display_result_target: "form", action: "submit->display-result#display"} }  do |f| %> <div class="carousel-item active justify-center-center">
+            <h4 class="mb-5">Transports </h4>
             <div class="caroussel-fixed overflow-auto"><%= f.input :input_transport_plane,
                    input_html: {data: {action: "change->annual-calc#displayplane"}},
                    label: "Prenez-vous l'avion ?" %> <div class="row g-3 d-none" data-annual-calc-target="plane">
@@ -32,7 +34,7 @@
             </div>
           </div>
           <div class="carousel-item justify-center-center">
-            <h5>Déplacements </h5>
+            <h4>Déplacements </h4>
             <div class="caroussel-fixed overflow-auto"><%= f.input :input_transport_two_wheels,
                                        input_html: {data: {action: "change->annual-calc#displaymoto"}},
                                        label: "Avez-vous un scooter ou une moto ?",
@@ -61,7 +63,7 @@
             </div>
           </div>
           <div class="carousel-item justify-center-center">
-            <h5>Je me loge </h5>
+            <h4>Je me loge </h4>
             <div class="caroussel-fixed overflow-auto">
               <p>Parlez nous de votre logement </p><%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"], selected: "Maison" %> <div class="row g-3">
                 <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?", input_html: { min: '0'} %> </div>
@@ -80,7 +82,7 @@
             </div>
           </div>
           <div class="carousel-item justify-center-center">
-            <h5>Je consomme </h5>
+            <h4>Je consomme </h4>
             <div class="caroussel-fixed overflow-auto">
               <div class="row g-2">
                 <div class="col"><%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"], selected: "Alimentation mixte" %> </div>
@@ -131,4 +133,6 @@
       </div>
     </div>
   </div>
+  </div>
+  <div class="whitecuttop-earth"><%= image_tag "whitecuttop.png" %></div>
 </div>
