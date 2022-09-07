@@ -24,7 +24,7 @@ m1 = Measurement.new(
   kgCO2e_year: 345.7,
   eq_minutes_flight_jet_bollore: 4.43,
   eq_km_yacht_arnault: 1.50,
-  additional_info: "Achetée neuve",
+  additional_info: "Sur la base d'un véhicule électrique acheté neuf",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
@@ -37,7 +37,7 @@ m2 = Measurement.new(
   kgCO2e_year: 1477.88,
   eq_minutes_flight_jet_bollore: 18.95,
   eq_km_yacht_arnault: 6.43,
-  additional_info: "À la place d'une chaudière gaz",
+  additional_info: "En remplacement d'une chaudière à gaz",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
@@ -102,7 +102,7 @@ m6 = Measurement.new(
   kgCO2e_year: 3200,
   eq_minutes_flight_jet_bollore: 41.03,
   eq_km_yacht_arnault: 13.91,
-  additional_info: "Sur une base de 2 vols domestique, 1 vol moyen courrier et 1 vol long courrier dans l'année",
+  additional_info: "Pour 2 vols domestiques, 1 moyen courrier et 1 long courrier dans l'année",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
@@ -111,11 +111,11 @@ m6.save!
 
 
 m7 = Measurement.new(
-  title: "✈️ J'arrête de prendre l'avion (voyageur régulier)",
+  title: "🛫 J'arrête de prendre l'avion (voyageur régulier)",
   kgCO2e_year: 6500,
   eq_minutes_flight_jet_bollore: 83.33,
   eq_km_yacht_arnault: 28.26,
-  additional_info: "Sur une base 4 vols domestiques, 2 vols moyen courrier et 2 vols long courrier dans l'année",
+  additional_info: "Pour 4 vols domestiques, 2 moyens courriers et 2 longs courriers dans l'année",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
@@ -129,7 +129,7 @@ m8 = Measurement.new(
   kgCO2e_year: 761.40,
   eq_minutes_flight_jet_bollore: 9.76,
   eq_km_yacht_arnault: 3.31,
-  additional_info: "Sur la base d'un trajet domicile / travail en voiture de 10 kilomètres, 5 jours dans la semaine",
+  additional_info: "Sur la base d'un trajet domicile-travail en voiture de 10 km, 5j/semaine",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
@@ -141,7 +141,7 @@ m9 = Measurement.new(
   kgCO2e_year: 1192,
   eq_minutes_flight_jet_bollore: 15.28,
   eq_km_yacht_arnault: 5.18,
-  additional_info: "Sur la base de 4 A/R Paris/Marseille dans l'année",
+  additional_info: "Sur la base de 4 A/R Paris-Marseille dans l'année",
   source_link: "nosgestesclimat.fr",
   source_name: "ADEME"
 )
