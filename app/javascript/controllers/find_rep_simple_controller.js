@@ -6,7 +6,6 @@ export default class extends Controller {
   static targets = ["input", "represult", "photo", "twitterhandletext", "twitterlink", "mailheadertext", "mailtolink"]
 
   connect() {
-    console.log("test rep 38")
   }
 
 
@@ -23,7 +22,6 @@ export default class extends Controller {
       typeSpeed: 100
     });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
-    console.log(url)
     fetch(url)
       .then(response => response.json())
       .then((data) => {
@@ -32,30 +30,20 @@ export default class extends Controller {
           return
         }
         const address = data['features'][0]['properties']['label']
-        console.log(address)
         const [lon, lat] = data['features'][0]['geometry']['coordinates']
-        console.log([lon, lat])
         const dpt = get_code3_dep(data['features'][0]['properties']["context"].split(',')[0])
-        console.log("before fetch")
         fetch('https://justcors.com/l_4vuqod9q6y/https://unicornvape.com/circopols.json')
           .then(response => response.json())
           .then((data) => {
-            console.log("just after fetch")
             const possible_polys = []
             for (let poly of data["features"]) {
-              console.log("iterating over polys in file")
               if (dpt === poly['properties']['REF'].substring(0, 3)) {
-                console.log(poly['properties']['REF'])
                 possible_polys.push(poly)
               }
             }
-            console.log("POSSIBLE POLYS")
-            console.log(possible_polys)
             for (let poly of possible_polys) {
               if (inside([lon, lat], poly['geometry']['coordinates'][0])) {
-                console.log("THIS IS THE CIRCO")
                 var circo = poly['properties']['REF']
-                console.log(circo)
               }
             }
             fetch('./deputes.json')

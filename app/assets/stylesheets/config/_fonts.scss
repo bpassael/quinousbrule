@@ -8,10 +8,17 @@ $headers-font: "Suez One", "serif";
 // font-family: 'Oxygen', sans-serif;
 // font-family: 'Suez One', serif;
 
+@font-face {
+  font-family: 'Antique Olive Compact';
+  src: url('AQCT.ttf');
+}
+
+
+
 
 h1 {
   font-family: 'Suez One', serif;
-  font-size: 50px!important;
+  font-size: 56px!important;
   line-height: 1.5rem;
 }
 

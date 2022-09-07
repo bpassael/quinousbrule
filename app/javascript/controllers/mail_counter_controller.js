@@ -8,18 +8,13 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("MAIL CONNECTED")
   }
 
   increaseMailCounter() {
     const url = document.location.origin + `/mail_counters/${this.idValue}`
-    console.log(url)
     fetch(url, {
       method: "PATCH",
       headers: {"Accept": "text/plain"},
     })
   }
 }
-
-
-// bind to all mail buttons
