@@ -7,7 +7,7 @@ export default class extends Controller {
   static targets = ["item", "source", "tweettext", "result", "rep", "mailtext", "tweet", "resultjet", "resultyacht", "fullresult", "resultexplain", "action"]
 
   connect() {
-    console.log("test38")
+    console.log("test40")
   }
 
 
@@ -36,7 +36,7 @@ export default class extends Controller {
       this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
       this.mailtextTarget.innerText = `Le site quinousbrule.fr m'a permis de réaliser que mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault.%0D%0A%0D%0AQue faites-vous pour lutter contre les vrais responsables du réchauffement climatique ?%0D%0A%0D%0ACordialement,%0D%0A%0D%0AVOTRE NOM`
       if (this.totalJet < 1 || this.totalYacht < 2) {
-        this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <strong><span class="key-number">${Number.parseFloat(4500/this.totalCarb).toFixed(0)}</span> années</strong> pour économiser la <strong>consommation de carburant</strong> de :`
+        this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <strong><span class="key-number">${Math.round(Number.parseFloat(4500/this.totalCarb))}</span> années</strong> pour économiser la <strong>consommation de carburant</strong> de :`
         this.resultjetTarget.innerText = "1 heure"
         this.resultyachtTarget.innerText = "20 kilomètres"
           // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(4500/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>60 minutes</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>20 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
