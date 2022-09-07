@@ -3,7 +3,9 @@
   <h3 class="text-center mb-5">Cochez une ou plusieurs cases pour calculer l'impact de vos actions pour le climat.</h3>
   <div class="simple-comp-menu">
   <div class="row d-flex">
-    <div class="col-10 col-lg-8 w-50 d-flex"><% @measurements.slice(0, @measurements.length/2).each do |measurement| %> <div class="d-flex-inline" data-controller="source-flip">
+    <div class="col-10 col-lg-8 w-50 d-flex">
+      <% @measurements.slice(0, @measurements.length/2).each do |measurement| %>
+      <div class="d-flex-inline m-2" data-controller="source-flip">
         <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %>
           <i class="d-none"><%= measurement.kgCO2e_year %> </i>
           <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
@@ -21,7 +23,9 @@
     </div>
   </div>
   <div class="row d-flex">
-    <div class="col-10 col-lg-8 w-50 d-flex"><% @measurements.slice(@measurements.length/2, @measurements.length).each do |measurement| %> <div class="d-flex-inline" data-controller="source-flip">
+    <div class="col-10 col-lg-8 w-50 d-flex">
+      <% @measurements.slice(@measurements.length/2, @measurements.length).each do |measurement| %>
+      <div class="d-flex-inline m-2" data-controller="source-flip">
         <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %>
           <i class="d-none"><%= measurement.kgCO2e_year %> </i>
           <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
@@ -30,7 +34,7 @@
         <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
           <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
         </p>
-        <p class="text-center m-1 item-element d-none thin" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
+        <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
         <div class="d-flex justify-content-center">
           <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
         </div>

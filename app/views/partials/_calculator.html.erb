@@ -1,6 +1,6 @@
 <div class="calculator-container earth" id="calculator" data-controller="display-result">
   <div class="whitecutbottom-earth"><%= image_tag "whitecutbottom.png" %></div>
-      <div class="container p-5">
+      <div class="container py-5">
         <h2 class="text-center">Calculer mon empreinte carbone annuelle </h2>
         <div class="row justify-content-center inner-form">
           <div class="col-12 col-lg-9">
@@ -39,9 +39,9 @@
                                             input_html: {data: {action: "change->annual-calc#displaymoto"}},
                                             label: "Avez-vous un scooter ou une moto ?",
                                             collection: ["Rien", "Scooter ou moto < 250", "Moto > 250", "Les deux"],
-                                            selected: "Scooter ou moto < 250" %> <p data-annual-calc-target="textmoto">Combien de km parcourez-vous chaque année ? </p>
+                                            selected: "Rien" %> <p data-annual-calc-target="textmoto" class="d-none">Combien de km parcourez-vous chaque année ? </p>
                     <div class="row g-2">
-                      <div class="col" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250", input_html: { min: '0'} %> </div>
+                      <div class="col d-none" data-annual-calc-target="scooter"><%= f.input :input_transport_scooter_km, label: "En scooter ou moto < 250", input_html: { min: '0'} %> </div>
                       <div class="col d-none" data-annual-calc-target="moto"><%= f.input :input_transport_moto_km, label: "En moto > 250", input_html: { min: '0'} %> </div>
                     </div><%= f.input :input_transport_train,
                                                   input_html: {data: {action: "change->annual-calc#displaytrain"}},
@@ -105,10 +105,10 @@
                 </div>
               </div>
             </div>
-          <div class="row d-flex justify-content-center mt-5">
+          <div class="row d-flex justify-content-center">
           <div class="col-12 col-lg-12">
             <div class ="row d-none" data-display-result-target="comparated">
-              <h4 class="text-center"> Votre empreinte carbone annuelle est de <strong data-display-result-target="annualfp" class="key-number"></strong>kgCO2e</h4>
+              <h4 class="text-center"> Votre empreinte carbone annuelle est de <strong data-display-result-target="annualfp" class="key-main-number"></strong>kgCO2e</h4>
                 <div class="col-12 col-lg-6">
                   <p class="text-center m-5"> Cela correspond à la consommation en carburant de :</p>
                     <div class="d-flex">
