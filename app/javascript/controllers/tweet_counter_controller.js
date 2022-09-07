@@ -8,18 +8,13 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("TWEET CONNECTED")
   }
 
   increaseTweetCounter() {
     const url = document.location.origin + `/tweet_counters/${this.idValue}`
-    console.log(url)
     fetch(url, {
       method: "PATCH",
       headers: {"Accept": "text/plain"},
     })
   }
 }
-
-
-// bind to all tweet buttons
