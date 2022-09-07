@@ -14,9 +14,9 @@ export default class extends Controller {
 
   find(event) {
     event.preventDefault()
-    this.represultTarget.innerHTML = `Nous recherchons votre député.e <span class="dots"></span>`
+    this.represultTarget.innerHTML = `<span class="thin">Nous recherchons votre député.e <span class="dots"></span></span>`
     var dots = new Typed('.dots', {
-      strings: ["............................................................................................................."],
+      strings: ["..............................................................."],
       typeSpeed: 100
     });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
@@ -67,7 +67,7 @@ export default class extends Controller {
                     this.mailheadertextTarget.insertAdjacentText("afterbegin",`mailto:${rep_email}?subject=Que faites vous contre le réchauffement climatique ?&body=Madame la députée, Monsieur le député,%0D%0A%0D%0A `)
                     this.mailtolinkTarget.href = this.mailheadertextTarget.innerText
                     this.mailtolinkTarget.classList.remove("d-none")
-                    this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong> (pour l'adresse : ${address}).`
+                    this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong><br><em>(pour l'adresse : ${address})</em>.`
                   }
                 }
               })

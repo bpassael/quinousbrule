@@ -1,0 +1,59 @@
+
+.inner {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap-plane {
+  position: relative;
+}
+
+.wrap-plane:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\e22d";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -50px;
+}
+
+.wrap-yacht {
+  position: relative;
+}
+
+.wrap-yacht:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\f21a";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -50px;
+}
+
+.key-number {
+  font-size: 42px;
+  font-family: $headers-font;
+  color: $yellow;
+}
+
+.key-number:hover {
+  color: $orange;
+}
+
+#action a:hover {
+    color: $orange;
+    text-decoration: underline;
+}
+
+
+p .thin {
+  font-weight: 300;
+}

@@ -17,6 +17,7 @@
   padding: 8px 20px;
   border-radius: 5px;
   background: $dark-blue;
+  border: 0;
   transition: 0.3s ease-in-out;
   font-family: 'Suez One', serif;
 }
@@ -25,6 +26,22 @@
   background: $yellow;
   color: $light-gray;
 }
+
+.btn-flat-calc {
+  color: $light-gray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: $yellow;
+  border: 0;
+  transition: 0.3s ease-in-out;
+  font-family: 'Suez One', serif;
+}
+
+.btn-flat-calc:hover {
+  background: $orange;
+  color: $light-gray;
+}
+
 
 .btn-message {
   color: $light-gray;
@@ -40,6 +57,28 @@
   color: $light-gray;
   font-weight: 700;
 }
+
+.btn-message-calc {
+  color: $light-gray;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background: $orange;
+  transition: 0.3s ease-in-out;
+  font-weight: 300;
+}
+
+.btn-message-calc:hover {
+  background: $yellow;
+  color: $light-gray;
+  font-weight: 700;
+}
+
+.btn-message:hover {
+  background: $dark-blue;
+  color: $light-gray;
+  font-weight: 700;
+}
+
 
 .btn-caroussel-prev {
   background-color: $yellow;
