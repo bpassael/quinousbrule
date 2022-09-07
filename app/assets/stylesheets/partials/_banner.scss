@@ -39,6 +39,8 @@
   font-weight: bold;
 }
 
+
+
 .banner p {
   color: $light-gray;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
@@ -49,6 +51,18 @@
   color: $yellow;
   font-size: 60px;
 }
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .banner .title {
+    font-size: 50px;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+}
+
 
 .banner i {
   color: $yellow;
