@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import {formatInput, get_code3_dep, inside} from './utilities.js';
+import {isValidAddressInput, formatInput, get_code3_dep, inside} from './utilities.js';
 
 
 // Connects to data-controller="find-rep-annual"
@@ -14,6 +14,11 @@ export default class extends Controller {
 
   find(event) {
     event.preventDefault()
+    if (isValidAddressInput(this.inputTarget.value) === "") {
+      this.represultTarget.innerText = "Nous n'avons pas trouvé, ressaisissez votre adresse"
+      this.inputTarget.value = ""
+      return
+    }
     this.represultTarget.innerHTML = `Nous recherchons votre député.e <span class="dots"></span>`
     var dots = new Typed('.dots', {
       strings: ["............................................................................................................."],
