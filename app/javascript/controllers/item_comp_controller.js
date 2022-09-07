@@ -7,7 +7,6 @@ export default class extends Controller {
   static targets = ["item", "source", "tweettext", "result", "rep", "mailtext", "tweet", "resultjet", "resultyacht", "fullresult", "resultexplain", "action"]
 
   connect() {
-    console.log("test41")
   }
 
 
@@ -19,7 +18,6 @@ export default class extends Controller {
     event.currentTarget.classList.toggle("item-element-selected")
     event.currentTarget.classList.toggle("item-element")
       const carbValues = this.element.getElementsByClassName("item-element-selected")
-      console.log(carbValues)
       const range = [...Array(Object.keys(carbValues).length).keys()];
       range.forEach((e) => {
         this.totalCarb += Number.parseFloat(carbValues[e]["childNodes"][3]["innerHTML"])
@@ -31,9 +29,9 @@ export default class extends Controller {
       this.resultTarget.innerHTML = `Félicitations ! Grâce vos efforts, votre <strong>empreinte carbone</strong> diminue de <span class="key-main-number">${Number.parseInt(this.totalCarb)}</span>kgCO2e par an.`
       // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br><div class="source">Source : informations récoltées par <a href="https://twitter.com/i_fly_Bernard" target="_blank">I Fly Bernard</a> et <a href="https://twitter.com/YachtCO2tracker" target="_blank">YachtCO2tracker</a> à partir de données provenant de <a href="https://www.eia.gov/environment/emissions/co2_vol_mass.php" target="_blank">l'U.S Energy Information Administration</a> et des <a href="https://www.mtu-solutions.com/content/dam/mtu/products/yacht/main-propulsion/mtu-series-4000/3232791_Marine_spec_16V4000M73-L_1B.pdf/_jcr_content/renditions/original./3232791_Marine_spec_16V4000M73-L_1B.pdf" target="_blank">données constructeur du navire</a></div>`)
       this.actionTarget.innerHTML = "<strong>Envie d'agir ?</strong><br><a data-item-comp-target='tweet' data-action='click->tweet-counter#increaseTweetCounter' href='' target='_blank'>Partagez votre résultat sur Twitter</a> ou recherchez votre député.e pour l'interpeller :"
-      this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
+      this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou ${Math.round(this.totalYacht)}km parcourus par le yacht de Bernard Arnault. A quoi servent-ils ?&hashtags=quinousbrule`
       this.repTarget.classList.remove("d-none")
-      this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${Math.round(this.totalYacht)} kilomètres parcourus par le yacht de Bernard Arnault. Que font nos représentants ?&hashtags=quinousbrule`
+      this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou ${Math.round(this.totalYacht)}km parcourus par le yacht de Bernard Arnault. A quoi servent-ils ?&hashtags=quinousbrule`
       this.mailtextTarget.innerText = `Le site quinousbrule.fr m'a permis de réaliser que mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par la consommation carburant de ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou de ${this.totalYacht.toFixed(2)} kilomètres parcourus par le yacht de Bernard Arnault.%0D%0A%0D%0AQue faites-vous pour lutter contre les vrais responsables du réchauffement climatique ?%0D%0A%0D%0ACordialement,%0D%0A%0D%0AVOTRE NOM`
       if (this.totalJet < 1 || this.totalYacht < 2) {
         this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <strong><span class="key-number">${Math.round(Number.parseFloat(4500/this.totalCarb))}</span> années</strong> pour économiser la <strong>consommation de carburant</strong> de :`

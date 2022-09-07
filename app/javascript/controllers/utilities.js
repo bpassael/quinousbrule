@@ -1,6 +1,10 @@
 export function timeConvert(n) {
   var num = n;
   if (num < 10) {
+    if (Math.round(num) === 1) {
+      return Math.round(num) + " minute"
+
+    } else
     return Math.round(num) + " minutes"
   }
   var hours = (num / 60);
@@ -25,6 +29,8 @@ export function timeConvert(n) {
     return rhours + " heures et " + rminutes + " minutes";
   }
 }
+
+
 
 
 export function formatInput(input) {
