@@ -38,8 +38,8 @@
       </div><% end %> </div>
   </div>
 </div>
-  <div class="row d-flex justify-content-center mt-5" data-controller="tweet-counter" data-tweet-counter-id-value="<%=@tweet_counter.id%>">
-    <div class="col-12 col-lg-12" data-controller="mail-counter" data-mail-counter-id-value="<%=@mail_counter.id%>">
+  <div class="row d-flex justify-content-center mt-5" >
+    <div class="col-12 col-lg-12">
       <div class="row d-none" data-item-comp-target="fullresult">
         <h4 class="text-center" data-item-comp-target="result"></h4>
           <div class="col-12 col-lg-6">
@@ -68,7 +68,7 @@
                       <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
                     </div>
                     <div class="col-6">
-                      <a class="d-none" data-find-rep-simple-target='mailtolink' data-action='click->mail-counter#increaseMailCounter'href="" target="_blank"><p class="text-center mx-3"><i class="btn-message"> Interpeller par <i class="fa-solid fa-envelope"></i></i></p></a>
+                      <a class="d-none" data-find-rep-simple-target='mailtolink' data-action='click->mail-counter#increaseMailCounter' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message"> Interpeller par <i class="fa-solid fa-envelope"></i></i></p></a>
                       <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
                     </div>
                 </div>

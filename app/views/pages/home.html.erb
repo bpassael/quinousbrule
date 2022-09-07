@@ -1,6 +1,10 @@
 <%# <%= render "partials/navbar" %>
 <%= render "partials/banner" %>
+<div data-controller="tweet-counter" data-tweet-counter-id-value="<%=@tweet_counter.id%>">
+<div data-controller="mail-counter" data-mail-counter-id-value="<%=@mail_counter.id%>">
 <%= render "partials/simple_comp" %>
 <%= render "partials/calculator" %>
+</div>
+</div>
 <%= render "partials/community" %>
 <%= render "partials/about" %>
