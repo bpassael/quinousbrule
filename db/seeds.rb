@@ -7,8 +7,17 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Measurement.destroy_all
+#AnnualFootprint.destroy_all
 
+if TweetCounter.all.length.zero?
+  tweet_counter = TweetCounter.new(count: 0)
+  tweet_counter.save!
+end
 
+if MailCounter.all.length.zero?
+  mail_counter = MailCounter.new(count: 0)
+  mail_counter.save!
+end
 
 m1 = Measurement.new(
   title: "🚙 Je remplace ma voiture par une voiture électrique",

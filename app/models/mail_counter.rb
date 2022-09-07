@@ -1,0 +1,2 @@
+class MailCounter < ApplicationRecord
+end

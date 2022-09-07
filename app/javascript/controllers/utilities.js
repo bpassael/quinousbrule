@@ -43,6 +43,14 @@ export function formatInput(input) {
   }
 
 
+  export function isValidAddressInput(input) {
+    const returnValue = input.toLowerCase()
+        .replace(/\W/g, '')
+        .replace(/ /g, '')
+    return returnValue;
+    }
+
+
 export function get_code3_dep(x){
     let strx = x.toString();
     if (strx.length===3)

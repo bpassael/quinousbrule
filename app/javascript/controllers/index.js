@@ -22,5 +22,11 @@ application.register("hello", HelloController)
 import ItemCompController from "./item_comp_controller"
 application.register("item-comp", ItemCompController)
 
+import MailCounterController from "./mail_counter_controller"
+application.register("mail-counter", MailCounterController)
+
 import SourceFlipController from "./source_flip_controller"
 application.register("source-flip", SourceFlipController)
+
+import TweetCounterController from "./tweet_counter_controller"
+application.register("tweet-counter", TweetCounterController)

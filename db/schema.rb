@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_06_162026) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_07_091300) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -58,6 +58,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_162026) do
     t.boolean "input_food_bottled_water", default: false
   end
 
+  create_table "mail_counters", force: :cascade do |t|
+    t.integer "count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "measurements", force: :cascade do |t|
     t.string "title"
     t.float "kgCO2e_year"
@@ -76,6 +82,12 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_06_162026) do
     t.string "circo_key"
     t.string "email"
     t.string "twitter"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tweet_counters", force: :cascade do |t|
+    t.integer "count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
