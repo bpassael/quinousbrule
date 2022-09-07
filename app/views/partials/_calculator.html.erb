@@ -9,14 +9,14 @@
                   <h4 class="mb-5 ps-2">Vos déplacements (avion et voiture) </h4>
                   <div class="caroussel-fixed overflow-auto p-2"><%= f.input :input_transport_plane,
                         input_html: {data: {action: "change->annual-calc#displayplane"}},
-                        label: "Prenez-vous l'avion ?" %> <div class="row g-3 d-none" data-annual-calc-target="plane">
+                        label: "Prenez-vous l'avion ?" %> <div class="row g-3" data-annual-calc-target="plane">
                       <p>Combien de vols (aller-retour) effectuez-vous dans l'année ? </p>
                       <div class="col"><%= f.input :input_transport_flights_short, label: "Domestiques (ex: Bordeaux-Lyon)", input_html: { min: '0'} %> </div>
                       <div class="col"><%= f.input :input_transport_flights_middle, label: "Moyen courrier (ex: Paris-Ibiza)", input_html: { min: '0'}  %> </div>
                       <div class="col"><%= f.input :input_transport_flights_long, label: "Long courrier (ex: Nice-Hanoï)", input_html: { min: '0'} %> </div>
                     </div><%= f.input :input_transport_car,
                                 input_html: {data: {action: "change->annual-calc#displaycar"}},
-                                label: "Utilisez-vous une voiture (covoiturage compris) ?" %> <div class="d-none" data-annual-calc-target="car">
+                                label: "Utilisez-vous une voiture (covoiturage compris) ?" %> <div data-annual-calc-target="car">
                       <p>Comment est la voiture que vous utilisez le plus ? </p>
                       <div class="row g-2">
                         <div class="col"><%= f.input :input_transport_car_type, label: "Type de voiture", collection: ["Petite", "Moyenne", "Berline", "SUV"], selected: "Moyenne" %> </div>
@@ -45,7 +45,7 @@
                       <div class="col d-none" data-annual-calc-target="moto"><%= f.input :input_transport_moto_km, label: "En moto > 250", input_html: { min: '0'} %> </div>
                     </div><%= f.input :input_transport_train,
                                                   input_html: {data: {action: "change->annual-calc#displaytrain"}},
-                                                  label: "Prenez-vous le train ?" %> <div class="row g-3 d-none" data-annual-calc-target="train">
+                                                  label: "Prenez-vous le train ?" %> <div class="row g-3" data-annual-calc-target="train">
                       <p>Combien de trajets (aller-retour) effectuez-vous dans l'année ? </p>
                       <div class="col"><%= f.input :input_transport_train_trips_short, label: "Courts trajets (ex: Cannes-Nice)", input_html: { min: '0'} %> </div>
                       <div class="col"><%= f.input :input_transport_train_trips_middle, label: "Moyens trajets (ex: Paris-Clermont)", input_html: { min: '0'} %> </div>
