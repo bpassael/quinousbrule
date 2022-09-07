@@ -2,6 +2,11 @@
   height: auto;
 }
 
+.calculator-container h2 {
+  color: $light-gray;
+}
+
+
 .calculator-container .inner-form {
   margin: 100px 0;
 }
@@ -12,14 +17,24 @@
 
 .inner-form label {
   font-weight: 700;
+  color: $light-gray;
 }
+
+.inner-form p {
+  color: $light-gray;
+}
+
+.inner-form h4 {
+  color: $light-gray;
+}
+
 
 .caroussel-fixed  {
   height: auto;
 }
 
 .earth {
-  background-color: $yellow;
+  background-color: $dark-blue;
   background-size: cover;
   background-position: center;
   position: relative;
