@@ -4,7 +4,8 @@ class PagesController < ApplicationController
   def home
     @measurements = Measurement.all
     @footprint = AnnualFootprint.new
+    @tweet_counter = TweetCounter.first
+    @mail_counter = MailCounter.first
   end
-
 
 end
