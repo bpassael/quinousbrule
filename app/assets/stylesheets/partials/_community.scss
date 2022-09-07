@@ -1,6 +1,61 @@
 
-
 #community p {
   max-width: 55ch;
-  text-align: justify
+}
+
+
+.inner-count {
+  position: relative;
+  z-index: 2;
+}
+
+.wrap-footprint {
+  position: relative;
+}
+
+.wrap-footprint:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\f0c2";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -60px;
+}
+
+.wrap-twitter {
+  position: relative;
+}
+
+.wrap-twitter:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\f081";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -45px;
+}
+
+.wrap-mail {
+  position: relative;
+}
+
+.wrap-mail:after {
+  position: absolute;
+  font-family: FontAwesome;
+  z-index: 1;
+  content: "\f674";
+  font-size: 100px;
+  color: $yellow;
+  opacity: 0.2;
+  top: 50%;
+  left: 50%;
+  margin: -70px 0 0 -45px;
 }
