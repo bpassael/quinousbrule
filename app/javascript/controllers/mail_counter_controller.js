@@ -8,7 +8,7 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log("mailcountertest2")
+    console.log("MAIL CONNECTED")
   }
 
   increaseMailCounter() {

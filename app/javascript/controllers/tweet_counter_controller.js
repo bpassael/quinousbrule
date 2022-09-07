@@ -4,11 +4,11 @@ import { Controller } from "@hotwired/stimulus"
 export default class extends Controller {
 
   static values = {
-    id: String
+    id: String,
   }
 
   connect() {
-    console.log("tweetcountertest12")
+    console.log("TWEET CONNECTED")
   }
 
   increaseTweetCounter() {

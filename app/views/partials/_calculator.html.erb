@@ -113,7 +113,7 @@
                   <p class="text-center m-5"> Cela correspond à la consommation en carburant de :</p>
                     <div class="d-flex">
                       <div class="col-6 text-center wrap-plane"><p class="inner"><span class="key-number" data-display-result-target="jetmn"></span><br>de vol dans le <strong>jet privé</strong><br> de Vincent Bolloré</p></div>
-                      <div class="col-6 text-center wrap-yacht"><p class="inner"><span class="key-number" data-display-result-target="kmyacht"></span><span class="key-number"> kilomètres</span><br>parcourus par le <strong>yacht</strong><br> de Bernard Arnault</p></div>
+                      <div class="col-6 text-center wrap-yacht"><p class="inner"><span class="key-number" data-display-result-target="kmyacht"></span><br>parcourus par le <strong>yacht</strong><br> de Bernard Arnault</p></div>
                     </div>
                 </div>
               <%# //suppr class="d-none" & target"rep" %>
@@ -133,11 +133,11 @@
                   <div class="row justify-content-center">
                     <div class="col-12 col-lg-8 my-3"><p data-find-rep-annual-target="represult" class="text-center"></p></div>
                       <div class="col-6">
-                        <a class="d-none" data-find-rep-annual-target='twitterlink' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message-calc"> Interpeller sur <i class="fa-brands fa-twitter"></i></i></p></a>
+                        <a class="d-none" data-find-rep-annual-target='twitterlink' data-action='click->tweet-counter#increaseTweetCounter' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message-calc"> Interpeller sur <i class="fa-brands fa-twitter"></i></i></p></a>
                         <p class="d-none" data-display-result-target="tweettext" data-find-rep-annual-target='twitterhandletext'></p>
                       </div>
                       <div class="col-6">
-                        <a class="d-none" data-find-rep-annual-target='mailtolink' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message-calc"> Interpeller par <i class="fa-solid fa-envelope"></i></i></p></a>
+                        <a class="d-none" data-find-rep-annual-target='mailtolink' data-action='click->mail-counter#increaseMailCounter' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message-calc"> Interpeller par <i class="fa-solid fa-envelope"></i></i></p></a>
                         <p class="d-none" data-display-result-target="mailtext" data-find-rep-annual-target='mailheadertext'></p>
                       </div>
                     </div>
