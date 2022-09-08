@@ -34,7 +34,7 @@
                   </div>
                 </div>
                 <div class="carousel-item justify-center-center">
-                  <h4 class="ps-2">Vos déplacements (deux roues, train et transports en commun)</h4>
+                  <h4 class="ps-2">Vos déplacements (deux roues et transports en commun)</h4>
                   <div class="caroussel-fixed overflow-auto p-2"><%= f.input :input_transport_two_wheels,
                                             input_html: {data: {action: "change->annual-calc#displaymoto"}},
                                             label: "Avez-vous un scooter ou une moto ?",
@@ -63,9 +63,9 @@
                   </div>
                 </div>
                 <div class="carousel-item justify-center-center">
-                  <h4 class="ps-2">Votre logement et consommation energétique</h4>
+                  <h4 class="ps-2">Votre logement et sa consommation énergétique</h4>
                   <div class="caroussel-fixed overflow-auto p-2">
-                    <p>Parlez nous de votre logement </p><%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"], selected: "Maison" %> <div class="row g-3">
+                    <p>Parlez-nous de votre logement </p><%= f.input :input_home_type, label: "Quel type de logement ?", collection: ["Appartement", "Maison", "Maison eco-construite"], selected: "Maison" %> <div class="row g-3">
                       <div class="col"><%= f.input :input_home_surface, label: "Quelle est la surface en m2 de votre logement ?", input_html: { min: '0'} %> </div>
                       <div class="col"><%= f.input :input_home_old, label: "Votre logement a t'il plus de 50 ans ?" %> </div>
                       <div class="col"><%= f.input :input_home_users, label: "Combien de personnes vivent en moyenne dans votre logement ?", input_html: { min: '0'} %> </div>
@@ -85,7 +85,7 @@
                   <h4 class="ps-2">Vos habitudes de consommation </h4>
                   <div class="caroussel-fixed overflow-auto p-2">
                     <div class="row g-2">
-                      <div class="col"><%= f.input :input_food_diet, label: "Comment décririez vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"], selected: "Alimentation mixte" %> </div>
+                      <div class="col"><%= f.input :input_food_diet, label: "Comment décririez-vous votre régime alimentaire ?", collection: ["Vegan", "Végétarien", "Pescitarien", "Je mange peu de viande", "Alimentation mixte", "Je mange beaucoup de viande"], selected: "Alimentation mixte" %> </div>
                       <div class="col"><%= f.input :input_food_waste, label: "Pour vos déchets", collection: ["Je suis zéro déchet", "Je composte", "Je réduis le gaspillage alimentaire", "Je ne fais rien de particulier"], selected: "Je réduis le gaspillage alimentaire" %> </div>
                     </div>
                     <div class="row g-2">
