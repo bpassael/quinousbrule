@@ -9,6 +9,11 @@
   z-index: 2;
 }
 
+.border-count {
+  border: solid 2px $yellow;
+  border-radius: 10px;
+}
+
 .wrap-footprint {
   position: relative;
 }

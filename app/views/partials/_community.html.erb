@@ -1,18 +1,26 @@
 <div class="container" id="communaute">
   <div class="row justify-content-center m-2">
     <div class="col-12 col-lg-6 my-4">
-      <a class="twitter-timeline" data-width="700" data-height="700" data-theme="light" href="https://twitter.com/QuiNousBrule?ref_src=twsrc%5Etfw">Tweets by QuiNousBrule</a>
+      <img src="" alt="">
+      <p class="text-center">Désactivez votre bloqueur de pub pour voir<a class="twitter-timeline" data-width="700" data-height="700" data-theme="light" href="https://twitter.com/QuiNousBrule?ref_src=twsrc%5Etfw">
+      les derniers tweets de Qui nous brûle</a> !</p>
     </div>
     <div class="col-12 col-lg-6 my-4">
         <h3 class="text-center mb-5">Vous êtes...</h3>
         <div class="col-12 wrap-footprint">
-          <p class="inner-count text-center mx-5 my-2 p-5"><span class="key-number"><%= AnnualFootprint.count %></span><br>à avoir calculé <br>votre <strong>empreinte carbone annuelle</strong></p>
+          <p class="inner-count text-center mx-5 my-2 p-5">
+          <span class="key-main-number"><%= AnnualFootprint.count %></span>
+          <br>à avoir calculé <br>votre <strong>empreinte carbone annuelle</strong></p>
         </div>
         <div class="col-12 wrap-twitter">
-          <p class="inner-count text-center mx-5 my-2 p-5"><span class="key-number"><%= @tweet_counter.count %></span><br>à avoir partagé <br>votre résultat sur <strong>Twitter</strong></p>
+          <p class="inner-count text-center mx-5 my-2 p-5">
+          <span class="key-main-number"><%= @tweet_counter.count %></span>
+          <br>à avoir partagé <br>votre résultat sur <strong>Twitter</strong></p>
         </div>
         <div class="col-12 wrap-mail">
-          <p class="inner-count text-center mx-5 my-2 p-5"><span class="key-number"><%= @mail_counter.count %></span><br>à avoir interpellé <br>votre député.e par <strong>e-mail</strong></p>
+          <p class="inner-count text-center mx-5 my-2 p-5">
+          <span class="key-main-number"><%= @mail_counter.count %></span>
+          <br>à avoir interpellé <br>votre député.e par <strong>e-mail</strong></p>
         </div>
     </div>
   </div>
