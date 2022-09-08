@@ -2,80 +2,96 @@
   <h2 class="text-center mt-5">Comparer mes petits gestes</h2>
   <h3 class="text-center mb-5">Cochez une ou plusieurs cases pour calculer l'impact de vos actions pour le climat.</h3>
   <div class="simple-comp-menu">
-  <div class="row d-flex">
-    <div class="col-10 col-lg-8 w-50 d-flex">
-      <% @measurements.slice(0, @measurements.length/2).each do |measurement| %>
-      <div class="d-flex-inline m-2" data-controller="source-flip">
-        <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %>
-          <i class="d-none"><%= measurement.kgCO2e_year %> </i>
-          <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
-          <i class="d-none"><%= measurement.eq_km_yacht_arnault %> </i>
-        </p>
-        <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
-          <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
-        </p>
-        <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
-        <div class="d-flex justify-content-center">
-          <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
-        </div>
-
-      </div><% end %>
+    <div class="row d-flex">
+      <div class="col-10 col-lg-8 w-50 d-flex"><% @measurements.slice(0, @measurements.length/2).each do |measurement| %> <div class="d-flex-inline m-2" data-controller="source-flip">
+          <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %> <i class="d-none"><%= measurement.kgCO2e_year %> </i>
+            <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
+            <i class="d-none"><%= measurement.eq_km_yacht_arnault %> </i>
+          </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
+            <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
+          </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
+          <div class="d-flex justify-content-center">
+            <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
+          </div>
+        </div><% end %> </div>
+    </div>
+    <div class="row d-flex">
+      <div class="col-10 col-lg-8 w-50 d-flex"><% @measurements.slice(@measurements.length/2, @measurements.length).each do |measurement| %> <div class="d-flex-inline m-2" data-controller="source-flip">
+          <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %> <i class="d-none"><%= measurement.kgCO2e_year %> </i>
+            <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
+            <i class="d-none"><%= measurement.eq_km_yacht_arnault %> </i>
+          </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
+            <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
+          </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
+          <div class="d-flex justify-content-center">
+            <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
+          </div>
+        </div><% end %> </div>
     </div>
   </div>
-  <div class="row d-flex">
-    <div class="col-10 col-lg-8 w-50 d-flex">
-      <% @measurements.slice(@measurements.length/2, @measurements.length).each do |measurement| %>
-      <div class="d-flex-inline m-2" data-controller="source-flip">
-        <p class="text-center m-1 item-element" data-item-comp-target="item" data-source-flip-target="element" data-action="click->item-comp#selected"><%= measurement.title.first%> <br><%= measurement.title[1..] %>
-          <i class="d-none"><%= measurement.kgCO2e_year %> </i>
-          <i class="d-none"><%= measurement.eq_minutes_flight_jet_bollore %> </i>
-          <i class="d-none"><%= measurement.eq_km_yacht_arnault %> </i>
-        </p>
-        <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
-          <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
-        </p>
-        <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
-        <div class="d-flex justify-content-center">
-          <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
-        </div>
-
-      </div><% end %> </div>
-  </div>
-</div>
-  <div class="row d-flex justify-content-center mt-5" >
+  <div class="row d-flex justify-content-center mt-5">
     <div class="col-12 col-lg-12">
       <div class="row d-none" data-item-comp-target="fullresult">
         <h4 class="text-center" data-item-comp-target="result"></h4>
-          <div class="col-12 col-lg-6">
-            <p class="text-center m-5" data-item-comp-target="resultexplain"></p>
-              <div class="d-flex">
-                <div class="col-6 text-center wrap-plane"><p class="inner"><span class="key-number" data-item-comp-target="resultjet"></span><br>de vol dans le <strong>jet privé</strong><br> de Vincent Bolloré</p></div>
-                <div class="col-6 text-center wrap-yacht"><p class="inner"><span class="key-number" data-item-comp-target="resultyacht"></span><br>parcourus par le <strong>yacht</strong><br> de Bernard Arnault</p></div>
-              </div>
-            <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <strong>9 tonnes CO2e</strong> par année. <a href="#calculator">Calculez la vôtre !</a></p>
+        <div class="col-12 col-lg-6">
+          <p class="text-center m-5" data-item-comp-target="resultexplain"></p>
+          <div class="d-flex">
+            <div class="col-6 text-center wrap-plane">
+              <p class="inner">
+                <span class="key-number" data-item-comp-target="resultjet"></span>
+                <br>de vol dans le <strong>jet privé</strong>
+                <br> de Vincent Bolloré
+              </p>
+            </div>
+            <div class="col-6 text-center wrap-yacht">
+              <p class="inner">
+                <span class="key-number" data-item-comp-target="resultyacht"></span>
+                <br>parcourus par le <strong>yacht</strong>
+                <br> de Bernard Arnault
+              </p>
+            </div>
           </div>
-          <div class="col-12 col-lg-6">
-            <p class="text-center m-5" data-item-comp-target="action" id="action"></p>
-            <div data-controller="find-rep-simple" id="contactrep" class="d-none" data-item-comp-target="rep">
-                <form class="row justify-content-center">
-                    <div class="col-6">
-                      <input id="search-input" type="text" class="form-control" data-find-rep-simple-target="input" placeholder="Tapez votre adresse">
-                    </div>
-                    <div class="col-2">
-                      <input type="submit" class="btn btn-flat" data-action="click->find-rep-simple#find" value="Rechercher">
-                    </div>
-                </form>
-                <div class="row justify-content-center">
-                  <div class="col-12 col-lg-8 my-3"><p data-find-rep-simple-target="represult" class="text-center"></p></div>
-                    <div class="col-6">
-                      <a class="d-none" data-find-rep-simple-target='twitterlink' data-action='click->tweet-counter#increaseTweetCounter' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message"> Interpeller sur <i class="fa-brands fa-twitter"></i></i></p></a>
-                      <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
-                    </div>
-                    <div class="col-6">
-                      <a class="d-none" data-find-rep-simple-target='mailtolink' data-action='click->mail-counter#increaseMailCounter' href="" target="_blank"><p class="text-center mx-3"><i class="btn-message"> Interpeller par <i class="fa-solid fa-envelope"></i></i></p></a>
-                      <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
-                    </div>
-                </div>
+          <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <strong>9 tonnes CO2e</strong> par année. <a href="#calculator">Calculez la vôtre !</a>
+          </p>
+        </div>
+        <div class="col-12 col-lg-6">
+          <p class="text-center m-5" data-item-comp-target="action" id="action"></p>
+          <div data-controller="find-rep-simple" id="contactrep" class="d-none" data-item-comp-target="rep">
+            <form class="row justify-content-center">
+              <div class="col-6">
+                <input id="search-input" type="text" class="form-control" data-find-rep-simple-target="input" placeholder="Tapez votre adresse">
+              </div>
+              <div class="col-2">
+                <input type="submit" class="btn btn-flat" data-action="click->find-rep-simple#find" value="Rechercher">
+              </div>
+            </form>
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-8 my-3">
+                <p data-find-rep-simple-target="represult" class="text-center"></p>
+              </div>
+              <div class="col-6">
+                <a class="d-none" data-find-rep-simple-target='twitterlink' data-action='click->tweet-counter#increaseTweetCounter' href="" target="_blank">
+                  <p class="text-center mx-3">
+                    <i class="btn-message"> Interpeller sur <i class="fa-brands fa-twitter"></i>
+                    </i>
+                  </p>
+                </a>
+                <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
+              </div>
+              <div class="col-6">
+                <a class="d-none" data-find-rep-simple-target='mailtolink' data-action='click->mail-counter#increaseMailCounter' href="" target="_blank">
+                  <p class="text-center mx-3">
+                    <i class="btn-message"> Interpeller par <i class="fa-solid fa-envelope"></i>
+                    </i>
+                  </p>
+                </a>
+                <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

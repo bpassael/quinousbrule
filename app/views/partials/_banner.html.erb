@@ -1,38 +1,41 @@
 <div class="banner align-content-flex-start">
-<nav class="navbar navbar-expand-lg navbar-quinousbrule">
-  <div class="container">
-    <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav container d-flex justify-content-around align-items-center">
-        <a class="nav-link" aria-current="page" href="#simplecomp">PETITS GESTES</a>
-        <a class="nav-link" href="#calculator">MON EMPREINTE</a>
-        <%= link_to "#", class: "navbar-brand" do %>
-          <%= image_tag "logo_navbar.png" %>
-         <% end %>
-        <a class="nav-link" href="#community">COMMUNAUTÉ</a>
-        <a class="nav-link" href="#about">À PROPOS</a>
+  <nav class="navbar navbar-expand-lg navbar-quinousbrule">
+    <div class="container">
+      <button class="navbar-toggler ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav container d-flex justify-content-around align-items-center">
+          <a class="nav-link" aria-current="page" href="#simplecomp">PETITS GESTES</a>
+          <a class="nav-link" href="#calculator">MON EMPREINTE</a><%= link_to "#", class: "navbar-brand" do %><%= image_tag "logo_navbar.png" %><% end %> <a class="nav-link" href="#community">COMMUNAUTÉ</a>
+          <a class="nav-link" href="#about">À PROPOS</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-
+  </nav>
   <div class="container mt-5 p-5">
     <div class="row">
       <div class="col-10 col-lg-8">
-        <h1><span class="title">63 milliardaires français</span> émettent autant de CO2 que 50% de la population</h1>
+        <h1>
+          <span class="title">63 milliardaires français</span> émettent autant de CO2 que 50% de la population
+        </h1>
       </div>
     </div>
     <div class="row">
       <div class="col-6">
-        <p class="mt-4"><strong class="text-yellow">Comparez</strong> l'impact de votre empreinte carbone aux comportements des plus riches. <strong class="text-yellow">Interpellez</strong> votre député pour réclamer une action politique concrète.</p>
-        <p><strong class="text-yellow">Identifiez</strong> les causes, <strong class="text-yellow">agissez</strong> en conséquence. </p>
+        <p class="mt-4">
+          <strong class="text-yellow">Comparez</strong> l'impact de votre empreinte carbone aux comportements des plus riches. <strong class="text-yellow">Interpellez</strong> votre député pour réclamer une action politique concrète.
+        </p>
+        <p>
+          <strong class="text-yellow">Identifiez</strong> les causes, <strong class="text-yellow">agissez</strong> en conséquence.
+        </p>
       </div>
     </div>
   </div>
   <div class="d-flex justify-content-center mb-5">
-    <a href="#simplecomp"><i class="fa-solid fa-arrow-down-long"></i></a>
+    <a href="#simplecomp">
+      <i class="fa-solid fa-arrow-down-long"></i>
+    </a>
   </div>
-  <div class=" whitecuttop"><%= image_tag "whitecuttop.png" %></div>
+  <div class=" whitecuttop"><%= image_tag "whitecuttop.png" %> </div>
 </div>
