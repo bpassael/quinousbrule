@@ -30,6 +30,7 @@
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), image-url("banner.jpeg");
+  position: relative
 }
 
 .banner h1 {
@@ -39,7 +40,6 @@
   font-weight: bold;
   font-size: 60px;
 }
-
 
 
 .banner p {
@@ -72,9 +72,4 @@
 
 .text-yellow {
   color: $yellow;
-}
-
-
-.whitecuttop {
-  height: 50px;
 }
