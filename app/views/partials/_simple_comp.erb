@@ -1,4 +1,4 @@
-<div class="simple-comp-container container overflow-auto" id="simplecomp" data-controller="item-comp">
+<div class="simple-comp-container container overflow-auto" id="petitsgestes" data-controller="item-comp">
   <h2 class="text-center mt-5">Comparer mes petits gestes</h2>
   <h3 class="text-center mb-5">Cochez une ou plusieurs cases pour calculer l'impact de vos actions pour le climat.</h3>
   <div class="simple-comp-menu">
@@ -11,7 +11,7 @@
           <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
             <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
           </p>
-          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><em><%= measurement.additional_info%></em></p>
           <div class="d-flex justify-content-center">
             <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
           </div>
@@ -55,7 +55,7 @@
               </p>
             </div>
           </div>
-          <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <span class="key-number">9</span> tonnes CO2e par année. <a href="#calculator">Calculez la vôtre</a> en 3 minutes !
+          <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <span class="key-number">9</span> tonnes CO2e par année. <a href="#monempreinte">Calculez la vôtre</a> en 3 minutes !
           </p>
         </div>
         <div class="col-12 col-lg-6">
