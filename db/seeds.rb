@@ -188,7 +188,7 @@ m12.save!
 
 
 m13 = Measurement.new(
-  title: "🚘 J'adopte l'eco-conduite",
+  title: "🚘 J'adopte l'éco-conduite",
   kgCO2e_year: 247.05,
   eq_minutes_flight_jet_bollore: 3.17,
   eq_km_yacht_arnault: 1.07,
@@ -201,7 +201,7 @@ m13.save!
 
 
 m14 = Measurement.new(
-  title: "🎢 Je reduis ma vitesse de 130 à 110 km/heure",
+  title: "🎢 Je réduis ma vitesse de 130 à 110 km/heure",
   kgCO2e_year: 101.25,
   eq_minutes_flight_jet_bollore: 1.30,
   eq_km_yacht_arnault: 0.45,
