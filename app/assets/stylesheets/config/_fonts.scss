@@ -1,9 +1,10 @@
 // Import Google fonts
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Suez+One&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700&display=swap');
 
 // Define fonts for body and headers
 $body-font: "Oxygen", "sans-serif";
-$headers-font: "Suez One", "serif";
+$headers-font: 'Suez One', serif;
 
 // font-family: 'Oxygen', sans-serif;
 // font-family: 'Suez One', serif;
@@ -14,10 +15,9 @@ $headers-font: "Suez One", "serif";
 }
 
 
-
-
 h1 {
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
+  // font-weight: 500;
   font-size: 60px;
   line-height: 1.5rem;
 }
@@ -25,19 +25,22 @@ h1 {
 
 
 h2 {
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
+  // font-weight: 500;
   font-size: 32px!important;
   line-height: 1.5rem;
 }
 
 h3 {
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
+  // font-weight: 300;
   font-size: 20px!important;
   line-height: 1.5rem;
 }
 
 h4 {
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
+  // font-weight: 300;
   font-size: 18px!important;
   line-height: 1.5rem;
 }

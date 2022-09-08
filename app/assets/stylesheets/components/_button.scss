@@ -19,7 +19,7 @@
   background: $dark-blue;
   border: 0;
   transition: 0.3s ease-in-out;
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
 }
 
 .btn-flat:hover {
@@ -34,7 +34,7 @@
   background: $yellow;
   border: 0;
   transition: 0.3s ease-in-out;
-  font-family: 'Suez One', serif;
+  font-family: $headers-font;
 }
 
 .btn-flat-calc:hover {
@@ -89,7 +89,7 @@
   border: none;
   text-align: center;
   line-height: 1rem;
-  font-family: 'Suez One', serif
+  font-family: $headers-font;
 }
 
 .btn-caroussel-prev:hover {
@@ -105,7 +105,7 @@
   border: none;
   text-align: center;
   line-height: 1rem;
-  font-family: 'Suez One', serif
+  font-family: $headers-font;
 }
 
 .btn-caroussel-next:hover {
