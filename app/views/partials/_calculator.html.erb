@@ -29,7 +29,7 @@
                       </div>
                     </div>
                     <div class="d-flex justify-content-center col-12">
-                      <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
+                      <i class="btn-caroussel-next mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
                     </div>
                   </div>
                 </div>
@@ -57,8 +57,8 @@
                       <div class="col"><%= f.input :input_transport_metro_tram_hours_week, label: "Dans le métro ou le tram", input_html: { min: '0'} %> </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                      <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i>
-                      <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
+                      <i class="btn-caroussel-prev mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i>
+                      <i class="btn-caroussel-next mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
                     </div>
                   </div>
                 </div>
@@ -76,8 +76,8 @@
                       <div class="col d-none" data-annual-calc-target="heatbill"><%= f.input :input_home_heat_bill, label: "Quel est votre dépense moyenne en chauffage (gaz, fioul ou bois) par mois ?", input_html: { min: '0'} %> </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                      <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i>
-                      <i class="btn-caroussel-next mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
+                      <i class="btn-caroussel-prev mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i>
+                      <i class="btn-caroussel-next mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> Suivant </i>
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@
                       <div class="col"><%= f.input :input_consumption_appliances, label: "Combien avez-vous d'électroménager de moins de 10 ans ?", collection: ["Beaucoup", "Moyennement", "Peu"], selected: "Moyennement"  %> </div>
                     </div>
                     <div class="d-flex justify-content-center">
-                      <i class="btn-caroussel-prev mx-2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i><%= f.submit "Calculer", class: "btn-caroussel-next mx-2" %> </p>
+                      <i class="btn-caroussel-prev mx-2" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> Précédent </i><%= f.submit "Calculer", class: "btn-caroussel-next mx-2" %> </p>
                     </div>
                   </div>
                 </div><% end %> <div class="d-none">
@@ -151,3 +151,4 @@
   </div>
   <div class="whitecuttop-earth"><%= image_tag "whitecuttop.png" %></div>
 </div>
+<%# type="button" %>
