@@ -61,11 +61,11 @@
         <div class="col-12 col-lg-6">
           <p class="text-center m-5" data-item-comp-target="action" id="action"></p>
           <div data-controller="find-rep-simple" id="contactrep" class="d-none" data-item-comp-target="rep">
-            <form class="row justify-content-center">
-              <div class="col-6">
+            <form class="row justify-content-center space-around">
+              <div class="col-8 col-lg-6 m-1">
                 <input id="search-input" type="text" class="form-control" data-find-rep-simple-target="input" placeholder="Tapez votre adresse">
               </div>
-              <div class="col-2">
+              <div class="col-4 col-lg-2 m-1">
                 <input type="submit" class="btn btn-flat" data-action="click->find-rep-simple#find" value="Rechercher">
               </div>
             </form>
@@ -73,18 +73,18 @@
               <div class="col-12 col-lg-8 my-3">
                 <p data-find-rep-simple-target="represult" class="text-center"></p>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <a class="d-none" data-find-rep-simple-target='twitterlink' data-action='click->tweet-counter#increaseTweetCounter' href="" target="_blank">
-                  <p class="text-center mx-3">
+                  <p class="text-center m-3">
                     <i class="btn-message"> Interpeller sur <i class="fa-brands fa-twitter"></i>
                     </i>
                   </p>
                 </a>
                 <p class="d-none" data-item-comp-target="tweettext" data-find-rep-simple-target='twitterhandletext'></p>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-lg-6">
                 <a class="d-none" data-find-rep-simple-target='mailtolink' data-action='click->mail-counter#increaseMailCounter' href="" target="_blank">
-                  <p class="text-center mx-3">
+                  <p class="text-center m-3">
                     <i class="btn-message"> Interpeller par <i class="fa-solid fa-envelope"></i>
                     </i>
                   </p>
