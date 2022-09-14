@@ -4,7 +4,7 @@ import {timeConvert} from './utilities.js';
 
 // Connects to data-controller="item-comp"
 export default class extends Controller {
-  static targets = ["item", "source", "tweettext", "result", "rep", "mailtext", "tweet", "resultjet", "resultyacht", "fullresult", "resultexplain", "action"]
+  static targets = ["item", "source", "tweettext", "result", "rep", "mailtext", "tweet", "resultjet", "resultyacht", "fullresult", "resultexplain", "action", "simpleaction"]
 
   connect() {
   }
@@ -28,7 +28,8 @@ export default class extends Controller {
       this.fullresultTarget.classList.remove("d-none")
       this.resultTarget.innerHTML = `Félicitations ! Grâce vos efforts, votre <strong>empreinte carbone</strong> diminue de <span class="key-main-number">${Number.parseInt(this.totalCarb)}</span>kgCO2e par an.`
       // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br><div class="source">Source : informations récoltées par <a href="https://twitter.com/i_fly_Bernard" target="_blank">I Fly Bernard</a> et <a href="https://twitter.com/YachtCO2tracker" target="_blank">YachtCO2tracker</a> à partir de données provenant de <a href="https://www.eia.gov/environment/emissions/co2_vol_mass.php" target="_blank">l'U.S Energy Information Administration</a> et des <a href="https://www.mtu-solutions.com/content/dam/mtu/products/yacht/main-propulsion/mtu-series-4000/3232791_Marine_spec_16V4000M73-L_1B.pdf/_jcr_content/renditions/original./3232791_Marine_spec_16V4000M73-L_1B.pdf" target="_blank">données constructeur du navire</a></div>`)
-      this.actionTarget.innerHTML = "<strong>Envie d'agir ?</strong><br><a data-item-comp-target='tweet' data-action='click->tweet-counter#increaseTweetCounter' href='' target='_blank'>Partagez votre résultat sur Twitter</a> ou recherchez votre député.e pour l'interpeller :"
+      this.actionTarget.innerHTML = "<strong>Envie d'agir ?</strong><br><br>Les député.e.s sont nos représentant.e.s.<br><strong>Recherchez votre député.e</strong> grâce à votre adresse postale pour l'interpeller par mail ou sur Twitter :"
+      this.simpleactionTarget.innerHTML = "<a data-item-comp-target='tweet' data-action='click->tweet-counter#increaseTweetCounter' href='' target='_blank'>Partagez votre résultat sur Twitter</a><br><em>(sans tagguer votre député.e ou si vous le/la connaissez déjà)</em>."
       this.repTarget.classList.remove("d-none")
       if (this.totalJet < 1 || this.totalYacht < 2) {
         this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <strong><span class="key-number">${Math.round(Number.parseFloat(4500/this.totalCarb))}</span> années</strong> pour compenser la <strong>consommation de carburant</strong> de :`
@@ -37,7 +38,6 @@ export default class extends Controller {
         this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Il me faudrait ${Math.round(Number.parseFloat(4500/this.totalCarb))} ans pour compenser 1 heure de vol dans le jet privé de Vincent Bolloré ou 20km parcourus par le yacht de Bernard Arnault. https://pic.twitter.com/XnIujtmLWg&hashtags=quinousbrule`
         this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Il me faudrait ${Math.round(Number.parseFloat(4500/this.totalCarb))} ans pour compenser 1 heure de vol dans le jet privé de Vincent Bolloré ou 20km parcourus par le yacht de Bernard Arnault. https://pic.twitter.com/XnIujtmLWg&hashtags=quinousbrule`
         this.mailtextTarget.innerText = `Le site quinousbrule.fr m'a permis de réaliser que mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Il me faudrait ${Math.round(Number.parseFloat(4500/this.totalCarb))} ans pour compenser 1 heure de vol dans le jet privé de Vincent Bolloré ou 20km parcourus par le yacht de Bernard Arnault.%0D%0A%0D%0AQue faites-vous pour lutter contre les vrais responsables du réchauffement climatique ?%0D%0A%0D%0ACordialement,%0D%0A%0D%0AVOTRE NOM`
-          // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(4500/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>60 minutes</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>20 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
         } else {
         this.tweetTarget.href = `https://twitter.com/intent/tweet?text=Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou ${Math.round(this.totalYacht)}km parcourus par le yacht de Bernard Arnault. A quoi servent-ils ? https://pic.twitter.com/XnIujtmLWg&hashtags=quinousbrule`
         this.tweettextTarget.innerText = `Mes efforts réduisent mon empreinte carbone de ${Number.parseInt(this.totalCarb)} kgCO2e par an. Ils sont annulés par ${timeConvert(this.totalJet)} de vol du jet de Vincent Bolloré, ou ${Math.round(this.totalYacht)}km parcourus par le yacht de Bernard Arnault. A quoi servent-ils ? https://pic.twitter.com/XnIujtmLWg&hashtags=quinousbrule`
@@ -46,22 +46,6 @@ export default class extends Controller {
         this.resultjetTarget.innerText = `${timeConvert(this.totalJet.toFixed(0))}`
         this.resultyachtTarget.innerText = `${this.totalYacht.toFixed(0)} kilomètres`
         }
-        // if (this.totalJet < 50) {
-        //   this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <span class="key-number">${Number.parseFloat(9000/this.totalCarb).toFixed(0)}</span> années pour économiser la consommation carbone de :`
-        //   this.resultjetTarget.innerText = "2 heures"
-        //   this.resultyachtTarget.innerText = "40 kilomètres"
-        //   // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(9000/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>2 heures</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>40 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
-        // } else if (this.totalJet < 100) {
-        //   this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <span class="key-number">${Number.parseFloat(18000/this.totalCarb).toFixed(0)}</span> années pour économiser la consommation carbone de :`
-        //   this.resultjetTarget.innerText = "4 heures"
-        //   this.resultyachtTarget.innerText = "80 kilomètres"
-        //   // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(18000/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>4 heures</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>80 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
-        // } else if (this.totalJet < 200) {
-        //   this.resultexplainTarget.innerHTML = `Il vous faudra adopter ce comportement pendant <span class="key-number">${Number.parseFloat(36000/this.totalCarb).toFixed(0)}</span> années pour économiser la consommation carbone de :`
-        //   this.resultjetTarget.innerText = "8 heures"
-        //   this.resultyachtTarget.innerText = "160 kilomètres"
-        //   // this.resultTarget.insertAdjacentHTML("beforeend", `<br><br>Il vous faudra adopter ce comportement pendant <strong>${Number.parseFloat(36000/this.totalCarb).toFixed(2)} ans</strong> pour économiser: <br><br> 🛩 la consommation carbone de <strong>8 heures</strong> de vol du jet privé de Vincent Bolloré<br> 🛥 <strong>160 kilomètres</strong> parcourus par le yacht de Bernard Arnault.`)
-        // }
       } else {
         this.fullresultTarget.classList.add("d-none")
         this.repTarget.classList.add("d-none")

@@ -18,11 +18,12 @@ export default class extends Controller {
       this.inputTarget.value = ""
       return
     }
-    this.represultTarget.innerHTML = `<span class="thin">Nous recherchons votre député.e <span class="dots"></span></span>`
-    var dots = new Typed('.dots', {
-      strings: ["..............................................................."],
-      typeSpeed: 100
-    });
+    this.represultTarget.innerHTML = `<span class="thin">Nous recherchons votre député.e <span>...</span></span>`
+    // <span class="dots"></span>
+    // var dots = new Typed('.dots', {
+    //   strings: ["..............................................................."],
+    //   typeSpeed: 100
+    // });
     const url = `https://api-adresse.data.gouv.fr/search/?q=${formatInput(this.inputTarget.value)}`
     fetch(url)
       .then(response => response.json())
@@ -60,7 +61,7 @@ export default class extends Controller {
                     this.twitterhandletextTarget.insertAdjacentText("afterbegin",`https://twitter.com/intent/tweet?text=@${rep_twitter} `)
                     this.twitterlinkTarget.href = this.twitterhandletextTarget.innerText
                     this.twitterlinkTarget.classList.remove("d-none")
-                    this.mailheadertextTarget.insertAdjacentText("afterbegin",`mailto:${rep_email}?subject=Que faites vous contre le réchauffement climatique ?&body=Madame la députée, Monsieur le député,%0D%0A%0D%0A `)
+                    this.mailheadertextTarget.insertAdjacentText("afterbegin",`mailto:${rep_email}?subject=A quoi servent mes efforts ?&body=Madame la députée, Monsieur le député,%0D%0A%0D%0A `)
                     this.mailtolinkTarget.href = this.mailheadertextTarget.innerText
                     this.mailtolinkTarget.classList.remove("d-none")
                     this.represultTarget.innerHTML = `Votre député.e est <strong>${rep_name}</strong><br><em>(pour l'adresse : ${address})</em>.`
