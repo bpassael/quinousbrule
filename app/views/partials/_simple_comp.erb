@@ -26,7 +26,7 @@
           <p class="text-center m-1 item-element d-none" data-source-flip-target="source"> 🗂 <br>
             <strong><%= measurement.source_name%> </strong>: <a href="https://www.<%= measurement.source_link%>" target="_blank"><%= measurement.source_link%> </a>
           </p>
-          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><%= measurement.additional_info%> </p>
+          <p class="text-center m-1 item-element d-none" data-source-flip-target="infos"><em><%= measurement.additional_info%> </em></p>
           <div class="d-flex justify-content-center">
             <p class="mx-2" data-action="click->source-flip#return">🔁</p><% if measurement.additional_info %> <p class="mx-2" data-action="click->source-flip#infos">ℹ️</p><% end %>
           </div>
@@ -55,7 +55,7 @@
               </p>
             </div>
           </div>
-          <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <span class="key-number">9</span> tonnes CO2e par année. <a href="#monempreinte">Calculez la vôtre</a> en 3 minutes !
+          <p class="text-center m-5" id="action">L'empreinte carbone moyenne d'un français est d'environ <span class="key-number">9</span> tonnes de CO2e par année. <a href="#monempreinte">Calculez la vôtre</a> en 3 minutes !
           </p>
         </div>
         <div class="col-12 col-lg-6">
@@ -92,6 +92,7 @@
                 <p class="d-none" data-item-comp-target="mailtext" data-find-rep-simple-target='mailheadertext'></p>
               </div>
             </div>
+            <p class="text-center m-5" data-item-comp-target="simpleaction"></p>
           </div>
         </div>
       </div>
