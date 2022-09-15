@@ -8,4 +8,8 @@ class PagesController < ApplicationController
     @mail_counter = MailCounter.first
   end
 
+  def tweetallreps
+    @reps = JSON.parse(File.read(Rails.root.join('public', 'deputes.json')))
+  end
+
 end

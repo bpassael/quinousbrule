@@ -1,0 +1,8 @@
+<h1>TWEET ALL REPS</h1>
+
+<%# 0 à 20 done %>
+
+<% @reps[21..40].each do |rep| %>
+<a class='ms-5' href="https://twitter.com/intent/tweet?text=Mon empreinte carbone annuelle est de 8,78 tonnes de CO2e soit 1 heure et 53 minutes de vol du jet de Vincent Bolloré ou 38km parcourus par le yacht de Bernard Arnault. A quoi servent mes efforts ? @<%= rep["twitter"]%> https://pic.twitter.com/yg32d9s7Po&hashtags=quinousbrule,sobriété,DontLookUp" target="_blank"> TWEET TO <%=rep["nom"] %></a>
+<br><br>
+<% end %>

@@ -30,3 +30,6 @@ application.register("source-flip", SourceFlipController)
 
 import TweetCounterController from "./tweet_counter_controller"
 application.register("tweet-counter", TweetCounterController)
+
+import TweetallrepsController from "./tweetallreps_controller"
+application.register("tweetallreps", TweetallrepsController)
