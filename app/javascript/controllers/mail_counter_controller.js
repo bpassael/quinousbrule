@@ -8,10 +8,11 @@ export default class extends Controller {
   }
 
   connect() {
+    console.log("zz")
   }
 
   increaseMailCounter() {
-    const url = document.location.origin + `/mail_counters/${this.idValue}`
+    const url = window.location.origin + `/mail_counters/${this.idValue}`
     fetch(url, {
       method: "PATCH",
       headers: {"Accept": "text/plain"},

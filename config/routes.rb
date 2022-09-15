@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :measurements, only: :index
   resources :tweet_counters, only: :update
   resources :mail_counters, only: :update
+  get "/tweetallreps", to: "pages#tweetallreps"
   # Define your application routses per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

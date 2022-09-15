@@ -11,7 +11,7 @@ export default class extends Controller {
   }
 
   increaseTweetCounter() {
-    const url = document.location.origin + `/tweet_counters/${this.idValue}`
+    const url = window.location.origin + `/tweet_counters/${this.idValue}`
     fetch(url, {
       method: "PATCH",
       headers: {"Accept": "text/plain"},
